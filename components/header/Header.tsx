@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { getInfo } from "../../utils";
-import { useAppDispatch, useAppSelector } from "../../store/hook/useRedux";
-import { setLanguage } from "../../store/slice/languageSlice/languageSlice";
+import { getInfo } from "@/utils";
+import { useAppDispatch, useAppSelector } from "@/store/hook/useRedux";
+import { setLanguage } from "@/store/slice/languageSlice/languageSlice";
+import styles from "@/styles/Header.module.css";
 
 export const Header = () => {
   const { projects, about, contact } = getInfo();
@@ -11,22 +12,22 @@ export const Header = () => {
 
   return (
     <>
-      <header className="header">
-        <nav className="header-nav">
-          <a href="#home" className="nav-logo" aria-label="Redirect to home">
+      <header className={styles.header}>
+        <nav className={styles['header-nav']}>
+          <a href="#home" className={styles["nav-logo"]} aria-label="Redirect to home">
             David Naranjo
           </a>
-          <ul className="nav-list">
-            <li className="nav-item">
+          <ul className={styles["nav-list"]}>
+            <li className={styles["nav-item"]}>
               <a
                 href="#about"
-                className="nav-link"
+                className={styles["nav-link"]}
                 aria-label="Redirect to about"
               >
                 {about[indexLanguage]}
               </a>
             </li>
-            <li className="nav-item">
+            <li className={styles["nav-item"]}>
               <a
                 href="#projects"
                 className="nav-link link-projects"
@@ -34,7 +35,7 @@ export const Header = () => {
               >
                 {projects[indexLanguage]}
                 <svg
-                  className="projects-icon"
+                  className={styles["projects-icon"]}
                   role="img"
                   width="30"
                   height="30"
@@ -48,26 +49,26 @@ export const Header = () => {
                   />
                 </svg>
               </a>
-              <div className="projects-items">
-                <a className="project-item">Web Pages</a>
-                <hr className="projects-separator" />
-                <a className="project-item">Models</a>
-                <a className="project-item">Illustrations</a>
+              <div className={styles["projects-items"]}>
+                <a className={styles["project-item"]}>Web Pages</a>
+                <hr className={styles["projects-separator"]} />
+                <a className={styles["project-item"]}>Models</a>
+                <a className={styles["project-item"]}>Illustrations</a>
               </div>
             </li>
-            <li className="nav-item">
+            <li className={styles["nav-item"]}>
               <a
                 href="#contact"
-                className="nav-link"
+                className={styles["nav-link"]}
                 aria-label="Redirect to contact"
               >
                 {contact[indexLanguage]}
               </a>
             </li>
-            <hr className="nav-separator" />
-            <li className="nav-item">
+            <hr className={styles["nav-separator"]} />
+            <li className={styles["nav-item"]}>
               <button
-                className="language-button"
+                className={styles["language-button"]}
                 onClick={() => {
                   setLanguageNumber(!languageNumber);
                   dispatch(setLanguage(languageNumber));
@@ -76,20 +77,20 @@ export const Header = () => {
                 {language}
               </button>
             </li>
-            <hr className="nav-separator" />
-            <li className="nav-item">
+            <hr className={styles["nav-separator"]}/>
+            <li className={styles["nav-item"]}>
               <a>Light</a>
             </li>
-            <hr className="nav-separator" />
-            <li className="social-item">
+            <hr className={styles["nav-separator"]} />
+            <li className={styles["social-item"]}>
               <a
-                className="social-link"
+                className={styles["social-link"]}
                 href="https://github.com/NamuraCode"
                 target="_blank"
                 aria-label="Redirect to github"
               >
                 <svg
-                  className="image-link"
+                  className={styles["image-link"]}
                   role="img"
                   width="50"
                   height="50"
@@ -104,15 +105,15 @@ export const Header = () => {
                 </svg>
               </a>
             </li>
-            <li className="social-item">
+            <li className={styles["social-item"]}>
               <a
-                className="social-link"
+                className={styles["social-link"]}
                 href="https://www.linkedin.com/in/david-naranjo/"
                 target="_blank"
                 aria-label="Redirect to linkedin"
               >
                 <svg
-                  className="image-link"
+                  className={styles["image-link"]}
                   role="img"
                   width="48"
                   height="48"

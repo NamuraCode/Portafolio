@@ -1,12 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import { Header } from '@/components'
-import { Home } from '@/views/Home'
-import { ExperienceMain } from '@/views/ExperienceMain'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import { Header } from "@/components";
+import { ExperienceMain, HomeMain } from "@/views";
+import { Provider } from "react-redux";
+import { store } from "@/store/store";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -17,11 +18,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/" />
       </Head>
-      <main className={`${styles['main-namura']}`}>
-        <Header />
-        <Home />
-        <ExperienceMain />
+      <main className={styles["main-namura"]}>
+        <Provider store={store}>
+          <Header />
+          <HomeMain />
+          <ExperienceMain />
+        </Provider>
       </main>
     </>
-  )
+  );
 }

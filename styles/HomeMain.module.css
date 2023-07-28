@@ -1,7 +1,3 @@
-@import url('../components/namuraTitle/namuraTitle.module.css');
-@import url('../components/namuraModel/namuraModel.module.css');
-@import url('../components/header/header.module.css');
-
 .namura-home{
     display: flex;
     justify-content: space-between;
