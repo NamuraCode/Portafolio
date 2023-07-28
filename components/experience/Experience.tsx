@@ -1,7 +1,11 @@
+'use client';
+
 import { useEffect, useLayoutEffect, useRef } from "react";
-import { useAppDispatch, useAppSelector } from "../../store/hook/useRedux";
-import { setExperience } from "../../store/slice/experienceSlice/experienceSlice";
-import { getInfo } from "../../utils";
+import { useAppDispatch, useAppSelector } from "@/store/hook/useRedux";
+import { setExperience } from "@/store/slice/experienceSlice/experienceSlice";
+import { getInfo } from "@/utils";
+import styles from "@/styles/Experience.module.css";
+import useIsomorphicLayoutEffect from "@/utils/useIsomorphicLayoutEffect";
 
 export const Experience = () => {
   const devRef = useRef<HTMLAnchorElement>(null);
@@ -17,7 +21,7 @@ export const Experience = () => {
     dispatch(setExperience({ name: "dev", job: experiences_jobs, changeLanguage: indexLanguage }));
   },[])
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     console.log(nameExperience);
     
     if (nameExperience === "dev") {
@@ -49,13 +53,13 @@ export const Experience = () => {
   }, [nameExperience]);
 
   return (
-    <article className="experience-info">
-      <div className="experience-navbar">
-        <h3 className="experience-navbar-title">{select[indexLanguage]}</h3>
-        <div className="experience-navbar-jobs" ref={contentExperience}>
+    <article className={styles["experience-info"]}>
+      <div className={styles["experience-navbar"]}>
+        <h3 className={styles["experience-navbar-title"]}>{select[indexLanguage]}</h3>
+        <div className={styles["experience-navbar-jobs"]} ref={contentExperience}>
           <a
             ref={devRef}
-            className="jobs-experience"
+            className={styles["jobs-experience"]}
             onClick={() => {
               dispatch(
                 setExperience({
@@ -70,7 +74,7 @@ export const Experience = () => {
           </a>
           <a
             ref={modelRef}
-            className="jobs-experience"
+            className={styles["jobs-experience"]}
             onClick={() => {
               dispatch(
                 setExperience({
@@ -85,18 +89,18 @@ export const Experience = () => {
           </a>
         </div>
       </div>
-        <ul className="experience-navbar-items">
+      <ul className={styles["experience-navbar-items"]}>
           {job.map((item, index) => {
             return (
-              <li className="experience-navbar-item" key={index}>
+              <li className={styles["experience-navbar-item"]} key={index}>
                 <a
                   key={index}
-                  className="experience-item"
+                  className={styles["experience-item"]}
                   href={`#${index}`}
                 >
                   {item.date[indexLanguage]}
                 </a>  
-                <div className="experience-item-info">
+                <div className={styles["experience-item-info"]}>
                   <p>
                     <span>{item.company}</span>
                     <br/>

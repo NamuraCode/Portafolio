@@ -1,5 +1,3 @@
-@import url('../components/experience/experience.module.css');
-
 .experience-main {
     display: flex;
     flex-direction: column;

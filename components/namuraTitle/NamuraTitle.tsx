@@ -1,3 +1,5 @@
+'use client';
+
 import { useAppSelector } from "@/store/hook/useRedux";
 import { getInfo } from "@/utils";
 import styles from "@/styles/NamuraTitle.module.css";
