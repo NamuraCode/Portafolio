@@ -1,0 +1,62 @@
+{
+    "about": [
+        "about",
+        "sobre mi"
+    ],
+    "projects": [
+        "projects",
+        "proyectos"
+    ],
+    "contact": [
+        "contact",
+        "contacto"
+    ],
+    "contact_me": [
+        "Contact",
+        "Contacto"
+    ],
+    "experience": [
+        "Experience",
+        "Experiencia"
+    ],
+    "select": [
+        "Select experience",
+        "Seleccione la experiencia"
+    ],
+    "modeling_3d":[
+        "3D Modeling",
+        "Modelado 3D"
+    ],
+    "experiences_jobs": [
+        {
+            "type": "dev",
+            "job": ["Fullstack Developer"],
+            "company": "Makata.SAS",
+            "description": ["lorem ipsum dolor sit amet","pero si le ponen la cancion, Es normal si te sientes solita y me extrañas"],
+            "date": [
+                "February 2022 - Current",
+                "Febrero 2022 - Actual"
+            ]
+        },
+        {
+            "type": "dev",
+            "job": ["Web Developer"],
+            "company": "Protalento",
+            "description": ["lorem ipsum dolor sit amet","Te di lo que pedia y no fue suficiente"],
+            "date": [
+                "August 2020 - April 2021",
+                "Agosto 2020 - Abril 2021"
+            ]
+        },
+        {
+            "type": "model",
+            "job": ["3D Generalist", "Generalista 3D"],
+            "company": "Semillero de Investigacion ITADIR",
+            "description": ["lorem ipsum dolor sit amet","Normal, si te sientes solita y me extrañas Y se te sale mi nombre"],
+            "date": [
+                "February 2019 - October 2019",
+                "Febrero 2019 - Octubre 2019"
+            ]
+        }
+    ]
+}

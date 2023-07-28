@@ -1,0 +1,19 @@
+.namura-model{
+    position: relative
+}
+
+.namura-model{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+@media (max-width: 1024px) {
+    .namura-model{
+        height: 300px;
+        width: 300px;
+    }
+}

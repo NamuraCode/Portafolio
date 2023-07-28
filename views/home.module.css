@@ -1,0 +1,20 @@
+@import url('../components/namuraTitle/namuraTitle.module.css');
+@import url('../components/namuraModel/namuraModel.module.css');
+@import url('../components/header/header.module.css');
+
+.namura-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: var(--colorWhite);
+}
+
+@media (max-width: 1024px) {
+    .namura-home{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+    

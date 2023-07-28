@@ -1,0 +1,41 @@
+.namura-title {
+    min-width: 22%;
+}
+
+.title-name{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    font-size: var(--titlesH1, 56px);
+    font-weight: var(--weightBold, 800);
+    color: var(--colorWhite);
+}
+
+.name-job{
+    margin: 0.5rem 0 1.4rem 0;
+    font-size: var(--titlesModalTitles);
+    font-weight: var(--weightMedium, 600);
+    color: var(--colorGray);
+    opacity: var(--opacityText, 60%);
+}
+  
+@media (max-width: 600px) {
+    .namura-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        flex-direction: column;
+    }
+
+    .title-name{
+        font-size: var(--titlesPage, 34px);
+        align-items: center;
+    }
+
+    .name-job{
+        font-size: var(--titlesInfoParagraphs, 20px);
+    }
+    
+}

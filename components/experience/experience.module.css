@@ -1,0 +1,92 @@
+.experience-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 40px;
+    padding: 10% 0%;
+    color: var(--colorWhite);
+}
+
+.experience-navbar {
+    position: relative;
+}
+
+.experience-navbar-title{
+    margin: 0 0 8px 0;
+    font-size: var(--textTimeStampsFootersCaption, 32px);
+    opacity: var(--opacityCaption, 50%);
+}
+
+.experience-navbar-jobs {
+    position: relative;
+    display: flex;
+    min-width: 210px;
+    max-width: 210px;
+    justify-content: space-between;
+    border: 1px solid var(--colorWhiteBorder);
+    border-radius: 12px;
+    padding: 12px 24px;
+    transition: border 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.experience-navbar-jobs:hover {
+    border: 1px solid var(--colorWhite);
+}
+
+.experience-navbar-jobs::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: var(--barExperienceLeft, 0);
+    width: var(--barExperienceWidth, 50%);
+    height: 100%;
+    padding: 0 24px;
+    border-radius: 12px;
+    background-color: var(--colorWhite);
+    transition: left 0.2s ease-in-out, width 0.2s ease-in-out;
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.jobs-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.experience-navbar-items{
+    display: flex;
+    height: 50%;    
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+    padding: 0 0 0 24px;
+    margin: 0;
+}
+
+.experience-navbar-item{
+    position: relative;
+}
+
+.experience-item-info{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.experience-navbar-item:hover .experience-item-info{
+    opacity: 1;
+}

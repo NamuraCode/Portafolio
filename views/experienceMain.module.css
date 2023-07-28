@@ -1,0 +1,17 @@
+@import url('../components/experience/experience.module.css');
+
+.experience-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    color: var(--colorWhite);
+}
+
+.experience-title {
+    align-self: center;
+    font-size: var(--titlesH2, 56px);
+    color: var(--colorWhite);
+    margin-bottom: 0;
+}
