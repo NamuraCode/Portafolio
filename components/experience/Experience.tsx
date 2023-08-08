@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useEffect, useLayoutEffect, useRef } from "react";
 import { useAppDispatch, useAppSelector } from "@/store/hook/useRedux";
@@ -6,6 +6,7 @@ import { setExperience } from "@/store/slice/experienceSlice/experienceSlice";
 import { getInfo } from "@/utils";
 import styles from "@/styles/Experience.module.css";
 import useIsomorphicLayoutEffect from "@/utils/useIsomorphicLayoutEffect";
+import { Marquee } from "../marquee/Marquee";
 
 export const Experience = () => {
   const devRef = useRef<HTMLAnchorElement>(null);
@@ -13,17 +14,21 @@ export const Experience = () => {
   const contentExperience = useRef<HTMLDivElement>(null);
   const { indexLanguage } = useAppSelector((state) => state.language);
   const { select, modeling_3d, experiences_jobs } = getInfo();
-  const { nameExperience, job } = useAppSelector(
-    (state) => state.experience
-  );
+  const { nameExperience, job } = useAppSelector((state) => state.experience);
   const dispatch = useAppDispatch();
   useEffect(() => {
-    dispatch(setExperience({ name: "dev", job: experiences_jobs, changeLanguage: indexLanguage }));
-  },[])
+    dispatch(
+      setExperience({
+        name: "dev",
+        job: experiences_jobs,
+        changeLanguage: indexLanguage,
+      })
+    );
+  }, []);
 
   useIsomorphicLayoutEffect(() => {
     console.log(nameExperience);
-    
+
     if (nameExperience === "dev") {
       const widthDev = devRef.current?.offsetWidth;
       contentExperience.current?.style.setProperty(
@@ -49,14 +54,18 @@ export const Experience = () => {
         `${move}px`
       );
     }
-    
   }, [nameExperience]);
 
   return (
     <article className={styles["experience-info"]}>
       <div className={styles["experience-navbar"]}>
-        <h3 className={styles["experience-navbar-title"]}>{select[indexLanguage]}</h3>
-        <div className={styles["experience-navbar-jobs"]} ref={contentExperience}>
+        <h3 className={styles["experience-navbar-title"]}>
+          {select[indexLanguage]}
+        </h3>
+        <div
+          className={styles["experience-navbar-jobs"]}
+          ref={contentExperience}
+        >
           <a
             ref={devRef}
             className={styles["jobs-experience"]}
@@ -89,7 +98,8 @@ export const Experience = () => {
           </a>
         </div>
       </div>
-      <ul className={styles["experience-navbar-items"]}>
+      <div>
+        <ul className={styles["experience-navbar-items"]}>
           {job.map((item, index) => {
             return (
               <li className={styles["experience-navbar-item"]} key={index}>
@@ -99,11 +109,11 @@ export const Experience = () => {
                   href={`#${index}`}
                 >
                   {item.date[indexLanguage]}
-                </a>  
+                </a>
                 <div className={styles["experience-item-info"]}>
                   <p>
                     <span>{item.company}</span>
-                    <br/>
+                    <br />
                     {item.description[indexLanguage]}
                   </p>
                 </div>
@@ -111,7 +121,8 @@ export const Experience = () => {
             );
           })}
         </ul>
+        <Marquee />
+      </div>
     </article>
   );
 };
-
