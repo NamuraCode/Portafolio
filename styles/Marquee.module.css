@@ -1,0 +1,34 @@
+.marquee {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    overflow: hidden;
+    pointer-events: none;
+    transform: rotate(270deg);
+}
+
+.marquee li {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.marquee-content {
+    display: flex;
+    list-style: none;
+    animation: scrolling 60s linear infinite;
+}
+
+.marquee-item {
+    flex-shrink: 0;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+}

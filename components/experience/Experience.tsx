@@ -98,7 +98,7 @@ export const Experience = () => {
           </a>
         </div>
       </div>
-      <div>
+      <div className={styles["experience-navbar-main"]}>
         <ul className={styles["experience-navbar-items"]}>
           {job.map((item, index) => {
             return (
