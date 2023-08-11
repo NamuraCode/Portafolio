@@ -10,6 +10,7 @@
     transform: rotate(270deg);
     background-color: var(--colorBlack);
     box-shadow: 10px 10px 0px 0px var(--colorBlackDark);
+    z-index: 1;
 }
 
 .marquee li {
