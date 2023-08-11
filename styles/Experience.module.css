@@ -4,8 +4,9 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    height: inherit;
     gap: 40px;
-    padding: 10% 0%;
+    margin: 10% 0%;
     color: var(--colorWhite);
     overflow: hidden;
 }
