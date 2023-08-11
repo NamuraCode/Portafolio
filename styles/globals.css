@@ -39,13 +39,6 @@ body {
   background-color: var(--colorBlack);
 }
 
-#__next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
 body::-webkit-scrollbar {
   display: none;
 }

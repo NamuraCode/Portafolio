@@ -1,10 +1,9 @@
 .main-namura {
   position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 100%;
+  width: 100vw;
   height: auto;
+}
+
+.main-namura > section {
   padding: 0 14rem;
 }
