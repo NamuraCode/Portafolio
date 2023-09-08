@@ -10,7 +10,7 @@
     color: var(--colorWhite);
     overflow: hidden;
 }
-
+/* 
 .experience-info::after{
     content: '';
     position: absolute;
@@ -21,7 +21,7 @@
     border-radius: 10px;
     background-color: var(--colorWhite);
     z-index: 0;
-}
+} */
 
 .experience-navbar {
     position: relative;

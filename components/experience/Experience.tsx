@@ -121,7 +121,7 @@ export const Experience = () => {
             );
           })}
         </ul>
-        <Marquee />
+        {/* <Marquee /> */}
       </div>
     </article>
   );
