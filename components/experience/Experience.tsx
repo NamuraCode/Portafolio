@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useAppDispatch, useAppSelector } from "@/store/hook/useRedux";
 import { setExperience } from "@/store/slice/experienceSlice/experienceSlice";
-import { getInfo } from "@/utils";
+import { getInfo, useSetWidthExp } from "@/utils";
 import styles from "@/styles/Experience.module.css";
-import useIsomorphicLayoutEffect from "@/utils/useIsomorphicLayoutEffect";
 import { Marquee } from "../marquee/Marquee";
 
 export const Experience = () => {
@@ -30,35 +29,8 @@ export const Experience = () => {
     );
   }, []);
 
-  useIsomorphicLayoutEffect(() => {
-    console.log(nameExperience);
-
-    if (nameExperience === "dev") {
-      const widthDev = devRef.current?.offsetWidth;
-      contentExperience.current?.style.setProperty(
-        "--barExperienceWidth",
-        `${widthDev}px`
-      );
-      contentExperience.current?.style.setProperty(
-        "--barExperienceLeft",
-        `0px`
-      );
-    }
-
-    if (nameExperience === "model") {
-      const widthContent = contentExperience.current?.offsetWidth;
-      const move = widthContent!! - (modelRef.current?.offsetWidth! + 48);
-      const widthModel = modelRef.current?.offsetWidth;
-      contentExperience.current?.style.setProperty(
-        "--barExperienceWidth",
-        `${widthModel}px`
-      );
-      contentExperience.current?.style.setProperty(
-        "--barExperienceLeft",
-        `${move}px`
-      );
-    }
-  }, [nameExperience]);
+  // Change property css for width of contentExperience reference
+  useSetWidthExp(devRef, modelRef, contentExperience, nameExperience);
 
   return (
     <article className={styles["experience-info"]}>

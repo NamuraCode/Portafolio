@@ -1,25 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
+import { ExperienceState, ExperienceJob } from "@/interfaces";
 import type { RootState } from "../../store";
 
 const devExperienceYears = [
   "February 2022 - Current 2023",
   "August 2020 - April 2021",
 ];
-
-interface ExperienceJob {
-  type: string;
-  job: string[];
-  company: string;
-  description: string[];
-  date: string[];
-}
-
-interface ExperienceState {
-  nameExperience: string;
-  job: ExperienceJob[];
-  toggleLanguage: number;
-  experience: string[];
-}
 
 const initialState: ExperienceState = {
   nameExperience: "dev",
