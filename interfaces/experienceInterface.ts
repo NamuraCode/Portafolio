@@ -12,3 +12,8 @@ export interface ExperienceState {
   toggleLanguage: number;
   experience: string[];
 }
+
+export interface ExpListProps {
+  experiences: ExperienceJob[];
+  indexLanguage: number;
+}

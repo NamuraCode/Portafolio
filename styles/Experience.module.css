@@ -36,8 +36,8 @@
 .experience-navbar-jobs {
     position: relative;
     display: flex;
-    min-width: 210px;
-    max-width: 210px;
+    min-width: var(--expWidth, 210px);
+    max-width: var(--expWidth, 210px);
     justify-content: space-between;
     border: 1px solid var(--colorWhiteBorder);
     border-radius: 12px;

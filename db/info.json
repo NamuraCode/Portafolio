@@ -19,9 +19,13 @@
         "Experience",
         "Experiencia"
     ],
-    "select": [
+    "selectExp": [
         "Select experience",
         "Seleccione la experiencia"
+    ],
+    "dev":[
+        "Developer",
+        "Desarrollador"
     ],
     "modeling_3d":[
         "3D Modeling",

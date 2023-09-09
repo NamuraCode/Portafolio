@@ -3,7 +3,7 @@ import type { RootState } from '../../store';
 
 interface UserLanguage {
   language: string;
-  indexLanguage: number;
+  indexLanguage: 0 | 1;
 }
 
 const initialState: UserLanguage = {
