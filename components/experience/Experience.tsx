@@ -12,10 +12,14 @@ export const Experience = () => {
   const devRef = useRef<HTMLAnchorElement>(null);
   const modelRef = useRef<HTMLAnchorElement>(null);
   const contentExperience = useRef<HTMLDivElement>(null);
-  const { indexLanguage } = useAppSelector((state) => state.language);
+
   const { select, modeling_3d, experiences_jobs } = getInfo();
+
+  const { indexLanguage } = useAppSelector((state) => state.language);
   const { nameExperience, job } = useAppSelector((state) => state.experience);
+
   const dispatch = useAppDispatch();
+
   useEffect(() => {
     dispatch(
       setExperience({
