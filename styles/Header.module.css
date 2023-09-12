@@ -137,6 +137,26 @@
     cursor: pointer;
 }
 
+.projects-items > :nth-child(n+3):hover::after{
+    content: 'extra';
+    position: absolute;
+    right: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    padding: 2px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: var(--colorBlack);
+    opacity: 0.8;
+    border: 1px solid var(--colorWhiteBorder);
+    background-color: var(--colorMain);
+    border-radius: 8px;
+    transition: all 1s ease-in-out 
+}
+
 .project-item:hover{
     background-color: var(--colorWhiteHover);
 }
