@@ -15,44 +15,36 @@ export const useSetWidthExp = (
       return;
     const widthDev = devRef.current.offsetWidth;
     const widthModel = modelRef.current.offsetWidth;
-    const widthContent = contentExperience.current.offsetWidth;
     const expStyle = contentExperience.current.style;
 
-    if (indexLanguage == 0) {
-      setBarExpWidth(
-        nameExperience,
-        expStyle,
-        widthContent,
-        widthDev,
-        widthModel
-      );
-    } else {
-      setBarExpWidth(
-        nameExperience,
-        expStyle,
-        widthContent,
-        widthDev,
-        widthModel
-      );
-    }
+    setBarExpWidth(
+      widthModel,
+      widthDev,
+      nameExperience,
+      indexLanguage,
+      expStyle
+    );
     expStyle.setProperty("--expWidth", `${widthDev + widthModel + 48}px`);
   }, [nameExperience, indexLanguage]);
 };
 
 const setBarExpWidth = (
-  nameExperience: string,
-  expStyle: CSSStyleDeclaration,
-  widthContent: number,
+  widthModel: number,
   widthDev: number,
-  widthModel: number
+  nameExperience: string,
+  indexLanguage: number,
+  expStyle: CSSStyleDeclaration
 ) => {
   if (nameExperience.toLowerCase() === "dev") {
     expStyle.setProperty("--barExperienceWidth", `${widthDev}px`);
     expStyle.setProperty("--barExperienceLeft", `0px`);
   }
-  if (nameExperience.toLowerCase() === "model") {
-    const move = widthContent - (widthModel + 48);
+  if (nameExperience.toLowerCase() === "model" && indexLanguage == 0) {
     expStyle.setProperty("--barExperienceWidth", `${widthModel}px`);
-    expStyle.setProperty("--barExperienceLeft", `${move}px`);
+    expStyle.setProperty("--barExperienceLeft", `${47}%`);
+  }
+  if (nameExperience.toLowerCase() === "model" && indexLanguage == 1) {
+    expStyle.setProperty("--barExperienceWidth", `${widthModel}px`);
+    expStyle.setProperty("--barExperienceLeft", `${50}%`);
   }
 };
