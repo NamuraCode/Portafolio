@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { getInfo } from "@/utils";
-import { useAppDispatch, useAppSelector } from "@/store/hook/useRedux";
+import { useAppDispatch, useAppSelector } from "@/store/hooks/useRedux";
 import { setLanguage } from "@/store/slice/languageSlice/languageSlice";
 import styles from "@/styles/Header.module.css";
 

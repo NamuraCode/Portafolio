@@ -1,12 +1,14 @@
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+
 import { MeshBox } from './MeshBox';
+
 import styles from '@/styles/NamuraModel.module.css';
 
 export const NamuraModel = () => {
   
   return (
-    <article className={styles['namura-model']}>
+    <div className={styles['namura-model']}>
       <Canvas className={styles['model-scene']} camera={{ position: [0, 0, 1] }}>
         <OrbitControls
           minPolarAngle={0}
@@ -18,6 +20,6 @@ export const NamuraModel = () => {
         <pointLight position={[10, 10, 10]} />
         <MeshBox  />
       </Canvas>
-    </article>
+    </div>
   );
 };

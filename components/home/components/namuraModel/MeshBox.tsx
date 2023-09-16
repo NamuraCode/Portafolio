@@ -1,8 +1,8 @@
 'use client';
 
-import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import { Group } from "three";
+import { useFrame } from "@react-three/fiber";
 
 export const MeshBox = () => {
   const meshRef = useRef<Group>(null);

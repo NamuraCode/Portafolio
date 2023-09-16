@@ -1,8 +1,11 @@
 .namura-title {
-    min-width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.title-name{
+.title-name {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -12,30 +15,29 @@
     color: var(--colorWhite);
 }
 
-.name-job{
+.name-job {
     margin: 0.5rem 0 1.4rem 0;
     font-size: var(--titlesModalTitles);
     font-weight: var(--weightMedium, 600);
     color: var(--colorGray);
     opacity: var(--opacityText, 60%);
 }
-  
+
 @media (max-width: 600px) {
-    .namura-title{
-        display: flex;
+    .namura-title {
         justify-content: center;
         align-items: center;
         min-width: 100%;
         flex-direction: column;
     }
 
-    .title-name{
+    .title-name {
         font-size: var(--titlesPage, 34px);
         align-items: center;
     }
 
-    .name-job{
+    .name-job {
         font-size: var(--titlesInfoParagraphs, 20px);
     }
-    
+
 }

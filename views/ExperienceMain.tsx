@@ -1,8 +1,8 @@
-'use client';
+import { getInfo } from "@/utils";
+import { useAppSelector } from "@/store";
 
 import { Experience } from "@/components";
-import { useAppSelector } from "@/store/hook/useRedux";
-import { getInfo } from "@/utils";
+
 import styles from "@/styles/ExperienceMain.module.css";
 
 export const ExperienceMain = () => {
