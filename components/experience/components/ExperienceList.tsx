@@ -1,5 +1,5 @@
-import { Marquee } from "@/components/marquee/Marquee";
 import { ExpListProps } from "@/interfaces";
+
 import styles from "@/styles/Experience.module.css";
 
 export const ExperienceList = ({ experiences, indexLanguage }: ExpListProps ) => {
@@ -27,7 +27,6 @@ export const ExperienceList = ({ experiences, indexLanguage }: ExpListProps ) =>
           );
         })}
       </ul>
-      {/* <Marquee/> */}
     </div>
   );
 };
