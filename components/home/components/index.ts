@@ -1,2 +1,2 @@
-export * from './namuraModel/NamuraModel'
-export * from './namuraModel/MeshBox'
+export * from './NamuraModel'
+export * from './MeshBox'
