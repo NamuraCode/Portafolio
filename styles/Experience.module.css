@@ -100,10 +100,10 @@
 
 .experience-item-info {
     position: absolute;
-    top: 0;
+    top: 50px;
     right: 0;
     transition: opacity 0.2s ease-in-out;
-    opacity: 1;
+    opacity: 0;
     pointer-events: none;
 }
 
