@@ -1,21 +1,23 @@
 import { ExpListProps } from "@/interfaces";
 
 import styles from "@/styles/Experience.module.css";
+import { ExperienceBar } from "./ExperienceBar";
 
-export const ExperienceList = ({ experiences, indexLanguage }: ExpListProps ) => {
+export const ExperienceList = ({
+  experiences,
+  indexLanguage,
+}: ExpListProps) => {
   return (
     <div className={styles["experience-navbar-main"]}>
       <ul className={styles["experience-navbar-items"]}>
         {experiences.map((experience, index) => {
           return (
             <li className={styles["experience-navbar-item"]} key={index}>
-              <a
-                key={index}
+              <p
                 className={styles["experience-item"]}
-                href={`#${index}`}
               >
                 {experience.date[indexLanguage]}
-              </a>
+              </p>
               <div className={styles["experience-item-info"]}>
                 <p>
                   <span>{experience.company}</span>
@@ -27,6 +29,7 @@ export const ExperienceList = ({ experiences, indexLanguage }: ExpListProps ) =>
           );
         })}
       </ul>
+      <ExperienceBar />
     </div>
   );
 };
