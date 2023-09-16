@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     height: inherit;
-    gap: 40px;
+    gap: 60px;
     margin: 10% 0%;
     color: var(--colorWhite);
     overflow: hidden;
@@ -15,7 +15,7 @@
     position: relative;
 }
 
-.experience-navbar-title{
+.experience-navbar-title {
     margin: 0 0 8px 0;
     font-size: var(--textTimeStampsFootersCaption, 32px);
     opacity: var(--opacityCaption, 50%);
@@ -38,7 +38,7 @@
     border: 1px solid var(--colorWhite);
 }
 
-.experience-navbar-jobs::after{
+.experience-navbar-jobs::after {
     content: '';
     position: absolute;
     top: 0;
@@ -53,7 +53,7 @@
     opacity: 0.2;
 }
 
-.jobs-experience{
+.jobs-experience {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,41 +61,52 @@
     cursor: pointer;
 }
 
-.experience-navbar-main{
+.experience-navbar-main {
     width: 100%;
 }
 
-.experience-navbar-items{
+.experience-navbar-items {
     position: relative;
     display: flex;
-    width: 100%;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    width: 60%;
     gap: 40px;
+    padding: 0;
+    margin: auto;
     list-style: none;
-    padding: 0 0 0 24px;
-    margin: 0;
 }
 
-.experience-navbar-item{
+.experience-navbar-items::after {
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 2px;
+    background-color: var(--colorWhite);
+}
+
+.experience-navbar-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-self: flex-start;
     width: 100%;
 }
+
 /* 
 .experience-navbar-item > a{
     width: 50%;
 } */
 
-.experience-item-info{
+.experience-item-info {
+    position: absolute;
+    top: 0;
+    right: 0;
     transition: opacity 0.2s ease-in-out;
     opacity: 1;
     pointer-events: none;
 }
 
-.experience-navbar-item:hover .experience-item-info{
+.experience-navbar-item:hover .experience-item-info {
     opacity: 1;
 }
