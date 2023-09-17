@@ -5,9 +5,9 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    gap: 6rem;
     margin: 6% 0%;
     color: var(--colorWhite);
-    overflow: hidden;
 }
 
 .experience-navbar {
@@ -66,7 +66,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 14rem;
 }
 
 .experience-navbar-items {
@@ -86,7 +86,6 @@
 .experience-navbar-item {
     display: flex;
     width: 100%;
-    transition: text-decoration 0.2s ease-in-out;
 }
 
 .experience-item-info {
@@ -95,7 +94,6 @@
     right: -67%;
     width: 100%;
     height: 100%;
-    align-self: center;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
     pointer-events: none;
@@ -111,4 +109,5 @@
 
 .experience-navbar-item:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
