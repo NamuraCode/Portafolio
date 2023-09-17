@@ -2,6 +2,7 @@ import { ExpListProps } from "@/interfaces";
 
 import styles from "@/styles/Experience.module.css";
 import { ExperienceBar } from "./ExperienceBar";
+import { ExperienceCard } from "./ExperienceCard";
 
 export const ExperienceList = ({
   experiences,
@@ -13,17 +14,15 @@ export const ExperienceList = ({
         {experiences.map((experience, index) => {
           return (
             <li className={styles["experience-navbar-item"]} key={index}>
-              <p
-                className={styles["experience-item"]}
-              >
+              <p className={styles["experience-item"]}>
                 {experience.date[indexLanguage]}
               </p>
               <div className={styles["experience-item-info"]}>
-                <p>
-                  <span>{experience.company}</span>
-                  <br />
-                  {experience.description[indexLanguage]}
-                </p>
+                <ExperienceCard
+                  key={index}
+                  company={experience.company}
+                  description={experience.description[indexLanguage]}
+                />
               </div>
             </li>
           );
