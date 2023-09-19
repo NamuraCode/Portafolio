@@ -7,11 +7,9 @@
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.exp-card-title img{
+    margin: 0;
 }
 
 .exp-card-description{
-
+    text-align: left;
 }
