@@ -1,9 +1,10 @@
-import { getInfo } from "@/utils";
 import { useAppSelector } from "@/store";
+import { getInfo } from "@/utils";
+
+import { NamuraModel } from "./components";
 
 import mainStyles from "@/styles/MainStyles.module.css";
 import styles from "@/styles/NamuraTitle.module.css";
-import { NamuraModel } from "./components";
 
 export const Home = () => {
   const { indexLanguage } = useAppSelector((state) => state.language);
@@ -11,7 +12,7 @@ export const Home = () => {
 
   return (
     <article className={styles["namura-title"]}>
-      <aside>
+      <aside className={styles["title-main"]}>
         <h1 className={styles["title-name"]}>
           David Naranjo{" "}
           <span className={styles["name-job"]}>Fullstack developer</span>

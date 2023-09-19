@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.title-main{
+    width: 50%;
+}
+
 .title-name {
     display: flex;
     justify-content: center;
