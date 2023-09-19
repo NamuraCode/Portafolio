@@ -12,6 +12,7 @@
     cursor: pointer;
     border: none;
     transition: outline, color 0.1s ease-in-out;
+    pointer-events: all;
   }
   
   .btn:hover {
