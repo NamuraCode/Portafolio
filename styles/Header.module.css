@@ -166,10 +166,9 @@
 }
 
 .nav-separator {
+    border: 1px solid var(--colorWhiteBorder);
     margin: 0;
     height: 34px;
-    background: rgb(2,0,36);
-    background:var(--separatorColor);
 }
 
 .social-item {
