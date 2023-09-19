@@ -2,3 +2,16 @@
     display: flex;
     flex-direction: column;
 }
+
+.exp-card-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.exp-card-title img{
+}
+
+.exp-card-description{
+
+}

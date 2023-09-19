@@ -72,26 +72,26 @@
 .experience-navbar-items {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 50%;
     height: 100%;
     gap: 40px;
     padding: 0;
-    margin: auto;
+    margin: 0 auto 0 0;
     list-style: none;
 }
 
 .experience-navbar-item {
     display: flex;
-    width: 100%;
+    justify-content: flex-end ;
+    width: 90%;
 }
 
 .experience-item-info {
     position: absolute;
     top: 0;
-    right: -67%;
+    right: -110%;
     width: 100%;
     height: 100%;
     opacity: 0;

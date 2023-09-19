@@ -22,6 +22,7 @@ export const ExperienceList = ({
                   key={index}
                   company={experience.company}
                   description={experience.description[indexLanguage]}
+                  img={`${experience.imageUrl}`}
                 />
               </div>
             </li>

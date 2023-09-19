@@ -10,11 +10,11 @@ export const ExperienceCard = ({
 }: ExperienceCardProps) => {
   return (
     <div className={`${styles["exp-card"]}`}>
-      <h4>
-        <Image src={img} width={50} height={50} alt={"image-company"} />
+      <h4 className={`${styles["exp-card-title"]}`}>
+        <Image src={img} width={30} height={30} alt={"image-company"} />
         {company}
       </h4>
-      <p>{description}</p>
+      <p className={`${styles["exp-card-description"]}`}>{description}</p>
     </div>
   );
 };

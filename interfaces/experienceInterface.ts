@@ -2,6 +2,7 @@ export interface ExperienceJob {
   type: string;
   job: string[];
   company: string;
+  imageUrl: string;
   description: string[];
   date: string[];
 }
