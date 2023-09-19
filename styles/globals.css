@@ -39,6 +39,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--colorBlack);
   scroll-behavior: smooth;
+  cursor: none
 }
 
 body::-webkit-scrollbar {

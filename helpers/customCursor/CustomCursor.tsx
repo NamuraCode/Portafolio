@@ -5,7 +5,7 @@ import { useLayoutEffect } from 'react'
 export const CustomCursor = ( {left, top} : Cursor) => {
     
     return (
-      <div className={`${styles['cursor-main']}`} style={{left: left - 10, top: top - 10}}>
+      <div className={`${styles['cursor-main']}`} style={{left: left - 15, top: top - 10}}>
        </div>
      )
   }
