@@ -9,9 +9,11 @@ export const NumberPage = ({ numberPage }: Props) => {
         position: "absolute",
         right: 0,
         bottom: 0,
+        margin: '4rem 6.5rem',
+        fontSize: 128
       }}
     >
-      <p>{numberPage}</p>
+      <p style={{margin: 0}}>{numberPage}</p>
     </div>
   );
 };
