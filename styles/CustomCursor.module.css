@@ -1,0 +1,13 @@
+.cursor-main{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+    mix-blend-mode: difference;
+    pointer-events: none
+}

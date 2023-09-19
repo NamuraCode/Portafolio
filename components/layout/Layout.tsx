@@ -1,8 +1,10 @@
-import Head from "next/head";
+import { MouseEvent, useState } from "react";
 import { Provider } from "react-redux";
-import { store } from "@/store/store";
+import Head from "next/head";
 
-import { LayoutProps } from "@/interfaces";
+import { LayoutProps, Cursor } from "@/interfaces";
+import { CustomCursor } from "@/helpers";
+import { store } from "@/store/store";
 
 import styles from "@/styles/Home.module.css";
 
@@ -14,6 +16,11 @@ export const Layout = ({
   keywords = "fullstack, react, nextjs, nodejs, javascript, typescript, developer, web, mobile, app, David Naranjo",
   title = "David Naranjo, Fullstack Developer",
 }: LayoutProps) => {
+  const [cursorPositions, setCursorPositions] = useState<Cursor>({
+    left: 0,
+    top: 0,
+  });
+
   return (
     <>
       <Head>
@@ -26,8 +33,14 @@ export const Layout = ({
         <meta property="og:image" content={`${origin}/images/banner.png`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className={styles["main-namura"]}>
+      <main
+        className={styles["main-namura"]}
+        onMouseMove={(e) => {
+          setCursorPositions({ left: e.pageX, top: e.pageY });
+        }}
+      >
         <Provider store={store}>{children}</Provider>
+        <CustomCursor left={cursorPositions.left} top={cursorPositions.top} />
       </main>
     </>
   );

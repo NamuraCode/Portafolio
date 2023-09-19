@@ -1,10 +1,5 @@
-import Head from "next/head";
-import styles from "@/styles/Home.module.css";
-import { Header } from "@/components";
 import { ExperienceMain, HomeMain } from "@/views";
-import { Provider } from "react-redux";
-import { store } from "@/store/store";
-import { Layout } from "@/components/layout/Layout";
+import { Header, Layout } from "@/components";
 
 export default function Home() {
   return (

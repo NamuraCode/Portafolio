@@ -5,6 +5,7 @@
     height: 100vh;
     padding: 0 14rem;
     color: var(--colorWhite);
+    z-index: 2;
 }
 
 @media (max-width: 1024px) {
