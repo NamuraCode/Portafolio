@@ -4,18 +4,24 @@ import { useAppDispatch, useAppSelector, setExpMouseY } from "@/store";
 import { ExperienceList, ExperienceSelector } from "./components";
 
 import styles from "@/styles/Experience.module.css";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export const Experience = () => {
-  const [ expMouse, setExpMouse ] = useState(1)
+  const [expMouse, setExpMouse] = useState(1);
+  const expRef = useRef<HTMLElement>(null)
   const { selectExp } = getInfo();
   const { indexLanguage } = useAppSelector((state) => state.language);
   const { job } = useAppSelector((state) => state.experience);
   const dispatch = useAppDispatch();
 
   return (
-    // <article className={styles["experience-info"]} onMouseMove={(e)=>{dispatch(setExpMouseY(e.pageY))}}>
-    <article className={styles["experience-info"]} >
+    <article
+      ref={expRef}
+      className={styles["experience-info"]}
+      // onMouseMove={(e) => {
+      //   dispatch(setExpMouseY(e.pageY));
+      // }}
+    >
       <div className={styles["experience-navbar"]}>
         <h3 className={styles["experience-navbar-title"]}>
           {selectExp[indexLanguage]}
