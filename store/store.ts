@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { languageSlice } from './slice/languageSlice/languageSlice'
-import { experienceSlice } from './slice/experienceSlice/experienceSlice'
+import { experienceMouse, experienceSlice, languageSlice } from './slice'
 // ...
 
 export const store = configureStore({
   reducer: {
     language: languageSlice.reducer,
-    experience: experienceSlice.reducer
+    experience: experienceSlice.reducer,
+    experienceMouse: experienceMouse.reducer
   },
 })
 
