@@ -1,5 +1,5 @@
 import { getInfo } from "@/utils";
-import { useAppDispatch, useAppSelector } from "@/store";
+import { useAppDispatch, useAppSelector, setExpMouseY } from "@/store";
 
 import { ExperienceList, ExperienceSelector } from "./components";
 
@@ -15,7 +15,7 @@ export const Experience = () => {
 
 
   return (
-    <article className={styles["experience-info"]} onMouseMove={(e)=>{}}>
+    <article className={styles["experience-info"]} onMouseMove={(e)=>{dispatch(setExpMouseY(e.pageY))}}>
       <div className={styles["experience-navbar"]}>
         <h3 className={styles["experience-navbar-title"]}>
           {selectExp[indexLanguage]}

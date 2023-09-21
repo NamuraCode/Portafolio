@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { experienceMouse, experienceSlice, languageSlice } from './slice'
-// ...
 
 export const store = configureStore({
   reducer: {
