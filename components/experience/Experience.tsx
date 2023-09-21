@@ -13,9 +13,9 @@ export const Experience = () => {
   const { job } = useAppSelector((state) => state.experience);
   const dispatch = useAppDispatch();
 
-
   return (
-    <article className={styles["experience-info"]} onMouseMove={(e)=>{dispatch(setExpMouseY(e.pageY))}}>
+    // <article className={styles["experience-info"]} onMouseMove={(e)=>{dispatch(setExpMouseY(e.pageY))}}>
+    <article className={styles["experience-info"]} >
       <div className={styles["experience-navbar"]}>
         <h3 className={styles["experience-navbar-title"]}>
           {selectExp[indexLanguage]}

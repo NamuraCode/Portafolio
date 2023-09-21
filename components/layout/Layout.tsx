@@ -1,10 +1,10 @@
-import { MouseEvent, useState } from "react";
-import { Provider } from "react-redux";
+import { useState } from "react";
 import Head from "next/head";
+import { Provider } from "react-redux";
 
 import { LayoutProps, Cursor } from "@/interfaces";
+import { store, useAppDispatch } from "@/store";
 import { CustomCursor } from "@/helpers";
-import { store } from "@/store/store";
 
 import styles from "@/styles/Home.module.css";
 
