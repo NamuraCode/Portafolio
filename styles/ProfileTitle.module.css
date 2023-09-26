@@ -1,10 +1,6 @@
-.porfileMain{
-    margin: auto;
-    height: 100vh;
-}
-
-.porfileMain > h2 {
+.profileTitle{
     text-align: center;
     font-size: var(--titlesH2, 56px);
     color: var(--colorWhite);
+    margin: 0;
 }

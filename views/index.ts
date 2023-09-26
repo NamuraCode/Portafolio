@@ -1,3 +1,3 @@
 export * from './ExperienceMain';
 export * from './HomeMain' 
-export * from './PorfileMain'
+export * from './ProfileMain'
