@@ -1,4 +1,4 @@
-import { ExperienceMain, HomeMain } from "@/views";
+import { ExperienceMain, HomeMain, PorfileMain } from "@/views";
 import { Header, Layout } from "@/components";
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     <Layout>
       <Header />
       <HomeMain />
+      <PorfileMain />
       <ExperienceMain />
     </Layout>
   );
