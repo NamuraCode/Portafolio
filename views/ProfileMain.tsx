@@ -1,10 +1,10 @@
-import { ProfileTitle } from "@/components";
+import { Profile } from "@/components";
 import styles from "@/styles/ProfileMain.module.css";
 
 export const ProfileMain = () => {
   return (
-    <section className={`${styles["profileMain"]}`}>
-      <ProfileTitle />
+    <section id='about' className={`${styles["profileMain"]}`}>
+      <Profile />
     </section>
   );
 };

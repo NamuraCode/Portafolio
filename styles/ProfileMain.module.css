@@ -2,10 +2,3 @@
     margin: auto;
     height: 100vh;
 }
-
-.profileMain > h2 {
-    text-align: center;
-    font-size: var(--titlesH2, 56px);
-    color: var(--colorWhite);
-    margin: 0;
-}
