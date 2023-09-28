@@ -5,14 +5,15 @@ const nextConfig = {
     outputStandalone: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'media.licdn.com',
-        port: '',
-        pathname: '/dms/image/D4E03AQFY2iFQInxo2A/**',
-      },
-    ],
+    domains: ["media.licdn.com"],
+    // remotePatterns: [
+    //   {
+    //     protocol: 'https',
+    //     hostname: 'media.licdn.com',
+    //     port: '',
+    //     pathname: '/dms/image/D4E03AQFY2iFQInxo2A/',
+    //   },
+    // ],
   },
 };
 
