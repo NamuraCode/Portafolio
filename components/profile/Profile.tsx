@@ -3,9 +3,9 @@ import { ProfileTitle, ProfileDescription, ProfileImage } from "./components";
 
 export const Profile = () => {
   return (
-    <article>
+    <article className={styles['profile']}>
       <ProfileTitle />
-      <div className="">
+      <div className={styles['profileDescription']}>
         <ProfileDescription />
         <ProfileImage />
       </div>
