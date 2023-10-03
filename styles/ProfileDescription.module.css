@@ -3,7 +3,6 @@
     font-size: var(--titlesInfoParagraphs);
     color: var(--colorWhite);
     line-height: 1.5rem;
-    text-align: left;
-    word-wrap: normal;
+    white-space: pre-line;
     opacity: var(--opacityHeader);
 }
