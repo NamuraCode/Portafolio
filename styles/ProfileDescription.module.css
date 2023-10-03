@@ -1,0 +1,9 @@
+.profileTitle{
+    width: 50%;
+    font-size: var(--titlesInfoParagraphs);
+    color: var(--colorWhite);
+    line-height: 1.5rem;
+    text-align: left;
+    word-wrap: normal;
+    opacity: var(--opacityHeader);
+}
