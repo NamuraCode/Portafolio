@@ -9,7 +9,7 @@ export const MeshBox = () => {
   
   useFrame(() => {
     if (meshRef.current) {
-      meshRef.current!!.rotation.z += 0.0008;
+      meshRef.current!!.rotation.z += 0.008;
       meshRef.current!!.rotation.y += 0.01;
     }
   });
