@@ -23,6 +23,7 @@
   --weightRegular: 400;
   /* text opacity */
   --opacityCaption: 50%;
+  --opacityDescription: 30%;
   --opacityHeader: 85%;
   --opacityText: 60%;
   /* time animations hover */
