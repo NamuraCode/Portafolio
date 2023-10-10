@@ -1,7 +1,7 @@
 {
     "about": [
-        "about",
-        "sobre mi"
+        "About me",
+        "Sobre mi"
     ],
     "projects": [
         "projects",
@@ -31,16 +31,20 @@
         "3D Modeling",
         "Modelado 3D"
     ],
+    "description": [
+        "Full-Stack JavaScript developer, studied at Digital House and Misión Tic 2021. With skills in languages such as JavaScript, Typescript, Python, Java, HTML and CSS, repository management with Git and Github. Creation and consumption of APIS using technologies such as Node, Express and React, and SQL (Mysql, sequelize) and NoSQL (MongoDb) databases. From which I develop durable and scalable digital solutions. With experience in research groups developing technologies and creating web pages with the MERN stack, under scrum methodologies differentiating the work by the effort to improve and the curiosity to learn and implement new technologies.",
+        "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS.Gestión de repositorios con Git y Github. Creación y consumo de APIS mediante tecnologías como Node, Express y React. Y bases de datos SQL (Mysql, sequelize) y NoSQL (MongoDb). Desde las cuales desarrollo soluciones digitales perdurables y escalables. Con experiencia en grupos de investigación de desarrollo de tecnologías y creación de páginas web con el stack MERN, bajo metodologías scrum diferenciando el trabajo por el esfuerzo de mejorar y la curiosidad de aprender e implementar tecnologías nuevas."
+    ],
     "experiences_jobs": [
         {
             "type": "dev",
             "job": [
-                "Full Stack Developer"
+                "Full-Stack Developer"
             ],
             "company": "Makata",
             "imageUrl": "/images/makata.jpeg",
             "description": [
-                "Full Stack developer, app creation in React native and ionic, technological solutions with next.js for interactive and fast websites, Shopify for e-commerce and management of libraries such as gsap and three.js for transitions and 3D web designs.",
+                "Full-Stack developer, app creation in React native and ionic, technological solutions with next.js for interactive and fast websites, Shopify for e-commerce and management of libraries such as gsap and three.js for transitions and 3D web designs.",
                 "Desarrollador Full Stack, creación de apps en React native y ionic, soluciones tecnológicas con react.js para páginas web interactivas y rápidas, Shopify para e-commerce y manejo de librerías como gsap y three.js para transiciones y diseños 3D en web."
             ],
             "date": [
