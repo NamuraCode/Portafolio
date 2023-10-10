@@ -10,8 +10,8 @@ export const ProfileDescription = () => {
   return (
     <>
       <p className={`${styles["profileTitle"]}`}>
-        <span>{splitDescription.map((text)=>{
-          return <span>{text}.</span>
+        <span>{splitDescription.map((text, index)=>{
+          return <span key={index}>{text}.</span>
         })}</span>
       </p>
     </>
