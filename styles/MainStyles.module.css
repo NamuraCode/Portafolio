@@ -76,6 +76,10 @@
   .ad {
     display: flex !important;
   }
+  .ad h4{
+    text-align: center;
+    padding: 0 3rem;
+  }
   .others{
     display: none !important;
   }

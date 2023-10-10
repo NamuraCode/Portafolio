@@ -5,6 +5,7 @@ import { getInfo } from "@/utils";
 import { useAppDispatch, useAppSelector } from "@/store/hooks/useRedux";
 import { setLanguage } from "@/store/slice/languageSlice/languageSlice";
 import styles from "@/styles/Header.module.css";
+import mainStyles from "@/styles/MainStyles.module.css";
 
 export const Header = () => {
   const { projects, about, contact } = getInfo();
@@ -14,7 +15,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className={styles.header}>
+      <header className={`${styles['header']} ${mainStyles['others']}`}>
         <nav className={styles['header-nav']}>
           <a href="#home" className={styles["nav-logo"]} aria-label="Redirect to home">
             David Naranjo
