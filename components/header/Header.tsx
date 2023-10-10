@@ -79,10 +79,10 @@ export const Header = () => {
                 {language}
               </button>
             </li>
-            <hr className={styles["nav-separator"]}/>
+            {/* <hr className={styles["nav-separator"]}/>
             <li className={styles["nav-item"]}>
               <a>Light</a>
-            </li>
+            </li> */}
             <hr className={styles["nav-separator"]} />
             <li className={styles["social-item"]}>
               <a
