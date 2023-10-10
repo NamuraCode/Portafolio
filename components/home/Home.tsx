@@ -5,11 +5,12 @@ import { NamuraModel } from "./components";
 
 import mainStyles from "@/styles/MainStyles.module.css";
 import styles from "@/styles/NamuraTitle.module.css";
+import { useRouter } from "next/router";
 
 export const Home = () => {
   const { indexLanguage } = useAppSelector((state) => state.language);
   const { contact_me } = getInfo();
-
+ 
   return (
     <article className={styles["namura-title"]}>
       <aside className={styles["title-main"]}>
@@ -17,7 +18,7 @@ export const Home = () => {
           David Naranjo{" "}
           <span className={styles["name-job"]}>Fullstack developer</span>
         </h1>
-        <button className={mainStyles.btn}>{contact_me[indexLanguage]}</button>
+        <a className={mainStyles.btn} href={'https://wa.me/3006109815?text=Hola,%20¿cómo%20estás?'} target="blank">{contact_me[indexLanguage]}</a>
       </aside>
       <NamuraModel />
     </article>

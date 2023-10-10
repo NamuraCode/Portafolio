@@ -25,11 +25,15 @@
   --opacityCaption: 50%;
   --opacityDescription: 30%;
   --opacityHeader: 85%;
+  --opacityMax: 100%;
   --opacityText: 60%;
   /* time animations hover */
   --secondsHover: 0.2s;
   /* titles margin */
   --spaceTitles: 6rem;
+  /* line-height texts */
+  --lineHeightTexts: 1.5rem;
+  --lineHeightTextsExp: 1.4rem;
 
   --shadowContent: 0 12px 32px rgba(0, 0, 0, .1), 0 2px 6px rgba(0, 0, 0, .08);
 }

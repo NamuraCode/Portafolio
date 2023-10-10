@@ -14,4 +14,6 @@
 .exp-card-description{
     text-align: left;
     font-size: var(--textDescriptions);
+    /* opacity: var(--opacityHeader); */
+    line-height: var(--lineHeightTextsExp);
 }
