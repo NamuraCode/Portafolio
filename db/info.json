@@ -35,13 +35,13 @@
         {
             "type": "dev",
             "job": [
-                "Fullstack Developer"
+                "Full Stack Developer"
             ],
             "company": "Makata",
             "imageUrl": "/images/makata.jpeg",
             "description": [
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet",
-                "pero si le ponen la cancion, Es normal si te sientes solita y me extrañas"
+                "Full Stack developer, app creation in React native and ionic, technological solutions with next.js for interactive and fast websites, Shopify for e-commerce and management of libraries such as gsap and three.js for transitions and 3D web designs.",
+                "Desarrollador Full Stack, creación de apps en React native y ionic, soluciones tecnológicas con react.js para páginas web interactivas y rápidas, Shopify para e-commerce y manejo de librerías como gsap y three.js para transiciones y diseños 3D en web."
             ],
             "date": [
                 "February 2022 - Current",
@@ -56,8 +56,8 @@
             "company": "Protalento",
             "imageUrl": "/images/protalento.jpeg",
             "description": [
-                "lorem ipsum dolor sit amet",
-                "Te di lo que pedia y no fue suficiente"
+                "Development from scratch of practice pages such as Free Market, Practice E-commerce and SPA and MPA pages.",
+                "Desarrollo desde cero de páginas de practica como Mercado libre, E-commerce de practica y paginas SPA y MPA."
             ],
             "date": [
                 "August 2020 - April 2021",
@@ -73,8 +73,8 @@
             "company": "Semillero de Investigacion ITADIR",
             "imageUrl": "/images/sena.jpeg",
             "description": [
-                "lorem ipsum dolor sit amet",
-                "Normal, si te sientes solita y me extrañas Y se te sale mi nombre"
+                "3D Artist. 3D and 2D digital art solutions, for companies and individuals, the focus was 3D and 2D design for animated projects, character design, and rendering of audiovisual products.",
+                "Artista 3D. Soluciones digitales de arte 3D y 2D, para empresas y particulares, el foco fue el diseño 3D y el 2D para proyectos animados, diseño de personajes, y renderizado de productos audiovisuales."
             ],
             "date": [
                 "February 2019 - October 2019",
