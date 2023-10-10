@@ -11,6 +11,7 @@ export const Ad = () => {
 
   return (
     <article className={mainStyles['ad']}>
+      <h4>{ad[indexLanguage]}</h4>
       <button
         className={mainStyles['btn']}
         onClick={() => {
@@ -20,7 +21,6 @@ export const Ad = () => {
       >
         {language[indexLanguage]}
       </button>
-      <h4>{ad[indexLanguage]}</h4>
     </article>
   );
 };
