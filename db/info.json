@@ -11,6 +11,10 @@
         "contact",
         "contacto"
     ],
+    "language": [
+        "Español",
+        "English"
+    ],
     "contact_me": [
         "Contact",
         "Contacto"
@@ -34,6 +38,10 @@
     "description": [
         "Full-Stack JavaScript developer, studied at Digital House and Misión Tic 2021. With skills in languages such as JavaScript, Typescript, Python, Java, HTML and CSS, repository management with Git and Github. Creation and consumption of APIS using technologies such as Node, Express and React, and SQL (Mysql, sequelize) and NoSQL (MongoDb) databases. From which I develop durable and scalable digital solutions. With experience in research groups developing technologies and creating web pages with the MERN stack, under scrum methodologies differentiating the work by the effort to improve and the curiosity to learn and implement new technologies.",
         "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS.Gestión de repositorios con Git y Github. Creación y consumo de APIS mediante tecnologías como Node, Express y React. Y bases de datos SQL (Mysql, sequelize) y NoSQL (MongoDb). Desde las cuales desarrollo soluciones digitales perdurables y escalables. Con experiencia en grupos de investigación de desarrollo de tecnologías y creación de páginas web con el stack MERN, bajo metodologías scrum diferenciando el trabajo por el esfuerzo de mejorar y la curiosidad de aprender e implementar tecnologías nuevas."
+    ],
+    "ad": [
+        "Currently in development, view on computer",
+        "Acutualmente en desarrollo, ver en computador"
     ],
     "experiences_jobs": [
         {

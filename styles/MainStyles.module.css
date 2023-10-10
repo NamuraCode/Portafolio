@@ -1,21 +1,44 @@
 .btn {
-    margin: 0;
-    padding: 10px 20px;
-    line-height: 38px;
-    border-radius: 20px;
-    font-size: var(--textDescriptions, 16px);
-    font-weight: var(--textButtonWeight, 600);
-    text-align: center;
-    outline: 1px solid var(--colorBlackDark);
-    background-color: var(--colorMain);
-    color: var(--colorBlackDark);
-    cursor: pointer;
-    border: none;
-    transition: outline, color 0.1s ease-in-out;
-    pointer-events: all;
+  margin: 0;
+  padding: 10px 20px;
+  line-height: 38px;
+  border-radius: 20px;
+  font-size: var(--textDescriptions, 16px);
+  font-weight: var(--textButtonWeight, 600);
+  text-align: center;
+  outline: 1px solid var(--colorBlackDark);
+  background-color: var(--colorMain);
+  color: var(--colorBlackDark);
+  cursor: pointer;
+  border: none;
+  transition: outline, color 0.1s ease-in-out;
+  pointer-events: all;
+}
+
+.btn:hover {
+  outline: 2px solid var(--colorWhite);
+  color: var(--colorWhite);
+}
+
+.ad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-size: var(--titlesTabsForms);
+  background: var(--colorBlack);
+  color: var(--colorWhite);
+  z-index: 10;
+  cursor: default;
+}
+
+@media (width < 1200px) {
+  .ad {
+    display: flex !important;
   }
-  
-  .btn:hover {
-    outline: 2px solid var(--colorWhite);
-    color: var(--colorWhite);
-  }
+}

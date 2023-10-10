@@ -5,7 +5,6 @@ import { NamuraModel } from "./components";
 
 import mainStyles from "@/styles/MainStyles.module.css";
 import styles from "@/styles/NamuraTitle.module.css";
-import { useRouter } from "next/router";
 
 export const Home = () => {
   const { indexLanguage } = useAppSelector((state) => state.language);
