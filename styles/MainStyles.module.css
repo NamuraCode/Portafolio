@@ -76,6 +76,9 @@
   .ad {
     display: flex !important;
   }
+  .others{
+    display: none !important;
+  }
 }
 
 @keyframes float {
