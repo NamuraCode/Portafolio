@@ -1,9 +1,10 @@
-import { Projects } from '@/components'
-export const ProjectsMain = () => {
+import { Projects } from "@/components";
+import mainStyles from "@/styles/MainStyles.module.css";
 
-    return (
-      <section>
-        <Projects />
-       </section>
-     )
-  }
+export const ProjectsMain = () => {
+  return (
+    <section id="projects" className={mainStyles["sections"]}>
+      <Projects />
+    </section>
+  );
+};

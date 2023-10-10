@@ -52,10 +52,10 @@ export const Header = () => {
                 </svg>
               </a>
               <div className={styles["projects-items"]}>
-                <a className={styles["project-item"]}>Web Pages</a>
+                <a className={styles["project-item"]} href="#projects">Web Pages</a>
                 <hr className={styles["projects-separator"]} />
-                <a className={styles["project-item"]}>Models</a>
-                <a className={styles["project-item"]}>Illustrations</a>
+                <a className={styles["project-item"]} href="#projects">Models</a>
+                <a className={styles["project-item"]} href="#projects">Illustrations</a>
               </div>
             </li>
             <li className={styles["nav-item"]}>

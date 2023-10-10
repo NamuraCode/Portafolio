@@ -1,9 +1,10 @@
 import { ProjectsTitle } from './components'
+import styles from '@/styles/Projects.module.css'
 
 export const Projects = () => {
 
     return (
-      <article>
+      <article className={styles['projects']}>
         <ProjectsTitle/>
        </article>
      )

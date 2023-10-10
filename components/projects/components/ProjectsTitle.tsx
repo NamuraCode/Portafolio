@@ -1,3 +1,9 @@
+import mainStyles from "@/styles/MainStyles.module.css";
+
 export const ProjectsTitle = () => {
-  return <h2>Projects</h2>;
+  return (
+    <>
+      <h2 className={mainStyles["titles"]}>Projects</h2>
+    </>
+  );
 };

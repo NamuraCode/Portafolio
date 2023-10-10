@@ -10,9 +10,9 @@ export const Ad = () => {
   const { ad, language } = getInfo();
 
   return (
-    <article className={mainStyles.ad}>
+    <article className={mainStyles['ad']}>
       <button
-        className={mainStyles.btn}
+        className={mainStyles['btn']}
         onClick={() => {
           setLanguageNumber(!languageNumber);
           dispatch(setLanguage(languageNumber));
