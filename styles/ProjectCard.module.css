@@ -1,6 +1,24 @@
 .cardProjects{
     --_cardBoxShadow: var(--shadowContent);
+    position: relative;
+    display: flex;
     width: 300px;
     height: 400px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
     box-shadow: var(--_cardBoxShadow);
+}
+
+.cardProjects:hover{
+    box-shadow: var(--shadowContentHover)
+}
+
+.cardProjectsImage{
+    position: absolute;
+    top: 2%;
+    width: 94%;
+    height: 60%;
+    border-radius: 16px;
 }
