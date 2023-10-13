@@ -1,0 +1,6 @@
+.cardProjects{
+    --_cardBoxShadow: var(--shadowContent);
+    width: 300px;
+    height: 400px;
+    box-shadow: var(--_cardBoxShadow);
+}
