@@ -6,6 +6,20 @@
   --colorWhiteHover: rgb(254, 250, 241, 0.1);
   --colorWhite: #FEFAF1;
   --colorMain: #68FE9A;
+
+  --colorMain-50: #f0fdf5;
+  --colorMain-100: #dcfce8;
+  --colorMain-200: #bbf7d1;
+  --colorMain-300: #86efad;
+  --colorMain-400: #4ade80;
+  --colorMain-500: #22c55e;
+  --colorMain-600: #16a34a;
+  --colorMain-700: #15803c;
+  --colorMain-800: #166533;
+  --colorMain-900: #14532b;
+  --colorMain-950: #052e14;
+
+
   /* text size */
   --titlesH1: 96px;
   --titlesH2: 60px;
