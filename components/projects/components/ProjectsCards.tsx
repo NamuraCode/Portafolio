@@ -2,7 +2,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export const ProjectsCards = () => {
   return (
-    <div>
+    <div className={'cards'}>
       <ProjectCard />
     </div>
   );

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import mainStyles from "@/styles/MainStyles.module.css"
-import styles from "@/styles/ProjectCard.module.css"
+import styles from "@/styles/ProjectCards.module.css"
 
 export const ProjectCard = () => {
   return (

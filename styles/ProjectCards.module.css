@@ -2,7 +2,7 @@
     --_cardBoxShadow: var(--shadowContent);
     position: relative;
     display: flex;
-    width: 300px;
+    width: 200px;
     height: 400px;
     align-items: center;
     justify-content: space-around;
