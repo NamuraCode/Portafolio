@@ -10,15 +10,15 @@
     --_cardBoxShadow: var(--shadowContent);
     position: relative;
     display: flex;
-    width: 200px;
+    width: 250px;
     height: 400px;
     padding: 6px 10px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: var(--_cardBoxShadow);
-    background-color: gray;
+    background-color: bisque;
 }
 
 .cardProjects:hover {
@@ -27,6 +27,7 @@
 
 .cardProjectsImage {
     position: relative;
+    align-self: center;
     /* top: 2%; */
     border-radius: 6px;
 }

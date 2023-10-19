@@ -13,13 +13,16 @@ export const ProjectCard = () => {
         height={100}
         alt="projectImage"
       ></Image>
+      <div>
+        
+      </div>
       <p>Name Project</p>
       <p>Description </p>
-      <div>
-        <p>Company</p>
-        <p>Actualization</p>
-      </div>
-      <br/>
+      <p>
+        <span>Company</span>
+        <span>Year</span>
+      </p>
+      <hr className="nav-separator"/>
       <p>Creation of Makata dev's</p>
     </div>
   );
