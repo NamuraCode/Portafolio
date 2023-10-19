@@ -1,24 +1,32 @@
-.cardProjects{
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+
+.cardProjects {
     --_cardBoxShadow: var(--shadowContent);
     position: relative;
     display: flex;
     width: 200px;
     height: 400px;
+    padding: 6px 10px;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: var(--_cardBoxShadow);
+    background-color: gray;
 }
 
-.cardProjects:hover{
+.cardProjects:hover {
     box-shadow: var(--shadowContentHover)
 }
 
-.cardProjectsImage{
-    position: absolute;
-    top: 2%;
-    width: 94%;
-    height: 60%;
-    border-radius: 16px;
+.cardProjectsImage {
+    position: relative;
+    /* top: 2%; */
+    border-radius: 6px;
 }
