@@ -14,16 +14,15 @@ export const ProjectCard = () => {
         alt="projectImage"
       ></Image>
       <div>
-        
+        <p>Name Project</p>
+        <p>Description </p>
+        <p>
+          <span>Company</span>
+          <span>Year</span>
+        </p>
+        <hr/>
+        <p>Creation of Makata dev's</p>
       </div>
-      <p>Name Project</p>
-      <p>Description </p>
-      <p>
-        <span>Company</span>
-        <span>Year</span>
-      </p>
-      <hr className="nav-separator"/>
-      <p>Creation of Makata dev's</p>
     </div>
   );
 };
