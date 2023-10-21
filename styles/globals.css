@@ -19,6 +19,17 @@
   --colorMain-900: #14532b;
   --colorMain-950: #052e14;
 
+  --black-50: #f4f6f7;
+  --black-100: #e4e7e9;
+  --black-200: #cbd1d6;
+  --black-300: #a7b1b9;
+  --black-400: #7b8995;
+  --black-500: #606d7a;
+  --black-600: #525c68;
+  --black-700: #474f57;
+  --black-800: #3f444b;
+  --black-900: #383c41;
+  --black-950: #24272c;
 
   /* text size */
   --titlesH1: 96px;

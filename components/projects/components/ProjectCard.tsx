@@ -14,14 +14,14 @@ export const ProjectCard = () => {
         alt="projectImage"
       ></Image>
       <div className={styles["cardProjectsDescription"]}>
-        <p>Name Project</p>
-        <p>Description </p>
+        <p className={styles["descriptionName"]}>Name Project</p>
+        <p className={styles["descriptionText"]}>Description </p>
         <p className={styles["descriptionCompany"]}>
           <span>Company</span>
           <span>Year</span>
         </p>
-        <hr/>
-        <p>Creation of Makata dev's</p>
+        <hr />
+        <p className={styles["descriptionCreator"]}>Creation of Makata dev's</p>
       </div>
     </div>
   );
