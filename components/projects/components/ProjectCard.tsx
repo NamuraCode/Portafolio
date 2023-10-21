@@ -13,10 +13,10 @@ export const ProjectCard = () => {
         height={100}
         alt="projectImage"
       ></Image>
-      <div>
+      <div className={styles["cardProjectsDescription"]}>
         <p>Name Project</p>
         <p>Description </p>
-        <p>
+        <p className={styles["descriptionCompany"]}>
           <span>Company</span>
           <span>Year</span>
         </p>
