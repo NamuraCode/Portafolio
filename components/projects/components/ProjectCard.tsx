@@ -24,6 +24,7 @@ export const ProjectCard = () => {
         </p>
         <hr />
         <p className={styles["descriptionCreator"]}>Creation of Makata dev's</p>
+        <button className={mainStyles["btn"]}>Go to project</button>
       </div>
     </div>
   );

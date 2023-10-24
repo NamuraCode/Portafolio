@@ -6,6 +6,8 @@ export const ProjectsCards = () => {
   return (
     <div className={styles['cards']}>
       <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
     </div>
   );
 };
