@@ -6,13 +6,15 @@ import styles from "@/styles/ProjectCards.module.css";
 export const ProjectCard = () => {
   return (
     <div className={styles["cardProjects"]}>
-      <Image
-        className={styles["cardProjectsImage"]}
-        src={"/images/makata.jpeg"}
-        width={100}
-        height={100}
-        alt="projectImage"
-      ></Image>
+      <div className={styles["cardImage"]}>
+        <Image
+          className={styles["cardProjectsImage"]}
+          src={"/images/makata.jpeg"}
+          width={100}
+          height={100}
+          alt="projectImage"
+        />
+      </div>
       <div className={styles["cardProjectsDescription"]}>
         <p className={styles["descriptionName"]}>Name Project</p>
         <p className={styles["descriptionText"]}>Description </p>
