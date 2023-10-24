@@ -58,3 +58,8 @@
     align-items: center;
     opacity: var(--opacityCaption, 50%);
 }
+
+.cardBtn{
+    line-height: 18px;
+    padding: 10px 20px;
+}
