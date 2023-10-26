@@ -3,6 +3,7 @@
     padding: 40px 0;
     justify-content: center;
     align-items: center;
+    flex-flow: wrap;
     gap: 30px;
     width: 100%;
     height: auto;

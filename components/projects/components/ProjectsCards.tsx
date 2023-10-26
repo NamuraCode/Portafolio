@@ -8,6 +8,12 @@ export const ProjectsCards = () => {
       <ProjectCard />
       <ProjectCard />
       <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
     </div>
   );
 };
