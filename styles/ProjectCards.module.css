@@ -13,12 +13,15 @@
     position: relative;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: column;
+    height: 200%;
     color: var(--black-50);
 }
 
 .cardImage{
+    position: absolute;
+    top: -50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,20 +39,26 @@
 }
 
 .cardProjectsDescription{
-    position: relative;
-    top: -10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 250px;
+    gap: 8px;
     padding: 20px 20px;
     font-size: var(--textDescriptions2);
     border-radius: 16px;
     background-color: var(--black-900);
+    z-index: 1;
 }
 
 .cardProjectsDescription > p{
+    align-self: flex-start;
     margin: 0;
+}
+
+.cardProjectsDescription > hr{
+    width: 100%;
 }
 
 .descriptionCompany{
