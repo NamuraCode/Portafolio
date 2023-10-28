@@ -30,8 +30,7 @@
     width: 100%;
     height: 100%;
     align-self: center;
-    border-radius: 6px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 14px 14px 0px 0px;
 }
 
 .cardProjectsDescription{
