@@ -6,6 +6,7 @@ import { useAppDispatch, useAppSelector } from "@/store/hooks/useRedux";
 import { setLanguage } from "@/store/slice/languageSlice/languageSlice";
 import styles from "@/styles/Header.module.css";
 import mainStyles from "@/styles/MainStyles.module.css";
+import Link from "next/link";
 
 export const Header = () => {
   const { projects, about, contact } = getInfo();
@@ -17,24 +18,24 @@ export const Header = () => {
     <>
       <header className={`${styles['header']} ${mainStyles['others']}`}>
         <nav className={styles['header-nav']}>
-          <a href="#home" className={styles["nav-logo"]} aria-label="Redirect to home">
+          <Link href="#home" className={styles["nav-logo"]} aria-label="David Naranjo">
             David Naranjo
-          </a>
+          </Link>
           <ul className={styles["nav-list"]}>
             <li className={styles["nav-item"]}>
-              <a
+              <Link
                 href="#about"
                 className={styles["nav-link"]}
-                aria-label="Redirect to about"
+                aria-label="about me"
               >
                 {about[indexLanguage]}
-              </a>
+              </Link>
             </li>
             <li className={styles["nav-item"]}>
-              <a
+              <Link
                 href="#projects"
                 className="nav-link link-projects"
-                aria-label="Redirect to projects"
+                aria-label="projects"
               >
                 {projects[indexLanguage]}
                 <svg
@@ -51,22 +52,22 @@ export const Header = () => {
                     fill="white"
                   />
                 </svg>
-              </a>
+              </Link>
               <div className={styles["projects-items"]}>
-                <a className={styles["project-item"]} href="#projects">Web Pages</a>
+                <Link className={styles["project-item"]} href="#projects">Web Pages</Link>
                 <hr className={styles["projects-separator"]} />
-                <a className={styles["project-item"]} href="#projects">Models</a>
-                <a className={styles["project-item"]} href="#projects">Illustrations</a>
+                <Link className={styles["project-item"]} href="#projects">Models</Link>
+                <Link className={styles["project-item"]} href="#projects">Illustrations</Link>
               </div>
             </li>
             <li className={styles["nav-item"]}>
-              <a
+              <Link
                 href="#contact"
                 className={styles["nav-link"]}
-                aria-label="Redirect to contact"
+                aria-label="contact"
               >
                 {contact[indexLanguage]}
-              </a>
+              </Link>
             </li>
             <hr className={styles["nav-separator"]} />
             <li className={styles["nav-item"]}>
@@ -82,15 +83,15 @@ export const Header = () => {
             </li>
             {/* <hr className={styles["nav-separator"]}/>
             <li className={styles["nav-item"]}>
-              <a>Light</a>
+              <aLink>Light</aLink
             </li> */}
             <hr className={styles["nav-separator"]} />
             <li className={styles["social-item"]}>
-              <a
+              <Link
                 className={styles["social-link"]}
                 href="https://github.com/NamuraCode"
                 target="_blank"
-                aria-label="Redirect to github"
+                aria-label="github"
               >
                 <svg
                   className={styles["image-link"]}
@@ -106,14 +107,14 @@ export const Header = () => {
                     fill="white"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
             <li className={styles["social-item"]}>
-              <a
+              <Link
                 className={styles["social-link"]}
                 href="https://www.linkedin.com/in/david-naranjo/"
                 target="_blank"
-                aria-label="Redirect to linkedin"
+                aria-label="linkedin"
               >
                 <svg
                   className={styles["image-link"]}
@@ -129,7 +130,7 @@ export const Header = () => {
                     fill="white"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
