@@ -21,7 +21,7 @@ export const ProjectCard = () => {
           <span>Year</span>
         </p>
         <hr />
-        <p className={styles["descriptionCreator"]}>Creation of Makata dev's</p>
+        <p className={styles["descriptionCreator"]}>Creation of Makata dev&apos;s</p>
         <button className={ `${mainStyles["btn"]} ${styles["cardBtn"]}`}>Go to project</button>
       </div>
     </div>
