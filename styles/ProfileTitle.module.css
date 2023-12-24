@@ -2,6 +2,4 @@
     text-align: center;
     font-size: var(--titlesH2, 56px);
     color: var(--colorWhite);
-    margin: 0;
-    padding-top: var(--spaceTitles);
 }

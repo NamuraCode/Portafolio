@@ -1,5 +1,6 @@
 import { useAppSelector } from "@/store";
 import styles from "@/styles/ProfileTitle.module.css";
+import mainStyles from '@/styles/MainStyles.module.css'
 import { getInfo } from "@/utils";
 
 export const ProfileTitle = () => {
@@ -8,7 +9,7 @@ export const ProfileTitle = () => {
 
   return (
     <>
-      <h2 className={`${styles["profileTitle"]}`}>{about[indexLanguage]}</h2>
+      <h2 className={`${styles["profileTitle"]} ${mainStyles.titles}`}>{about[indexLanguage]}</h2>
     </>
   );
 };

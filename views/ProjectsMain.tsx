@@ -3,7 +3,7 @@ import mainStyles from "@/styles/MainStyles.module.css";
 
 export const ProjectsMain = () => {
   return (
-    <section id="projects" className={`${mainStyles["sections"]} ${mainStyles['others']}`}>
+    <section id="projects" className={`${mainStyles["sections"]} ${mainStyles['others']} ${mainStyles['projects']}`}>
       <Projects />
     </section>
   );

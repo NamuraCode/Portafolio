@@ -32,9 +32,8 @@ export const Header = () => {
               </Link>
             </li>
             <li className={styles["nav-item"]}>
-              <Link
-                href="#projects"
-                className="nav-link link-projects"
+              <span
+                className={`${styles['nav-link']} ${styles['link-projects']}`}
                 aria-label="projects"
               >
                 {projects[indexLanguage]}
@@ -52,7 +51,7 @@ export const Header = () => {
                     fill="white"
                   />
                 </svg>
-              </Link>
+              </span>
               <div className={styles["projects-items"]}>
                 <Link className={styles["project-item"]} href="#projects">Web Pages</Link>
                 <hr className={styles["projects-separator"]} />

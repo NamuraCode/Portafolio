@@ -1,4 +1,4 @@
-import { ExperienceMain, HomeMain, ProfileMain, ProjectsMain, Ad } from "@/views";
+import { ExperienceMain, HomeMain, ProfileMain, ProjectsMain, Ad, ContactMain } from "@/views";
 import { Header, Layout } from "@/components";
 
 export default function Home() {
@@ -10,6 +10,7 @@ export default function Home() {
       <ProfileMain />
       <ExperienceMain />
       <ProjectsMain />
+      <ContactMain />
     </Layout>
   );
 }

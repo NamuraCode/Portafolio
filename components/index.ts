@@ -4,4 +4,4 @@ export * from './home/Home'
 export * from './layout/Layout'
 export * from './profile/Profile'
 export * from './projects'
-
+export * from './contact'

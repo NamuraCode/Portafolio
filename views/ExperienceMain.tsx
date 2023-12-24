@@ -11,7 +11,7 @@ export const ExperienceMain = () => {
   const { experience } = getInfo();
   return (
     <section className={`${styles["experience-main"]} ${mainStyles['others']}`}>
-      <h2 className={styles["experience-title"]}>{experience[indexLanguage]}</h2>
+      <h2 className={`${styles["experience-title"]} ${mainStyles.titles}`}>{experience[indexLanguage]}</h2>
       <Experience />
     </section>
   );

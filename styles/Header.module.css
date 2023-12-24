@@ -49,6 +49,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--colorWhite);
 }
 
 
@@ -57,6 +58,7 @@
     align-items: center;
     line-height: 60px;
     transition: opacity var(--secondsHover) ease-in-out;
+    text-transform: capitalize;
 }
 
 .nav-link:hover {

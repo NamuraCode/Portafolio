@@ -1,7 +1,6 @@
 .experience-main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     color: var(--colorWhite);
 }
 
@@ -9,6 +8,4 @@
     align-self: center;
     font-size: var(--titlesH2, 56px);
     color: var(--colorWhite);
-    margin: 0;
-    margin-top: 6rem;
 }

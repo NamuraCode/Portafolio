@@ -4,9 +4,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
     gap: 6rem;
-    margin: 6% 0%;
+    margin-top: var(--spaceTitles);
+    margin-bottom: var(--spaceTitles);
     color: var(--colorWhite);
 }
 
