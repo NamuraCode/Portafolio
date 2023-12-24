@@ -1,0 +1,6 @@
+.contact {
+    display: flex;
+    margin: var(--spaceTitles) 0;
+    border: 1px solid var(--colorWhite);
+    border-radius: 5px;
+}

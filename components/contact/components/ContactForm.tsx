@@ -1,7 +1,10 @@
+import styles from '@/styles/ContactForm.module.css'
+import mainStyles from '@/styles/MainStyles.module.css'
+
 export const ContactForm = () => {
 
     return (
-        <form>
+        <form className={styles.form}>
         <fieldset>
           <label htmlFor="name">You Name</label>
           <input id={"name"} type="text" placeholder="name lastname"></input>
@@ -14,6 +17,7 @@ export const ContactForm = () => {
           <label htmlFor="message">message</label>
           <textarea id="message"></textarea>
         </fieldset>
+        <button className={`${mainStyles.btn}`} type="submit">send</button>
       </form>
      )
   }

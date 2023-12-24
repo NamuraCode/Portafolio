@@ -1,0 +1,40 @@
+.mapMain{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    perspective: 966px;
+    color: var(--colorWhite);
+}
+
+.map{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    transform-style: preserve-3d;
+    opacity: 0.6;
+    border-radius: 8px;
+    transform: rotateX(0deg) rotateY(50deg);
+    filter: grayscale(1);
+}
+
+.titles {
+    position: absolute;
+    margin: 0;
+    font-size: var(--titlesH2, 56px);
+    z-index: 2;
+}
+
+.text{
+    position: absolute;
+    top: 10%;
+    font-size: var(--titlesInfoParagraphs, 56px);
+}
+
+.location{
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    font-size: var(--titlesInfoParagraphs, 56px);
+}
