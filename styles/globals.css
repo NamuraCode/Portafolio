@@ -5,7 +5,7 @@
   --colorWhiteBorder: #fefaf11a;
   --colorWhiteHover: rgb(254, 250, 241, 0.1);
   --colorWhite: #FEFAF1;
-  --colorMain: #68FE9A;
+  --colorMain: #215BF0;
 
   --colorMain-50: #f0fdf5;
   --colorMain-100: #dcfce8;
@@ -73,7 +73,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--colorBlack);
   scroll-behavior: smooth;
-  cursor: none
+  /* cursor: none */
 }
 
 body::-webkit-scrollbar {

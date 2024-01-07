@@ -40,7 +40,7 @@ export const Layout = ({
         }}
       >
         <Provider store={store}>{children}</Provider>
-        <CustomCursor left={cursorPositions.left} top={cursorPositions.top} />
+        {/* <CustomCursor left={cursorPositions.left} top={cursorPositions.top} /> */}
       </main>
     </>
   );

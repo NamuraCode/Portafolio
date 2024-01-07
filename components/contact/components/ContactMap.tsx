@@ -2,7 +2,7 @@ import styles from '@/styles/ContactMap.module.css'
 
 export const ContactMap = () => {
   return (
-    <article className={styles.mapMain}>
+    <div className={styles.mapMain}>
         <h2 className={`${styles.titles}`}>Contact</h2>
         <h4 className={styles.text}>Ask me something</h4>
         <iframe
@@ -14,6 +14,6 @@ export const ContactMap = () => {
             loading="lazy"
         ></iframe>
         <h4 className={styles.location}>Colombia Medellin</h4>
-    </article>
+    </div>
   );
 };
