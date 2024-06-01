@@ -1,0 +1,30 @@
+.header{
+    width: 100vw;
+}
+
+.headerNav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: var(--weightBold);
+    font-size: var(--textDescriptions2);
+    color: var(--colorBlack)
+}
+
+.headerNav > *{
+    opacity: var(--opacityHeader);
+}
+
+.headerNav button {
+    display: flex;
+    align-items: center;
+    font-weight: var(--weightExtraBold);
+    font-size: var(--sizeText);
+    color: var(--colorText);
+    border: none;
+    background: none
+}
+
+.headerNav a {
+    text-transform: lowercase;
+}
