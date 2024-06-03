@@ -3,52 +3,48 @@ import Link from "next/link";
 
 import styles from "./Header.module.css";
 
-const links = ["Namura", "About", "Contact", "Projects"];
-const socialLinks = [
-  "https://github.com/NamuraCode",
-  "https://www.artstation.com/david_naranjo",
-  "https://www.linkedin.com/in/david-naranjo/",
-  "https://www.instagram.com/david_naranjo_999/",
+interface Links {
+  name: string;
+  url: string;
+  image: string;
+}
+
+const links: Links[] = [
+  {
+    name: "github",
+    url: "https://github.com/NamuraCode",
+    image: "./images/github.svg",
+  },
+  {
+    name: "linkedin",
+    url: "https://www.linkedin.com/in/david-naranjo/",
+    image: "./images/linkedin.svg",
+  },
+  {
+    name: "instagram",
+    url: "https://www.instagram.com/david_naranjo_999/?hl=es",
+    image: "./images/instagram.svg",
+  },
+  {
+    name: "artstation",
+    url: "https://www.artstation.com/david_naranjo",
+    image: "./images/artstation.svg",
+  },
 ];
 
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <nav className={styles.headerNav}>
-        {links.map((text, index) => {
-          return index == 0 ? (
-            <button key={index} type="submit" role="button">
-              <svg
-                width="34"
-                height="34"
-                viewBox="0 0 44 44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.34426 14.643C8.34426 14.643 6.26644 17.9078 6.50461 22.8326C6.74277 27.7573 9.82073 31.6255 9.82073 31.6255C9.82073 31.6255 13.4891 32.7652 17.6167 31.7512C21.7444 30.7371 24.4598 27.7787 24.4598 27.7787C24.4598 27.7787 20.1568 26.3611 15.6557 22.9092C10.8744 19.2425 8.34426 14.643 8.34426 14.643Z"
-                  fill="black"
-                />
-                <path
-                  d="M31.1205 33.4745C37.4577 28.4374 38.5116 19.2167 33.4744 12.8795C28.4373 6.54237 19.2167 5.48847 12.8795 10.5256C6.54235 15.5627 5.48845 24.7834 10.5256 31.1205C15.5627 37.4577 24.7833 38.5116 31.1205 33.4745Z"
-                  stroke="black"
-                  stroke-width="2"
-                />
-                <path
-                  d="M28.6357 16.5922C28.443 11.5184 25.371 7.82543 23.81 6.53265C29.6314 7.35337 32.535 10.426 34.1106 12.2405C37.6292 16.2926 37.782 21.5008 37.4649 23.8419C37.2353 26.3712 36.1675 28.5419 35.621 29.5744C32.6207 29.8258 27.0976 28.7488 24.4597 27.7787C26.9468 24.8684 28.8284 21.6661 28.6357 16.5922Z"
-                  fill="black"
-                />
-              </svg>
-
-              {text}
-            </button>
-          ) : (
-            <Link href={`#${text}`} key={index}>
-              {text}
+      <div className={styles.headerLinks}>
+        {links.map((link, index) => {
+          return (
+            <Link key={index} href={link.url} target="_blank">
+              <Image src={link.image} width={22} height={22} alt={link.name} />
+              {link.name}
             </Link>
           );
         })}
-      </nav>
+      </div>
     </header>
   );
 };

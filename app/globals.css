@@ -2,36 +2,10 @@
 
 :root {
   /* colors */
-  --colorBlackDark: #060606;
-  --colorBlack: #24272C;
-  --colorWhiteBorder: #fefaf11a;
-  --colorWhiteHover: rgb(254, 250, 241, 0.1);
-  --colorWhite: #FEFAF1;
-  --colorMain: #215BF0;
-
-  --colorMain-50: #f0fdf5;
-  --colorMain-100: #dcfce8;
-  --colorMain-200: #bbf7d1;
-  --colorMain-300: #86efad;
-  --colorMain-400: #4ade80;
-  --colorMain-500: #22c55e;
-  --colorMain-600: #16a34a;
-  --colorMain-700: #15803c;
-  --colorMain-800: #166533;
-  --colorMain-900: #14532b;
-  --colorMain-950: #052e14;
-
-  --black-50: #f4f6f7;
-  --black-100: #e4e7e9;
-  --black-200: #cbd1d6;
-  --black-300: #a7b1b9;
-  --black-400: #7b8995;
-  --black-500: #606d7a;
-  --black-600: #525c68;
-  --black-700: #474f57;
-  --black-800: #3f444b;
-  --black-900: #383c41;
-  --black-950: #24272c;
+  --color2: #020D19;
+  --color3: #FAFAFA;
+  --color1: #A8FF35;
+  --colorBg: rgb(6, 6, 2, 0.8);
 
   /* text size */
   --titlesH1: 72px;
@@ -56,17 +30,6 @@
   --opacityHeader: 85%;
   --opacityMax: 100%;
   --opacityText: 60%;
-  
-  /* time animations hover */
-  --secondsHover: 0.2s;
-
-  /* titles margin */
-  --spaceTitles: 6rem;
-
-  /* line-height texts */
-  --lineHeightTexts: 1.5rem;
-  --lineHeightTextsExp: 1.4rem;
-
 }
 
 * {
