@@ -38,9 +38,9 @@ export const Header = () => {
       <div className={styles.headerLinks}>
         {links.map((link, index) => {
           return (
-            <Link key={index} href={link.url} target="_blank">
+            <Link key={index} href={link.url} target="_blank" >
               <Image src={link.image} width={22} height={22} alt={link.name} />
-              {link.name}
+              <span>{link.name}</span>
             </Link>
           );
         })}

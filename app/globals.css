@@ -2,9 +2,9 @@
 
 :root {
   /* colors */
+  --color1: #A8FF35;
   --color2: #020D19;
   --color3: #FAFAFA;
-  --color1: #A8FF35;
   --colorBg: rgb(6, 6, 2, 0.8);
 
   /* text size */
