@@ -1,7 +1,10 @@
 .borderButton{
-    font-weight: var(--weightMedium);
-    font-size: var(--textDescriptions);
+    border: 1px solid var(--color3);
+    font-weight: var(--weightBold);
+    font-size: var(--textDescriptions2);
     border-radius: 12px;
+    background-color: transparent;
     color: var(--color3);
     text-transform: uppercase;
+    cursor: pointer;
 }

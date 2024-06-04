@@ -14,7 +14,7 @@ export const ModelCanvas = () => {
         <OrbitControls enableZoom={false} />
         <mesh>
           <boxGeometry />
-          <meshStandardMaterial color="#ff00ff" />
+          <meshStandardMaterial color="#ffffff" />
         </mesh>
       </Canvas>
     </div>

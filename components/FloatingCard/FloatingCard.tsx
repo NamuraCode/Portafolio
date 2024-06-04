@@ -8,9 +8,9 @@ export const FloatingCard = () => {
   return (
     <section className={styles.floatingCard}>
       <div className={styles.floatingCardButtons}>
-        <BorderButton text="Contact" bgColor="var(--color1)" />
-        <BorderButton text="Projects" bgColor="var(--color1)" />
-        <BorderButton text="Experience" bgColor="var(--color1)" />
+        <BorderButton text="Contact" index={1} />
+        <BorderButton text="Projects" index={2} />
+        <BorderButton text="Experience" index={3} />
       </div>
       <ModelCanvas />
     </section>

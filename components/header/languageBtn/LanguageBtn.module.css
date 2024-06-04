@@ -1,0 +1,31 @@
+.languageBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.languageBtn button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 26px;
+  padding: 25px;
+  border: none;
+  border-radius: 50%;
+  font-weight: var(--weightBold);
+  font-size: var(--titlesInfoParagraphs);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color2);
+  background-color: var(--color1);
+  cursor: pointer;
+}

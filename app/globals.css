@@ -3,8 +3,9 @@
 :root {
   /* colors */
   --color1: #A8FF35;
-  --color2: #020D19;
+  --color2: #020d19;
   --color3: #FAFAFA;
+  --color4: #5F00FC;
   --colorBg: rgb(6, 6, 2, 0.8);
 
   /* text size */

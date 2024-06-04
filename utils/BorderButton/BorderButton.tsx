@@ -1,15 +1,11 @@
-import React from 'react'
-import styles from './BorderButtons.module.css'
+import React from "react";
+import styles from "./BorderButtons.module.css";
 
 interface BorderButtonsProps {
-    text: string
-    bgColor: string
+  index: number;
+  text: string;
 }
 
-export const BorderButton = ({text, bgColor}: BorderButtonsProps) => {
-  return (
-    <button className={styles.borderButton} style={{backgroundColor: `${bgColor}`}}>
-        {text}
-    </button>
-  )
-}
+export const BorderButton = ({ text, index }: BorderButtonsProps) => {
+  return <button id={`button${index}`} className={`${styles.borderButton}`}>{text}</button>;
+};

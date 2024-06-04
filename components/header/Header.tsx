@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./Header.module.css";
+import { LanguageBtn } from "./languageBtn/LanguageBtn";
 
 interface Links {
   name: string;
@@ -13,22 +14,22 @@ const links: Links[] = [
   {
     name: "github",
     url: "https://github.com/NamuraCode",
-    image: "./images/github.svg",
+    image: "./images/icons/github.svg",
   },
   {
     name: "linkedin",
     url: "https://www.linkedin.com/in/david-naranjo/",
-    image: "./images/linkedin.svg",
+    image: "./images/icons/linkedin.svg",
   },
   {
     name: "instagram",
     url: "https://www.instagram.com/david_naranjo_999/?hl=es",
-    image: "./images/instagram.svg",
+    image: "./images/icons/instagram.svg",
   },
   {
     name: "artstation",
     url: "https://www.artstation.com/david_naranjo",
-    image: "./images/artstation.svg",
+    image: "./images/icons/artstation.svg",
   },
 ];
 
@@ -45,6 +46,7 @@ export const Header = () => {
           );
         })}
       </div>
+      <LanguageBtn />
     </header>
   );
 };
