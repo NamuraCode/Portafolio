@@ -1,0 +1,19 @@
+.canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.canvas::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    outline: 12px solid var(--color2);
+    opacity: 1;
+    pointer-events: none;
+}

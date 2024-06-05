@@ -1,1 +1,1 @@
-export * from "./ModelCanvas"
+export * from "./Model"

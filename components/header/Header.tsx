@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./Header.module.css";
-import { LanguageBtn } from "./languageBtn/LanguageBtn";
+import { LanguageBtn } from "./LanguageBtn/LanguageBtn";
+import { Navbar } from "./Navbar/Navbar";
 
 interface Links {
   name: string;
@@ -47,6 +48,7 @@ export const Header = () => {
         })}
       </div>
       <LanguageBtn />
+      <Navbar />
     </header>
   );
 };

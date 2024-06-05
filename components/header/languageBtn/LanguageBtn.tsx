@@ -12,15 +12,20 @@ export const LanguageBtn = () => {
   };
   return (
     <div className={styles.languageBtn}>
-      <Image
-        src={"./images/button/languageBtn.svg"}
-        width={94}
-        height={94}
-        alt="language"
-      />
-      <button onClick={changeLanguage}>
-        {isSpanish ? "ES" : "EN"}
-      </button>
+      <svg
+        width="102"
+        height="102"
+        viewBox="0 0 102 102"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M23.3197 41.2279V23.1843C23.3197 10.4303 12.8791 0.0910492 0 0.0910492L102 0V102C102 88.6552 91.0675 77.8416 77.592 77.8571L60.3714 77.8771C39.9153 77.9007 23.3197 61.4854 23.3197 41.2279Z"
+          fill="#060602"
+        />
+      </svg>
+
+      <button onClick={changeLanguage}>{isSpanish ? "ES" : "EN"}</button>
     </div>
   );
 };

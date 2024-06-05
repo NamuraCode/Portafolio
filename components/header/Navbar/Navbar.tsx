@@ -1,0 +1,53 @@
+import React from "react";
+import Image from "next/image";
+
+import styles from "./Navbar.module.css";
+const links = [
+  { name: "home"},
+  { name: "Projects"},
+  { name: "about"},
+  { name: "contact"},
+];
+
+export const Navbar = () => {
+  return (
+    <nav className={styles.navbar}>
+      <button className={styles.navbarButton}>
+        <svg
+          width="128"
+          height="128"
+          viewBox="0 0 128 128"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M88.0002 13V101.5L111.255 113.339C111.522 113.475 111.79 113.596 112.06 113.703C113.84 112.434 115 110.352 115 108V20C115 16.134 111.866 13 108 13H88.0002Z"
+            fill="#fafafa"
+          />
+          <path
+            d="M88 115V101.529L13 56.9705V108C13 111.866 16.134 115 20 115H88Z"
+            fill="#fafafa"
+          />
+          <rect
+            x="4"
+            y="4"
+            width="120"
+            height="120"
+            rx="16"
+            stroke="#fafafa"
+            stroke-width="8"
+          />
+        </svg>
+      </button>
+      <div>
+        {links.map((link, index) => {
+          return (
+            <button key={index} type="button" name={link.name}>
+              {link.name}
+            </button>
+          );
+        })}
+      </div>
+    </nav>
+  );
+};
