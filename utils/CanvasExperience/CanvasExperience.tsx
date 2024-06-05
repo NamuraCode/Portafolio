@@ -10,7 +10,7 @@ export const CanvasExperience = ({children}: {children: React.ReactNode}) => {
     <div className={styles.canvas}>
       <Canvas camera={{ position: [0, 0, 2]}}>
         <ambientLight intensity={5} />
-        <color attach="background" args={["#020D19"]} />
+        <color attach="background" args={["#060602"]} />
         <OrbitControls enableZoom={false}  />
           {children}
       </Canvas>

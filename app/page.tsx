@@ -1,4 +1,4 @@
-import {FloatingCard, Header} from "@/components";
+import {Background, FloatingCard, Header} from "@/components";
 import styles from "./page.module.css";
 import { DesktopText } from "@/components/DesktopText/DesktopText";
 
@@ -8,6 +8,7 @@ export default function Home() {
       <Header></Header>
       <FloatingCard />
       <DesktopText />
+      <Background />
     </main>
   );
 }

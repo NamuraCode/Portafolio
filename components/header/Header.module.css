@@ -17,7 +17,7 @@
     gap: 40px;
     background-color: var(--color2);
     border-radius: 20px;
-
+    z-index: 2;
 }
 
 .headerLinks a{
