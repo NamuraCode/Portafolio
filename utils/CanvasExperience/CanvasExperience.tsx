@@ -5,14 +5,24 @@ import { OrbitControls } from "@react-three/drei";
 
 import styles from "./CanvasExperience.module.css";
 
-export const CanvasExperience = ({children}: {children: React.ReactNode}) => {
+export const CanvasExperience = ({
+  children,
+  colorBg = "#060602",
+  hasBorder,
+  hasBg,
+}: {
+  children: React.ReactNode;
+  colorBg?: string;
+  hasBorder?: boolean;
+  hasBg?: boolean;
+}) => {
   return (
-    <div className={styles.canvas}>
-      <Canvas camera={{ position: [0, 0, 2]}}>
+    <div className={`${styles.canvas} ${hasBorder && styles.canvasBorder}`}>
+      <Canvas camera={{ position: [0, 0, 2] }}>
         <ambientLight intensity={5} />
-        <color attach="background" args={["#060602"]} />
-        <OrbitControls enableZoom={false}  />
-          {children}
+        {hasBg && <color attach="background" args={[`${colorBg}`]} />}
+        <OrbitControls enableZoom={false} />
+        {children}
       </Canvas>
     </div>
   );

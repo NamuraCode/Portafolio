@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-.canvas::after{
+.canvasBorder::after{
     content: "";
     position: absolute;
     width: 100%;

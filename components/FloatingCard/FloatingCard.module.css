@@ -13,6 +13,7 @@
     margin: 28px;
     border-radius: 48px;
     background-color: var(--color2);
+    z-index: 2;
 }
 
 .floatingCardButtons{

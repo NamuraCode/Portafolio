@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+import { useGlobal } from "@/store";
+
 import styles from "./BorderButtons.module.css";
+import { useEffect } from "react";
 
 interface BorderButtonsProps {
   index: number;
@@ -7,5 +10,17 @@ interface BorderButtonsProps {
 }
 
 export const BorderButton = ({ text, index }: BorderButtonsProps) => {
-  return <button id={`button${index}`} className={`${styles.borderButton}`}>{text}</button>;
+  const { setTogglePopup } = useGlobal();
+
+  return (
+    <button
+      id={`button${index}`}
+      className={`${styles.borderButton}`}
+      onClick={() => {
+        text == "Contact" && setTogglePopup();
+      }}
+    >
+      {text}
+    </button>
+  );
 };

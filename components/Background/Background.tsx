@@ -7,7 +7,7 @@ import styles from "./Background.module.css";
 export const Background = () => {
   return (
     <section className={styles.background}>
-      <CanvasExperience>
+      <CanvasExperience hasBg={false}>
         <Objects />
       </CanvasExperience>
     </section>

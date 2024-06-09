@@ -1,14 +1,14 @@
-import {Background, FloatingCard, Header} from "@/components";
+import { Background, FloatingCard, Header, Popup, DesktopText } from "@/components";
 import styles from "./page.module.css";
-import { DesktopText } from "@/components/DesktopText/DesktopText";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Header></Header>
-      <FloatingCard />
-      <DesktopText />
-      <Background />
+        <Header></Header>
+        {/* <Popup/> */}
+        <FloatingCard />
+        <DesktopText />
+        <Background />
     </main>
   );
 }
