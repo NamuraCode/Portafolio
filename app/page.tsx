@@ -1,5 +1,4 @@
-import { Background, FloatingCard, Popup, DesktopText } from "@/components";
-import { Header } from "@/components/Header/Header";
+import { Background, FloatingCard, Header, DesktopText } from "@/components";
 import styles from "./page.module.css";
 
 export default function Home() {

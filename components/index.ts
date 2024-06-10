@@ -1,4 +1,5 @@
 export * from "./Background/Background"
 export * from "./DesktopText/DesktopText"
 export * from "./FloatingCard/FloatingCard"
+export * from "./header/Header"
 export * from "./Popup/Popup"
