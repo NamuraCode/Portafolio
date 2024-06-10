@@ -21,11 +21,11 @@
 }
 
 .navbar .navbarButton svg path {
-    fill: var(--color2)
+    fill: var(--colorNav)
 }
 
 .navbar .navbarButton svg rect {
-    stroke: var(--color2)
+    stroke: var(--colorNav)
 }
 
 .navbar div{
@@ -39,16 +39,16 @@
     align-items: center;
     position: relative;
     height: 40px;
-    width: 400px;
+    width: calc(545px - 56px);
     border: none;
     background-color: transparent;
     font-weight: var(--weightMedium);
     font-size: var(--titlesInfoParagraphs);
     text-transform: capitalize;
     text-align: left;
-    color: var(--color2);
+    color: var(--colorNav);
     cursor: pointer;
-    transition: padding 0.2s ease-in-out;
+    transition: padding 0.2s ease-in-out, font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
     z-index: 1;
 }
 
@@ -68,7 +68,6 @@
 .navbar div button:hover{
     padding-left: 20px;
     font-weight: var(--weightBold);
-    color: var(--color3);
 }
 
 .navbar div button:hover::before{

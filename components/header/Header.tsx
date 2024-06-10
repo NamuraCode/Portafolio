@@ -15,22 +15,22 @@ const links: Links[] = [
   {
     name: "github",
     url: "https://github.com/NamuraCode",
-    image: "./images/icons/github.svg",
+    image: "./images/github.svg",
   },
   {
     name: "linkedin",
     url: "https://www.linkedin.com/in/david-naranjo/",
-    image: "./images/icons/linkedin.svg",
+    image: "./images/linkedin.svg",
   },
   {
     name: "instagram",
     url: "https://www.instagram.com/david_naranjo_999/?hl=es",
-    image: "./images/icons/instagram.svg",
+    image: "./images/instagram.svg",
   },
   {
     name: "artstation",
     url: "https://www.artstation.com/david_naranjo",
-    image: "./images/icons/artstation.svg",
+    image: "./images/artstation.svg",
   },
 ];
 

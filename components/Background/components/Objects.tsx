@@ -5,11 +5,7 @@ export default function Objects() {
     <group>
         <mesh>
             <boxGeometry />
-            <meshStandardMaterial color="red"/>
-        </mesh>
-        <mesh>
-            <boxGeometry />
-            <meshStandardMaterial color="blue"/>
+            <meshStandardMaterial color="white"/>
         </mesh>
     </group>  
   )

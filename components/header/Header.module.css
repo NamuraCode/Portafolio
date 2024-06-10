@@ -3,7 +3,7 @@
     justify-content: center;
     position: relative;
     width: 100%;
-    z-index: 2;
+    z-index: 4;
 }
 
 .headerLinks{
@@ -18,7 +18,11 @@
     gap: 40px;
     background-color: var(--color2);
     border-radius: 20px;
-    z-index: 2;
+    background-color: var(--color2Glass);
+    box-shadow: var(--boxShadows);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    /* border: var(--border); */
 }
 
 .headerLinks a{
@@ -34,5 +38,5 @@
 }
 
 .headerLinks a:hover{
-    opacity: 0.8;
+    opacity: 0.6;
 }

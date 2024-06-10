@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="./images/icons/namurasLogo.svg" sizes="any" />
+        <link rel="icon" href="./images/namurasLogo.svg" sizes="any" />
       </head>
       <body style={{ backgroundColor: "var(--color2)", padding: "0" }}>
         {children}
