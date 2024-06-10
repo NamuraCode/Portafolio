@@ -3,17 +3,15 @@
   bottom: -0.6px;
   left: -0.6px;
   display: flex;
-  min-width: 660px;
-  min-height: 390px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   gap: 20px;
-  margin: 28px;
+  margin: 0;
   z-index: 2;
 }
 
-/* .desktopText::after,
+.desktopText::after,
 .desktopText::before {
   content: "";
   position: absolute;
@@ -24,7 +22,7 @@
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 100%
+    var(--color2) 70%
   );
 }
 
@@ -33,14 +31,16 @@
   left: 0;
   width: calc(100% - 100px);
   height: 40px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var(--color2) 70%);
   z-index: 1;
-} */
+}
 
 .desktopText h3 {
   position: absolute;
   width: max-content;
   top: -18px;
+  padding-right: calc(9% + 40px);
+  padding-left: 40px;
   text-align: center;
 }
 
@@ -49,7 +49,13 @@
   margin: auto;
   padding: 10px 50px;
   border-radius: 40px;
-  border: 1px solid var(--color2);
+  font-weight: var(--weightBold);
+  font-size: var(--titlesTabsForms);
+  text-align: center;
+  text-transform: uppercase;
+  /* border: 1px solid var(--color2); */
+  /* background-color: var(--color1); */
+  color: var(--color1);
 }
 
 .desktopText p {
@@ -57,7 +63,10 @@
   max-width: 100%;
   max-height: 84%;
   min-height: 84%;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: calc(9% + 40px);
+  padding-left: 40px;
   text-align: center;
   color: var(--color3);
   overflow-y: scroll;

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./Header.module.css";
-import { LanguageBtn } from "./LanguageBtn/LanguageBtn";
+import { LanguageBtn } from "./languageBtn/LanguageBtn";
 import { Navbar } from "./Navbar/Navbar";
 
 interface Links {

@@ -2,7 +2,6 @@
 import { useGlobal } from "@/store";
 
 import styles from "./BorderButtons.module.css";
-import { useEffect } from "react";
 
 interface BorderButtonsProps {
   index: number;

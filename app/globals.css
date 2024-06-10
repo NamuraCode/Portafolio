@@ -4,11 +4,11 @@
   /* colors */
   --color1: #A8FF35;
   --color2: #060602;
-  --color2Glass: rgb(6, 6, 2, 0.9);
   --color3: #F8F8FF;
   --color4: #5F00FC;
+  --colorBg: #0a0a06;
   --colorNav: var(--color3);
-  --colorBg: #2f2e2d;
+  --color2Glass: rgb(6, 6, 2, 0.9);
 
   /* text size */
   --titlesH1: 72px;
@@ -35,7 +35,7 @@
   --opacityText: 60%;
 
   /* special styles */
-  --blurValue: 20px;
+  --blurValue: 10px;
   /* --boxShadows: 0 6px 6px 0px rgb(128, 128, 128, 0.1);
   --dropShadow: drop-shadow(6px -6px 6px rgb(128, 128, 128, 0.1));
   --border: 2px solid rgba( 255, 255, 255, 0.2); */
@@ -57,6 +57,7 @@ body {
 
 body{
   padding: 0rem 1rem;
+  user-select: none;
 }
 
 a {

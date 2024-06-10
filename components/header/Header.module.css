@@ -28,7 +28,7 @@
 .headerLinks a{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     font-family: "montserrat";
     font-weight: 700;
     font-size: var(--textDescriptions2);

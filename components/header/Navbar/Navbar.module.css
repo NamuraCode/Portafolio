@@ -1,76 +1,107 @@
-.navbar{
-    position: absolute;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 72px;
-    margin-left: 56px;
-    gap: 50px;
+.navbar {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 72px;
+  margin-left: 56px;
+  gap: 50px;
 }
 
-.navbar .navbarButton{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+.navbar .navbarButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.navbar .navbarButton svg{
-    width: 92px;
-    height: 92px;
+.navbar .navbarButton svg {
+  width: 84px;
+  height: 84px;
 }
 
 .navbar .navbarButton svg path {
-    fill: var(--colorNav)
+  fill: var(--colorNav);
 }
 
 .navbar .navbarButton svg rect {
-    stroke: var(--colorNav)
+  stroke: var(--colorNav);
 }
 
-.navbar div{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.navbar div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.navbar div button{
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 40px;
-    width: calc(545px - 56px);
-    border: none;
-    background-color: transparent;
-    font-weight: var(--weightMedium);
-    font-size: var(--titlesInfoParagraphs);
-    text-transform: capitalize;
-    text-align: left;
-    color: var(--colorNav);
-    cursor: pointer;
-    transition: padding 0.2s ease-in-out, font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
-    z-index: 1;
+.navbar div button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  width: calc(545px - 56px);
+  border: none;
+  background-color: transparent;
+  font-weight: var(--weightMedium);
+  font-size: var(--titlesInfoParagraphs);
+  text-transform: capitalize;
+  text-align: left;
+  color: var(--colorNav);
+  cursor: pointer;
+  transition: padding 0.2s ease-in-out, font-weight 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  z-index: 1;
 }
 
-.navbar div button::before{
-    content: "";
-    position: absolute;
-    left: 0px;
-    width: 0%;
-    height: calc(100% + 20px);
-    background-color: var(--color4);
-    border-top: 2px solid var(--color2);
-    opacity: 0;
-    transition: opacity 0.2s 0.04s ease-in-out, width 0.1s ease-in-out;
-    z-index: -1;
+.navbar div button::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 0%;
+  height: calc(100% + 20px);
+  background: linear-gradient(
+      90deg,
+      var(--color1) 10%,
+      var(--color1) 30%,
+      var(--colorBg) 90%
+    )
+    padding-box;
+  /* linear-gradient(90deg, var(--colorNav) 10%, var(--colorBg) 90%) border-box; */
+  border-top: 2px solid transparent;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.2s 0.04s ease-in-out, width 0.1s ease-in-out;
 }
 
-.navbar div button:hover{
+.navbar div button:hover {
+  padding-left: 20px;
+  font-weight: var(--weightBold);
+  color: var(--color2);
+}
+
+.navbar div button:hover::before {
+  opacity: 1;
+  width: 100%;
+}
+
+.navbar div button:first-child {
+    padding-left: 20px !important;
+    font-weight: var(--weightBold) !important;
+    color: var(--color2) !important;
+  }
+
+.navbar div button:first-child::before {
+  opacity: 1 !important;
+  width: 100% !important;
+}
+  
+.navbar div button:hover {
     padding-left: 20px;
     font-weight: var(--weightBold);
-}
-
-.navbar div button:hover::before{
+    color: var(--color2);
+  }
+  
+  .navbar div button:hover::before {
     opacity: 1;
-    width: 100%;
-}
+    width: 80%;
+  }
