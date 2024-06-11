@@ -3,6 +3,8 @@ import React, { createContext, useContext, useState } from "react";
 interface GlobalContext {
   openPopup: boolean;
   setTogglePopup: () => void;
+  navActive: number;
+  setNavActive: (index: number) => void;
 }
 
 const GlobalContext = createContext<GlobalContext | undefined>(undefined);
@@ -12,10 +14,16 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
   const setTogglePopup = () => {
     return setOpenPopup(!openPopup);
   };
+  const [navActive, setNavNumberActive] = useState(0);
+  const setNavActive = (index: number) => {
+    return setNavNumberActive(index);
+  }
 
   const value = {
     openPopup,
     setTogglePopup,
+    navActive,
+    setNavActive
   };
 
   return (

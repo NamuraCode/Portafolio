@@ -1,3 +1,6 @@
+"use client";
+import { GlobalProvider } from "@/store";
+
 import { Buttons } from "./Buttons";
 import styles from "./Navbar.module.css";
 
@@ -31,9 +34,9 @@ export const Navbar = () => {
           />
         </svg>
       </button>
-      <div>
+      <GlobalProvider>
         <Buttons />
-      </div>
+      </GlobalProvider>
     </nav>
   );
 };

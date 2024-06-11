@@ -90,7 +90,7 @@
 
 .navbar div button:hover::before {
   opacity: 1;
-  width: 80%;
+  width: 40%;
 }
 
 .active::before {
