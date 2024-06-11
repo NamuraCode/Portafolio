@@ -34,7 +34,7 @@
   gap: 20px;
 }
 
-.navbar div label {
+.navbar div button {
   display: flex;
   align-items: center;
   position: relative;
@@ -53,7 +53,7 @@
   z-index: 1;
 }
 
-.navbar div label::before {
+.navbar div button::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -71,34 +71,34 @@
   transition: opacity 0.2s 0.04s ease-in-out, width 0.1s ease-in-out;
 }
 
-.navbar div label:hover {
+.navbar div button:hover {
   padding-left: 20px;
   font-weight: var(--weightBold);
   color: var(--color2);
 }
 
-.navbar div label:hover::before {
+.navbar div button:hover::before {
   opacity: 1;
   width: 100%;
 }
 
-.navbar div label:hover {
+.navbar div button:hover {
   padding-left: 20px;
   font-weight: var(--weightBold);
   color: var(--color2);
 }
 
-.navbar div label:hover::before {
+.navbar div button:hover::before {
   opacity: 1;
   width: 80%;
 }
 
-.navbarBtnActive::before{
+.active::before {
   opacity: 1 !important;
-  width: 80% !important;
+  width: 100% !important;
 }
 
-.navbarBtnActive {
+.active {
   padding-left: 20px !important;
   font-weight: var(--weightBold) !important;
   color: var(--color2) !important;

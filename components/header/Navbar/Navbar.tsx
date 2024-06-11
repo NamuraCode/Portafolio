@@ -1,12 +1,5 @@
-import React from "react";
-
+import { Buttons } from "./Buttons";
 import styles from "./Navbar.module.css";
-const links = [
-  { name: "home"},
-  { name: "Projects"},
-  { name: "about"},
-  { name: "contact"},
-];
 
 export const Navbar = () => {
   return (
@@ -39,13 +32,7 @@ export const Navbar = () => {
         </svg>
       </button>
       <div>
-        {links.map((link, index) => {
-          return (
-            <>
-              <label key={index} form={link.name}>{link.name} <input type="checkbox" name={link.name} /></label>
-            </>
-          );
-        })}
+        <Buttons />
       </div>
     </nav>
   );
