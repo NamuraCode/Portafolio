@@ -41,9 +41,9 @@ export const Navbar = () => {
       <div>
         {links.map((link, index) => {
           return (
-            <button key={index} type="button" name={link.name}>
-              {link.name}
-            </button>
+            <>
+              <label key={index} form={link.name}>{link.name} <input type="checkbox" name={link.name} /></label>
+            </>
           );
         })}
       </div>

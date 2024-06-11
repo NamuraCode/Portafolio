@@ -9,5 +9,5 @@
 
 .canvasBorder {
     border-radius: 28px;
-    border: 10px solid var(--color2);
+    overflow: hidden;
 }

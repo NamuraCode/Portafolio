@@ -1,7 +1,9 @@
 .background {
   width: 100%;
   height: calc(100vh - 18px);
-  padding: 18px;
   margin: auto;
+  border-radius: 60px;
+  overflow: hidden;
   z-index: -1;
+
 } 
