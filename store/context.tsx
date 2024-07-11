@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useState } from "react";
 
 interface GlobalContext {
-  openPopup: boolean;
-  setTogglePopup: () => void;
+  openPopup: {open: boolean, index: number};
+  setTogglePopup: (id: number) => void;
   navActive: number;
   setNavActive: (index: number) => void;
 }
@@ -10,20 +10,26 @@ interface GlobalContext {
 const GlobalContext = createContext<GlobalContext | undefined>(undefined);
 
 export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
-  const [openPopup, setOpenPopup] = useState(false);
-  const setTogglePopup = () => {
-    return setOpenPopup(!openPopup);
-  };
   const [navActive, setNavNumberActive] = useState(0);
+  const [openPopup, setOpenPopup] = useState({open: false, index: -1});
+
+  const setTogglePopup = (index: number) => {
+    const statePopup = {
+      open: !openPopup.open,
+      index: index,
+    }
+    return setOpenPopup(statePopup)
+  };
+
   const setNavActive = (index: number) => {
     return setNavNumberActive(index);
-  }
+  };
 
   const value = {
     openPopup,
     setTogglePopup,
     navActive,
-    setNavActive
+    setNavActive,
   };
 
   return (

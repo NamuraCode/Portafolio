@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./Header.module.css";
 import { LanguageBtn } from "./languageBtn/LanguageBtn";
 import { Navbar } from "./Navbar/Navbar";
+
+import styles from "./Header.module.css";
 
 interface Links {
   name: string;

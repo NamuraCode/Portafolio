@@ -1,12 +1,23 @@
-import { Background, FloatingCard, Header, DesktopText } from "@/components";
+"use client";
+import {
+  Background,
+  DesktopText,
+  Header,
+  Popup,
+  FloatingCard,
+} from "@/components";
+
 import styles from "./page.module.css";
+import { GlobalProvider } from "@/store";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Header />
-      {/* <Popup/> */}
-      <FloatingCard />
+      <GlobalProvider>
+        <Header />
+        <FloatingCard />
+        <Popup />
+      </GlobalProvider>
       <DesktopText />
       <Background />
     </main>

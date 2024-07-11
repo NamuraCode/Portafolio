@@ -16,7 +16,7 @@ export const BorderButton = ({ text, index }: BorderButtonsProps) => {
       id={`button${index}`}
       className={`${styles.borderButton}`}
       onClick={() => {
-        text == "Contact" && setTogglePopup();
+        setTogglePopup(index);
       }}
     >
       {text}

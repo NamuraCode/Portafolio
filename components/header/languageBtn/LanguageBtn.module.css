@@ -29,3 +29,7 @@
   background-color: var(--color1);
   cursor: pointer;
 }
+
+.languageBtn svg path {
+ fill: var(--color2)
+}
