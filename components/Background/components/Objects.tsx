@@ -12,7 +12,7 @@ export const Objects = () => {
   });
 
   return (
-    <group ref={groupRef} rotation={[-Math.PI / 2, 0, 0]}>
+    <group ref={groupRef} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]}>
       <mesh position={[0, 0, 1.2]}>
         <boxGeometry />
         <meshStandardMaterial color="white" />

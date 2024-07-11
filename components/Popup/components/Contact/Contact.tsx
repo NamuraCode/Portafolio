@@ -6,16 +6,16 @@ export const Contact = () => {
       <h2>Contact</h2>
       <form className={styles.contact}>
         <fieldset>
+          <input placeholder="name" type="text" required  />
           <label>Name</label>
-          <input type="text" required />
         </fieldset>
         <fieldset>
+          <input placeholder="email" type="email" required />
           <label>Email</label>
-          <input type="email" required />
         </fieldset>
-        <fieldset>
+        <fieldset className={styles.contactTextarea}>
+          <textarea placeholder="message" required />
           <label>Message</label>
-          <textarea required />
         </fieldset>
         <button type="submit">Send</button>
       </form>

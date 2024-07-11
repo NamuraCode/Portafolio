@@ -18,7 +18,7 @@ export const CanvasExperience = ({
 }) => {
   return (
     <div className={`${styles.canvas} ${hasBorder && styles.canvasBorder}`}>
-      <Canvas camera={{ position: [0, 0, 2] }}>
+      <Canvas camera={{ position: [0, 0, 4] }}>
         <ambientLight intensity={5} />
         {hasBg && <color attach="background" args={[`${colorBg}`]} />}
         <OrbitControls enableZoom={false} />
