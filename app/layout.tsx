@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { ProviderLayout } from "@/layouts/ProviderLayout";
 
 export const metadata: Metadata = {
   title: "Welcome - Home",
@@ -12,14 +12,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="./images/namurasLogo.svg" sizes="any" />
-      </head>
-      <body style={{ backgroundColor: "var(--color2)", padding: "0" }}>
-        {children}
-      </body>
-    </html>
-  );
+  return <ProviderLayout>{children}</ProviderLayout>;
 }

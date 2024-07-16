@@ -4,6 +4,6 @@
   min-width: calc(100vw - 16px);
   margin: 8px;
   padding: 0;
-  border-radius: 60px;
-  background-color: var(--colorBg);
+  border-radius: 30px;
+  background-color: var(--color1);
 }
