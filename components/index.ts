@@ -1,5 +1,4 @@
 export * from "./DesktopText/DesktopText"
-export * from "./FloatingCard/FloatingCard"
 export * from "./header/Header"
 export * from "./Popup/Popup"
 export * from "./CanvasBg/CanvasBg"
