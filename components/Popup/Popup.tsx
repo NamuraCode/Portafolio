@@ -6,7 +6,7 @@ import { useGlobal } from "@/store";
 import styles from "./Popup.module.css";
 import { Contact } from "./components"
 
-const popups: JSX.Element[] = [ <Contact/> ]
+const popups: JSX.Element[] = [ <Contact key={0}/> ]
 
 export const Popup = () => {
   const { openPopup, setTogglePopup } = useGlobal();
