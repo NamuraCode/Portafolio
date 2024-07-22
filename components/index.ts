@@ -1,4 +1,4 @@
-export * from "./DesktopText/DesktopText"
-export * from "./header/Header"
-export * from "./Popup/Popup"
 export * from "./CanvasBg/CanvasBg"
+export * from "./Borders/BorderLeft"
+export * from "./Borders/BorderRight"
+export * from "./Navbar/Navbar"

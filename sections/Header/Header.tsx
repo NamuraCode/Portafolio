@@ -1,7 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-
 import styles from "./Header.module.css";
+import { BorderLeft, BorderRight, Navbar  } from "@/components";
 
 interface Links {
   name: string;
@@ -35,18 +33,9 @@ const links: Links[] = [
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.headerLinks}>
-        {links.map((link, index) => {
-          return (
-            <Link key={index} href={link.url} target="_blank" >
-              <Image src={link.image} width={22} height={22} alt={link.name} />
-              <span>{link.name}</span>
-            </Link>
-          );
-        })}
-      </div>
-      {/* <LanguageBtn />
-      <Navbar /> */}
+      <BorderLeft/>
+      <Navbar />
+      <BorderRight/>
     </header>
   );
 };

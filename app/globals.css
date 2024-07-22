@@ -2,43 +2,27 @@
 
 :root {
   /* colors */
-  --color1: #A8FF35;
+  --color1: #FAFAFA;
   --color2: #060602;
-  --color3: #F8F8FF;
-  --color4: #5F00FC;
-  --colorBg: #242424dc;
-  --colorNav: var(--color3);
-  --color2Glass: rgb(6, 6, 2, 0.9);
-
-  /* text size */
-  --titlesH1: 72px;
-  --titlesH2: 60px;
-  --titlesModalTitles: 38px;
-  --titlesPage: 34px;
-  --titlesTabsForms: 28px;
-  --titlesButtonsTabsForms: 22px;
-  --titlesInfoParagraphs: 20px;
-  --textDescriptions: 16px;
-  --textDescriptions2: 14px;
-  --textTimeStampsFootersCaption: 12px;
+  --color3: #363639;
+  --color1Glass: #d9d9d9;
+  --gradient1: radial-gradient(circle, rgba(52,52,55,0.8) 0%, rgba(52,52,55,1) 100%);
   
-  /* text weight */
-  --weightBold: 800;
-  --weightMedium: 600;
-  --weightRegular: 400;
+  /* text size */
+  --text18: 1.125rem;
 
   /* text opacity */
-  --opacityCaption: 50%;
-  --opacityDescription: 30%;
-  --opacityHeader: 85%;
-  --opacityMax: 100%;
-  --opacityText: 60%;
+  --opacity70: 0.7;
+  --opacity50: 0.5;
+  --opacity20: 0.2;
 
-  /* special styles */
-  --blurValue: 10px;
-  /* --boxShadows: 0 6px 6px 0px rgb(128, 128, 128, 0.1);
-  --dropShadow: drop-shadow(6px -6px 6px rgb(128, 128, 128, 0.1));
-  --border: 2px solid rgba( 255, 255, 255, 0.2); */
+  /* text weight */
+  --weight300: 300;
+  --weight400: 400;
+  --weight500: 500;
+  --weight700: 700;
+  --weight900: 900;
+ 
 }
 
 * {
@@ -52,12 +36,13 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: '';
+  /* font-family: ''; */
 }
 
 body{
-  padding: 0rem 1rem;
   user-select: none;
+  background: var(--color1);
+  margin: 8px
 }
 
 a {

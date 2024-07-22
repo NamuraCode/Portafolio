@@ -1,0 +1,13 @@
+.borderLeft{
+    width: min-content;
+    float: left;
+}
+
+.borderRight{
+    width: min-content;
+    float: right;
+}
+
+.borderRight svg{
+    transform: scale(-1, 1);
+}

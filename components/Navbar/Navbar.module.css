@@ -1,0 +1,29 @@
+.navbar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.navbar ul{
+    display: flex;
+    height: 100%;
+    width: auto;
+    gap: 4.063rem;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li{
+    font-size: var(--text18);
+    font-weight: var(--weight500);
+    color: var(--color1);
+    opacity: var(--opacity70);
+    transition: opacity 0.2s ease;
+}
+
+.navbar ul li:hover{
+    opacity: 1;
+}

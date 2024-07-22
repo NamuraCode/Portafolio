@@ -1,8 +1,55 @@
 .background {
-  width: 100%;
-  height: calc(100vh - 18px);
+  position: relative;
+  width: calc(100vw - 16px);
+  height: calc(100vh - 16px);
   margin: auto;
-  border-radius: 60px;
+  /* border-radius: 40px; */
   overflow: hidden;
-  z-index: -1;
 } 
+
+.bgBorderLeft, .bgBorderRight{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: calc(50% - 140px);
+  height: 57px;
+  background: var(--color1);
+  z-index: 2;
+}
+
+.bgBorderRight{
+  right: 0;
+}
+
+.bgBorderLeft::after, .bgBorderRight::after{
+  content: "";
+  position: absolute;
+  top: -48px;
+  width: 50px;
+  height: 48px;
+  background-color: var(--color1);
+  mask-image: url("/images/borderTop.svg");
+  z-index: 2;
+}
+
+.bgBorderRight::after{
+  right: 0;
+  transform: scale(-1, 1);
+}
+
+.bgBorderLeft::before, .bgBorderRight::before{
+  content: "";
+  position: absolute;
+  right: -57px;
+  width: 57px;
+  height: 100%;
+  background-color: var(--color1);
+  mask-image: url("/images/borderX.svg");
+  z-index: 2;
+}
+
+.bgBorderRight::before{
+  left: -57px;
+  transform: scale(-1, 1);
+}
+
