@@ -1,0 +1,53 @@
+.homeInfo{
+    position: absolute;
+    top: 16.875rem;
+    left: 4.813rem;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
+.homeInfo h1{
+    font-size: var(--text48);
+    font-weight: var(--weight800);
+    color: var(--color1);
+    margin-bottom: 1.5rem;
+}
+
+.homeInfo p{
+    width: 38%;
+    height: auto;
+    font-size: var(--text18);
+    font-weight: var(--weight500);
+    color: var(--color1);
+    margin-bottom: 2.25rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1.563rem;
+}
+
+.buttonHome{
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.813rem 1.5rem;
+    border-radius: 0.938rem;
+    background-color: var(--buttonBg1);
+    border: 1px solid var(--color1);
+    cursor: pointer;
+    pointer-events: all;
+    transition: border 0.2s ease;
+}
+
+.buttonHome:hover{
+    border: 1px solid var(--color3);
+}
+
+.buttonHome span {
+    font-size: var(--text18);
+    font-weight: var(--weight700);
+    color: var(--color1);
+    line-height: 0;
+}

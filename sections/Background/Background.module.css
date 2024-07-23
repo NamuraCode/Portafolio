@@ -3,15 +3,24 @@
   width: calc(100vw - 16px);
   height: calc(100vh - 16px);
   margin: auto;
-  /* border-radius: 40px; */
   overflow: hidden;
 } 
+
+.bgBorderUpLeft, .bgBorderUpRight{
+  position: absolute;
+  z-index: 1;
+}
+
+.bgBorderUpRight{
+  right: 0;
+  transform: scale(-1, 1);
+}
 
 .bgBorderLeft, .bgBorderRight{
   content: "";
   position: absolute;
   bottom: 0;
-  width: calc(50% - 140px);
+  width: calc(50% - 170px);
   height: 57px;
   background: var(--color1);
   z-index: 2;

@@ -6,10 +6,13 @@
   --color2: #060602;
   --color3: #363639;
   --color1Glass: #d9d9d9;
+  --buttonBg1: #fafafa33;
   --gradient1: radial-gradient(circle, rgba(52,52,55,0.8) 0%, rgba(52,52,55,1) 100%);
   
   /* text size */
   --text18: 1.125rem;
+  --text22: 1.375rem;
+  --text48: 3rem;
 
   /* text opacity */
   --opacity70: 0.7;
@@ -21,6 +24,7 @@
   --weight400: 400;
   --weight500: 500;
   --weight700: 700;
+  --weight800: 800;
   --weight900: 900;
  
 }

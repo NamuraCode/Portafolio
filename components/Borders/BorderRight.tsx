@@ -3,18 +3,98 @@ import styles from "./Borders.module.css";
 export const BorderRight = () => {
   return (
     <div className={styles.borderRight}>
-      <svg
-        width="121"
-        height="121"
-        viewBox="0 0 121 121"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M92.1811 49.2637L92.1811 27.7508C92.1811 12.5444 105.636 -1.34315e-06 121 0L0.000152588 1.04907e-05L-2.94876e-06 121C-1.55781e-06 105.089 13.0417 92.1965 29.1172 92.2151C29.1172 92.2151 25.2574 92.2106 49.6601 92.2388C74.0628 92.267 92.1811 73.4162 92.1811 49.2637Z"
-          fill="#FAFAFA"
-        />
-      </svg>
+      <button className={styles.borderRLanguage}>EN</button>
+      <button className={styles.borderRTheme}>
+        <svg
+          width="16"
+          height="17"
+          viewBox="0 0 16 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="11.8682"
+            y="11.9115"
+            width="7.73585"
+            height="7.73586"
+            rx="3.86793"
+            transform="rotate(180 11.8682 11.9115)"
+            fill="#363639"
+          />
+          <rect
+            x="8.77393"
+            y="3.40201"
+            width="1.54717"
+            height="3.09434"
+            rx="0.773585"
+            transform="rotate(180 8.77393 3.40201)"
+            fill="#363639"
+          />
+          <rect
+            x="8.89258"
+            y="16.0769"
+            width="1.7852"
+            height="3.5704"
+            rx="0.892599"
+            transform="rotate(180 8.89258 16.0769)"
+            fill="#363639"
+          />
+          <rect
+            x="3.35742"
+            y="7.26999"
+            width="1.54717"
+            height="3.09434"
+            rx="0.773585"
+            transform="rotate(90 3.35742 7.26999)"
+            fill="#363639"
+          />
+          <rect
+            x="15.7354"
+            y="7.26999"
+            width="1.54717"
+            height="3.09434"
+            rx="0.773585"
+            transform="rotate(90 15.7354 7.26999)"
+            fill="#363639"
+          />
+          <rect
+            x="5.26514"
+            y="4.21451"
+            width="1.54717"
+            height="3.09434"
+            rx="0.773585"
+            transform="rotate(135 5.26514 4.21451)"
+            fill="#363639"
+          />
+          <rect
+            x="14.0171"
+            y="12.9666"
+            width="1.54717"
+            height="3.09434"
+            rx="0.773585"
+            transform="rotate(135 14.0171 12.9666)"
+            fill="#363639"
+          />
+          <rect
+            x="4.1709"
+            y="10.7786"
+            width="1.54717"
+            height="3.09434"
+            rx="0.773585"
+            transform="rotate(45 4.1709 10.7786)"
+            fill="#363639"
+          />
+          <rect
+            x="12.9224"
+            y="2.02649"
+            width="1.54717"
+            height="3.09434"
+            rx="0.773585"
+            transform="rotate(45 12.9224 2.02649)"
+            fill="#363639"
+          />
+        </svg>
+      </button>
     </div>
   );
 };
