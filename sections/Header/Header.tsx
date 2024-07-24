@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import { BorderLeft, BorderRight, Navbar  } from "@/components";
+import { BorderLeft, BorderRight, Navbar, NavbarPoints  } from "@/components";
 
 export const Header = () => {
   return (
@@ -7,6 +7,7 @@ export const Header = () => {
       <BorderLeft/>
       <Navbar />
       <BorderRight/>
+      <NavbarPoints />
     </header>
   );
 };

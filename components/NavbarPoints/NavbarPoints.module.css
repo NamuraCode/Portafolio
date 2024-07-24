@@ -1,0 +1,19 @@
+.navbarPoints {
+  position: fixed;
+  right: 2.375rem;
+  display: flex;
+  gap: 3.625rem;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 74px);
+  z-index: 2;
+}
+
+.navbarPoints button {
+  content: "";
+  border-radius: 60px;
+  padding: 6px 6px;
+  border: 1px solid var(--color1);
+  background-color: transparent;
+  cursor: pointer;
+}

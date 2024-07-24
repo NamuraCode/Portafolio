@@ -1,0 +1,12 @@
+.helperTitle{
+    display: flex;
+    gap: 1.875rem;
+    flex-direction: row;
+}
+
+.helperTitle h2{
+    font-size: var(--text48);
+    font-weight: var(--weight700);
+    text-transform: capitalize;
+    color: var(--color3);
+}   

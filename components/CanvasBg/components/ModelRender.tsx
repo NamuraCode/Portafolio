@@ -8,9 +8,11 @@ export const ModelRender = () => {
   const groupRef = useRef<Group>(null);
   useFrame((state) => {
     if (!groupRef.current) return;
+
+    groupRef.current.rotation.z = state.clock.getElapsedTime() / 2;
   });
   return (
-    <group ref={groupRef} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]}>
+    <group ref={groupRef} rotation={[Math.PI / 2, 0, 0]} position={[0, 0, 0]}>
       <mesh position={[0, 0, 1.2]}>
         <boxGeometry />
         <meshStandardMaterial color="white" />

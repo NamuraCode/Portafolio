@@ -1,93 +1,108 @@
 {
-    "about": [
-        "About me",
-        "Sobre mi"
-    ],
-    "projects": [
-        "projects",
-        "proyectos"
-    ],
-    "contact": [
-        "contact",
-        "contacto"
-    ],
-    "language": [
-        "Español",
-        "English"
-    ],
-    "contact_me": [
-        "Contact",
-        "Contacto"
-    ],
-    "experience": [
-        "Experience",
-        "Experiencia"
-    ],
-    "dev": [
-        "Developer",
-        "Desarrollador"
-    ],
-    "modeling_3d": [
-        "3D Modeling",
-        "Modelado 3D"
-    ],
-    "description": [
-        "Full-Stack JavaScript developer, studied at Digital House and Misión Tic 2021. With skills in languages such as JavaScript, Typescript, Python, Java, HTML and CSS, repository management with Git and Github. Creation and consumption of APIS using technologies such as Node, Express and React, and SQL (Mysql, sequelize) and NoSQL (MongoDb) databases. From which I develop durable and scalable digital solutions. With experience in research groups developing technologies and creating web pages with the MERN stack, under scrum methodologies differentiating the work by the effort to improve and the curiosity to learn and implement new technologies.",
-        "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github. Creación y consumo de APIS mediante tecnologías como Node, Express y React. Y bases de datos SQL (Mysql, sequelize) y NoSQL (MongoDb). Desde las cuales desarrollo soluciones digitales perdurables y escalables. Con experiencia en grupos de investigación de desarrollo de tecnologías y creación de páginas web con el stack MERN, bajo metodologías scrum diferenciando el trabajo por el esfuerzo de mejorar y la curiosidad de aprender e implementar tecnologías nuevas."
-    ],
-    "ad": [
-        "Currently in development, view on computer",
-        "Acutualmente en desarrollo, ver en computador"
-    ],
-    "experiences_jobs": [
-        {
-            "type": "dev",
-            "job": [
-                "Full-Stack Developer"
-            ],
-            "company": "Makata",
-            "imageUrl": "/images/makata.jpeg",
-            "description": [
-                "Full-Stack developer, app creation in React native and ionic, technological solutions with next.js for interactive and fast websites, Shopify for e-commerce and management of libraries such as gsap and three.js for transitions and 3D web designs.",
-                "Desarrollador Full Stack, creación de apps en React native y ionic, soluciones tecnológicas con react.js para páginas web interactivas y rápidas, Shopify para e-commerce y manejo de librerías como gsap y three.js para transiciones y diseños 3D en web."
-            ],
-            "date": [
-                "February 2022 - Current",
-                "Febrero 2022 - Actual"
-            ]
-        },
-        {
-            "type": "dev",
-            "job": [
-                "Web Developer"
-            ],
-            "company": "Protalento",
-            "imageUrl": "/images/protalento.jpeg",
-            "description": [
-                "Development from scratch of practice pages such as Free Market, Practice E-commerce and SPA and MPA pages.",
-                "Desarrollo desde cero de páginas de practica como Mercado libre, E-commerce de practica y paginas SPA y MPA."
-            ],
-            "date": [
-                "August 2020 - April 2021",
-                "Agosto 2020 - Abril 2021"
-            ]
-        },
-        {
-            "type": "model",
-            "job": [
-                "3D Generalist",
-                "Generalista 3D"
-            ],
-            "company": "Semillero de Investigacion ITADIR",
-            "imageUrl": "/images/sena.jpeg",
-            "description": [
-                "3D Artist. 3D and 2D digital art solutions, for companies and individuals, the focus was 3D and 2D design for animated projects, character design, and rendering of audiovisual products.",
-                "Artista 3D. Soluciones digitales de arte 3D y 2D, para empresas y particulares, el foco fue el diseño 3D y el 2D para proyectos animados, diseño de personajes, y renderizado de productos audiovisuales."
-            ],
-            "date": [
-                "February 2019 - October 2019",
-                "Febrero 2019 - Octubre 2019"
-            ]
-        }
-    ]
+    "navbar": {
+        "about": [
+            "sobre mi",
+            "about"
+        ],
+        "experience": [
+            "experiencia",
+            "experience"
+        ],
+        "projects": [
+            "proyectos",
+            "projects"
+        ],
+        "contact": [
+            "contacto",
+            "contact"
+        ]
+    },
+    "home": {
+        "welcome": [
+            "Hola, soy David Naranjo",
+            "Hello, i'm David Naranjo"
+        ],
+        "description": [
+            "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github...",
+            "Full-Stack JavaScript Developer, studied at Digital House and Misión Tic 2021. With skills in languages such as JavaScript, Typescript, Python, Java, HTML and CSS. Repository management with Git and Github..."
+        ]
+    },
+    "experience": {
+        "title": [
+            "experiencia",
+            "experience"
+        ],
+        "jobs": [
+            {
+                "charge": [
+                    "Full-Stack junior",
+                    "Full-Stack junior"
+                ],
+                "company": "Makata Studio",
+                "time": [
+                    "Febrero 2022 - Actualmente...",
+                    "February 2022 - Currently..."
+                ],
+                "description": [
+                    "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github.",
+                    "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github. "
+                ],
+                "type": "dev"
+            },
+            {
+                "charge": [
+                    "Full-Stack junior",
+                    "Full-Stack junior"
+                ],
+                "company": "Protalento",
+                "time": [
+                    "Agosto 2020 - Abril 2021",
+                    "August 2020 - April. 2021"
+                ],
+                "description": [
+                    "Desarrollo Back End y Front End. Como prácticas en cada módulo se desarrollaban ejercicios, adicional dos páginas web, mercado liebre replica de mercado libre y kruto store e-commerce página desarrollada.",
+                    "Desarrollo Back End y Front End. Como prácticas en cada módulo se desarrollaban ejercicios, adicional dos páginas web, mercado liebre replica de mercado libre y kruto store e-commerce página desarrollada."
+                ],
+                "type": "dev"
+            },
+            {
+                "charge": [
+                    "Artista 3D",
+                    "3D Artist"
+                ],
+                "company": "Freelance",
+                "time": [
+                    "Febrero 2020 – Actualmente...",
+                    "February 2020 – Currently..."
+                ],
+                "description": [
+                    "Soluciones digitales de arte 3D y 2D, para empresas y particulares, el foco fue el diseño 3D y el 2D para proyectos animados, diseño de personajes, y renderizado de productos audiovisuales.",
+                    "Soluciones digitales de arte 3D y 2D, para empresas y particulares, el foco fue el diseño 3D y el 2D para proyectos animados, diseño de personajes, y renderizado de productos audiovisuales."
+                ],
+                "type": "art"
+            },
+            {
+                "charge": [
+                    "Artista 3D",
+                    "3D Artist"
+                ],
+                "company": "Semillero de Investigación ITADIR",
+                "time": [
+                    "Marzo 2019 – Agosto 2019",
+                    "March 2019 – August 2019"
+                ],
+                "description": [
+                    "Desempeñe el cargo de artista 3D e investigador de proyectos en realidad aumentada, realidad virtual, captura de movimiento y el proyecto asignado, un cortometraje animado llamado sinfonía salvaje.",
+                    "Desempeñe el cargo de artista 3D e investigador de proyectos en realidad aumentada, realidad virtual, captura de movimiento y el proyecto asignado, un cortometraje animado llamado sinfonía salvaje."
+                ],
+                "type": "art"
+            }
+        ]
+    },
+    "footer": {
+        "copy": [
+            "© 2024 David Naranjo. Todos los derechos resevados",
+            "© 2024 David Naranjo. All rights reserved"
+        ]
+    }
 }

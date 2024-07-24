@@ -1,14 +1,17 @@
+"use client";
+import { info } from "@/db/info";
 import { ButtonHome } from "./components/ButtonHome";
 import styles from "./HomeInfo.module.css";
+import { useGlobal } from "@/store";
 
 export const HomeInfo = () => {
+  const { language } = useGlobal();
+  const { home } = info;
   return (
     <div className={styles.homeInfo}>
-      <h1>Hola, soy David Naranjo</h1>
+      <h1>{home.welcome[language]}</h1>
       <p>
-        Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión
-        Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript,
-        Python, Java, HTML y CSS. Gestión de repositorios con Git y Github...
+        {home.description[language]}
       </p>
       <div className={styles.buttons}>
         <ButtonHome

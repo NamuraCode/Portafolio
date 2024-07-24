@@ -1,9 +1,22 @@
+"use client";
+
+import { useState } from "react";
+import { useGlobal } from "@/store";
+
 import styles from "./Borders.module.css";
 
 export const BorderRight = () => {
+  const [ language, setLanguageButton ] = useState(true);
+  const { setLanguage } = useGlobal();
+
+  const setLanguageState = () => {
+    setLanguageButton(!language);
+    return setLanguage( language ? 0 : 1 );
+  }
+
   return (
     <div className={styles.borderRight}>
-      <button className={styles.borderRLanguage}>EN</button>
+      <button className={styles.borderRLanguage} onClick={setLanguageState}>{language ? "ES" : "EN"}</button>
       <button className={styles.borderRTheme}>
         <svg
           width="16"
