@@ -32,6 +32,10 @@
             "experiencia",
             "experience"
         ],
+        "subtitle": [
+            "complementarias",
+            "complementary"
+        ],
         "jobs": [
             {
                 "charge": [
@@ -97,6 +101,12 @@
                 ],
                 "type": "art"
             }
+        ]
+    },
+    "projects": {
+        "title": [
+            "proyectos",
+            "projects"
         ]
     },
     "footer": {

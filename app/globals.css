@@ -12,8 +12,15 @@
     rgba(52, 52, 55, 0.8) 0%,
     rgba(52, 52, 55, 1) 100%
   );
+  --gradient2: linear-gradient(
+    0deg,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(250, 250, 250, 0) 100%
+  );
 
   /* text size */
+  --text12: 0.75rem;
+  --text14: 0.875rem;
   --text18: 1.125rem;
   --text22: 1.375rem;
   --text48: 3rem;

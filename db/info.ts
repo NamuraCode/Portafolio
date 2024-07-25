@@ -1,5 +1,13 @@
 import db from "./info.json";
 
+interface jobProps {
+  charge: string[];
+  company: string;
+  time: string[];
+  description: string[];
+  type: string;
+}
+
 export const info = {
   header: {
     about: db.navbar.about,
@@ -16,14 +24,22 @@ export const info = {
   },
   experience: {
     title: db.experience.title,
+    subtitle: db.experience.subtitle,
     jobs: (index: number) => {
-      return {
-        charge: db.experience.jobs[index].charge,
-        company: db.experience.jobs[index].company,
-        time: db.experience.jobs[index].time,
-        description: db.experience.jobs[index].description,
-        type: db.experience.jobs[index].type,
-      };
+      const jobs : jobProps[] = [];
+      db.experience.jobs.map((job) => {
+        jobs.push({
+          charge: job.charge,
+          company: job.company,
+          time: job.time,
+          description: job.description,
+          type: job.type,
+        })
+      })
+      return jobs
     },
   },
+  projects: {
+    title: db.projects.title,
+  }
 };

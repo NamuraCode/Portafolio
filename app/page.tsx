@@ -1,12 +1,11 @@
-import { HomePage, ExperiencePage } from "@/views";
+import { HomePage } from "@/views";
 
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main id="home" className={styles.main}>
       <HomePage />
-      <ExperiencePage />
     </main>
   );
 }

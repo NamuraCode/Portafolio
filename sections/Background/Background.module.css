@@ -23,7 +23,7 @@
   width: calc(50% - 170px);
   height: 57px;
   background: var(--color1);
-  z-index: 2;
+  z-index: 1;
 }
 
 .bgBorderRight{

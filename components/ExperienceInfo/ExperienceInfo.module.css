@@ -1,8 +1,79 @@
 .expContent{
-    
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 5rem
+}
+
+.expContentContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 1.625rem;
+}
+
+.subtitle{
+    padding-left: 1.875rem;
+    font-size: var(--text14);
+    font-weight: var(--weight600);
+    opacity: var(--opacity70);
+}
+
+.expContentContainer::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--color3);
 }
 
 .experienceJob{
     display: flex;
     flex-direction: row;
+}
+
+.experienceJobDescription{
+    font-size: var(--text18);
+    font-weight: var(--weight600);
+    opacity: var(--opacity70);
+}
+
+.experienceJob::after{
+    content: "";
+    position: absolute;
+    left: -3px;
+    width: 8px;
+    height: 8px;
+    margin-top: 6px;
+    border-radius: 50%;
+    background-color: var(--color3);
+}
+
+.experienceJob div{
+    width: 50%;
+    padding: 0 4rem;
+}
+
+.experienceJob div h3, .experienceJob div h4{
+    font-size: var(--text22);
+    font-weight: var(--weight800);
+    padding-bottom: 0.375rem;
+}
+
+.experienceJob div p{
+    width: 100%;
+    font-size: var(--text14);
+    font-weight: var(--weight600);
+    opacity: var(--opacity70);
+}
+
+.experienceJob div h4{
+    padding-bottom: 0;
+}
+
+.experienceJob p{
+    width: 50%;
 }

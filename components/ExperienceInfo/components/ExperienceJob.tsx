@@ -1,10 +1,13 @@
-import styles from "../ExperienceInfo.module.css"
+"use client";
+import { useGlobal } from "@/store";
+import styles from "../ExperienceInfo.module.css";
 
 interface ExperienceInfoProps {
-  charge: string;
+  charge: string[];
   company: string;
-  time: string;
-  description: string;
+  time: string[];
+  description: string[];
+  type: string;
 }
 
 export const ExperienceJob = ({
@@ -12,17 +15,17 @@ export const ExperienceJob = ({
   company,
   time,
   description,
+  type,
 }: ExperienceInfoProps) => {
+  const { language }  = useGlobal();
   return (
     <div className={styles.experienceJob}>
       <div>
-        <h3>{charge}</h3>
+        <h3>{charge[language]}</h3>
         <h4>{company}</h4>
-        <p>{time}</p>
+        <p>{time[language]}</p>
       </div>
-      <p>
-        {description}
-      </p>
+      <p className={styles.experienceJobDescription}>{description[language]}</p>
     </div>
   );
 };
