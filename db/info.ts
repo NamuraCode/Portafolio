@@ -8,6 +8,11 @@ interface jobProps {
   type: string;
 }
 
+interface projectProps {
+  title: string[];
+  image: string;
+}
+
 export const info = {
   header: {
     about: db.navbar.about,
@@ -26,7 +31,7 @@ export const info = {
     title: db.experience.title,
     subtitle: db.experience.subtitle,
     jobs: (index: number) => {
-      const jobs : jobProps[] = [];
+      const jobs: jobProps[] = [];
       db.experience.jobs.map((job) => {
         jobs.push({
           charge: job.charge,
@@ -34,12 +39,22 @@ export const info = {
           time: job.time,
           description: job.description,
           type: job.type,
-        })
-      })
-      return jobs
+        });
+      });
+      return jobs;
     },
   },
   projects: {
-    title: db.projects.title,
-  }
+    title: db.project.title,
+    projects: () => {
+      const projects: projectProps[] = [];
+      db.project.projects.map((project) => {
+        projects.push({
+          title: project.title,
+          image: project.image,
+        });
+      });
+      return projects;
+    },
+  },
 };

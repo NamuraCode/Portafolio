@@ -1,5 +1,5 @@
 import { info } from "@/db/info";
-import { HelperTitle } from "@/components";
+import { HelperTitle, ProjectsInfo } from "@/components";
 import styles from "@/styles/global.module.css";
 
 export const Projects = () => {
@@ -21,6 +21,7 @@ const { title } = info.projects;
           />
         </svg>
       </HelperTitle>
+      <ProjectsInfo />
     </section>
   );
 };

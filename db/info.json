@@ -103,10 +103,47 @@
             }
         ]
     },
-    "projects": {
+    "project": {
         "title": [
             "proyectos",
             "projects"
+        ],
+        "projects": [
+            {
+                "title": [
+                    "Makata Studio pagina web",
+                    "Makata Studio landing page"
+                ],
+                "image": "/images/placeholder.jpg"
+            },
+            {
+                "title": [
+                    "Makata Studio pagina web",
+                    "Makata Studio landing page"
+                ],
+                "image": "/images/placeholder.jpg"
+            },
+            {
+                "title": [
+                    "Makata Studio pagina web",
+                    "Makata Studio landing page"
+                ],
+                "image": "/images/placeholder.jpg"
+            },
+            {
+                "title": [
+                    "Makata Studio pagina web",
+                    "Makata Studio landing page"
+                ],
+                "image": "/images/placeholder.jpg"
+            },
+            {
+                "title": [
+                    "Makata Studio pagina web",
+                    "Makata Studio landing page"
+                ],
+                "image": "/images/placeholder.jpg"
+            }
         ]
     },
     "footer": {
