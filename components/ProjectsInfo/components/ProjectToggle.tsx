@@ -3,12 +3,12 @@ import { useState } from "react";
 import styles from "../ProjectInfo.module.css";
 
 export const ProjectToggle = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(true);
   const toggleChecked = () => setIsChecked(!isChecked);
   return (
     <div className={styles.projectToggle}>
-      <input type="checkbox" id="myCheckbox" checked={!isChecked} />
-      <label htmlFor="myCheckbox" onClick={toggleChecked}>
+      <input type="checkbox" id="dev" defaultChecked={isChecked} />
+      <label htmlFor="dev" onClick={toggleChecked}>
         <svg
           width="17"
           height="17"
@@ -24,8 +24,8 @@ export const ProjectToggle = () => {
         </svg>
         <span>Development</span>
       </label>
-      <input type="checkbox" id="myCheckbox" checked={isChecked} />
-      <label htmlFor="myCheckbox" onClick={toggleChecked}>
+      <input type="checkbox" id="art"/>
+      <label htmlFor="art" onClick={toggleChecked}>
         <svg
           width="17"
           height="17"

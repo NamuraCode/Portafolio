@@ -10,8 +10,8 @@ export const ProjectsInfo = () => {
     <div>
       <ProjectToggle />
       <div className={styles.projectInfoCards}>
-        {projects.map((project) => (
-          <ProjectCard key={project.image} image={project.image} text={project.title} />
+        {projects.map((project, index) => (
+          <ProjectCard key={`projectImg${index}`} image={project.image} text={project.title} />
         ))}
       </div>
     </div>
