@@ -134,13 +134,28 @@
             },
             {
                 "title": [
-                    "Modelo 3D",
-                    "Model 3D"
+                    "Ilustración digital de mis hobbies",
+                    "Ilustration of my and my hobbies"
                 ],
                 "image": [
-                    "/images/placeholder2.jpg"
+                    "/images/art1/namura4.jpg",
+                    "/images/art1/namura3.jpg",
+                    "/images/art1/namura2.jpg",
+                    "/images/art1/namura1.jpg"
                 ],
-                "url": "https://portafolio-ten-wine.vercel.app/",
+                "url": "https://www.artstation.com/artwork/q9yZZN",
+                "type": "art"
+            },
+            {
+                "title": [
+                    "Modelo jaguar para cortometraje",
+                    "Model jaguar for cutscene"
+                ],
+                "image": [
+                    "/images/art2/junior2.jpg",
+                    "/images/art2/junior1.jpg"
+                ],
+                "url": "https://www.artstation.com/artwork/nQeLor",
                 "type": "art"
             },
             {
@@ -158,17 +173,6 @@
             },
             {
                 "title": [
-                    "Modelo 3D",
-                    "Model 3D"
-                ],
-                "image": [
-                    "/images/placeholder.jpg"
-                ],
-                "url": "https://portafolio-ten-wine.vercel.app/",
-                "type": "art"
-            },
-            {
-                "title": [
                     "Makata Studio pagina web",
                     "Makata Studio landing page"
                 ],
@@ -179,17 +183,6 @@
                 ],
                 "url": "https://portafolio-ten-wine.vercel.app/",
                 "type": "dev"
-            },
-            {
-                "title": [
-                    "Modelo 3D",
-                    "Model 3D"
-                ],
-                "image": [
-                    "/images/placeholder2.jpg"
-                ],
-                "url": "https://portafolio-ten-wine.vercel.app/",
-                "type": "art"
             },
             {
                 "title": [

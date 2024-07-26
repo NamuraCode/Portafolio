@@ -71,6 +71,7 @@
   align-items: center;
   overflow-x: scroll;
   width: 330px;
+  height: 270px;
   padding: 0;
   scroll-snap-type: x mandatory;
   mask-image: url("/images/projectMask.svg");
@@ -78,6 +79,17 @@
 
 .projectCardImage img {
   scroll-snap-align: center;
+  object-fit: cover;
+  min-width: 330px;
+  width: 330px;
+  height: 270px;
+  background-color: var(--color3);
+  filter: blur(2px);
+  transition: filter 0.4s ease-in-out;
+}
+
+.projectCardImage:hover img {
+  filter: blur(0px);
 }
 
 .projectCardContent {
@@ -86,7 +98,7 @@
   height: min-content;
 }
 
-.projectCardContent button {
+.projectCardContent a {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -102,10 +114,10 @@
   transition: transform 0.1s ease-in-out;
 }
 
-.projectCardContent button:hover {
+.projectCardContent a:hover {
   transform: scale(1.16);
 }
 
-.projectCardContent button:active {
+.projectCardContent a:active {
   transform: scale(1);
 }

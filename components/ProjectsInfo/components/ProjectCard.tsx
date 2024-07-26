@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useGlobal } from "@/store";
 import styles from "../ProjectInfo.module.css";
+import Link from "next/link";
 
 interface ProjectCardProps {
   images: string[];
@@ -55,7 +56,7 @@ export const ProjectCard = ({ text, images, url }: ProjectCardProps) => {
             );
           })}
         </div>
-        <button onClick={() => router.push(url)}>
+        <Link href={url} target="_blank">
           <svg
             width="20"
             height="20"
@@ -68,7 +69,7 @@ export const ProjectCard = ({ text, images, url }: ProjectCardProps) => {
               fill="#F8F8F8"
             />
           </svg>
-        </button>
+        </Link>
       </div>
       <p>{text[language]}</p>
     </div>
