@@ -1,6 +1,6 @@
 import { info } from "@/db/info";
 import { ExperienceInfo, HelperTitle } from "@/components";
-import styles from "@/styles/global.module.css";
+import styles from "@/styles/Global.module.css";
 
 export const Experience = () => {
   const { title } = info.experience;

@@ -1,6 +1,6 @@
 import { info } from "@/db/info";
 import { HelperTitle, ProjectsInfo } from "@/components";
-import styles from "@/styles/global.module.css";
+import styles from "@/styles/Global.module.css";
 
 export const Projects = () => {
 const { title } = info.projects;
