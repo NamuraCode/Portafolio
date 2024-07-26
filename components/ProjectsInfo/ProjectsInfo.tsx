@@ -1,19 +1,31 @@
+"use client";
 import { info } from "@/db/info";
-import { ProjectToggle, ProjectCard } from "./components"
-import styles from "./ProjectInfo.module.css"
+import { ProjectToggle, ProjectCard } from "./components";
+import styles from "./ProjectInfo.module.css";
+import { useGlobal } from "@/store";
 
 export const ProjectsInfo = () => {
-    const projects = info.projects.projects();
-    
+  const projects = info.projects.projects();
+  const { projectType } = useGlobal();
+
   return (
     // <div className={styles.projectInfo}>
     <div>
       <ProjectToggle />
       <div className={styles.projectInfoCards}>
-        {projects.map((project, index) => (
-          <ProjectCard key={`projectImg${index}`} image={project.image} text={project.title} />
-        ))}
+        {projects.map((project, index) => {
+          return (
+            projectType === project.type && (
+              <ProjectCard
+                key={`projectImg${index}`}
+                images={project.image}
+                text={project.title}
+                url={project.url}
+              />
+            )
+          );
+        })}
       </div>
     </div>
-  )
-}
+  );
+};

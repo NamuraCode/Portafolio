@@ -1,107 +1,111 @@
-.projectInfo{
-    width: 100%;
-    margin-top: 1.875rem;
+.projectInfo {
+  width: 100%;
+  margin-top: 1.875rem;
 }
 
-.projectInfoCards{
-    display: grid;
-    width: 100%;
-    gap: 3.75rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
-    place-items: center;
+.projectInfoCards {
+  display: grid;
+  width: 100%;
+  gap: 3.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  place-items: center;
 }
 
 .projectToggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    margin: 5rem 0 1.875rem 0;
-    float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin: 5rem 0 1.875rem 0;
+  float: left;
 }
 
-.projectToggle label {
-    display: flex;
-    gap: 0.625rem;
-    align-items: center;
-    border: none;
-    font-size: var(--text18);
-    font-weight: var(--weight700);
-    padding: 0.813rem 1.5rem;
-    background-color: var(--color3);
-    cursor: pointer;
+.projectToggle button {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  border: none;
+  font-size: var(--text18);
+  font-weight: var(--weight700);
+  padding: 0.813rem 1.5rem;
+  background-color: var(--color3);
+  cursor: pointer;
 }
 
-.projectToggle input {
-    display: none;
+.activeProject {
+  background-color: var(--color3);
+  opacity: var(--opacity50);
 }
 
-.projectToggle input:checked + label {
-    background-color: var(--color3);
-    opacity: 0.5;
+.projectToggle button {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
-.projectToggle label {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+.projectToggle button:last-child {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
-.projectToggle label:last-child {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+.projectToggle button span {
+  color: var(--color1);
 }
 
-.projectToggle label span{
-    color: var(--color1)
+.projectCard {
+  width: min-content;
 }
 
-.projectCard{
-    width: min-content;
-}  
-
-.projectCard p{
-    margin-top: 0.625rem;
-    font-size: var(--text18);
-    font-weight: var(--weight700);
-    color: var(--color3);
-    opacity: var(--opacity70);
+.projectCard p {
+  margin-top: 0.625rem;
+  font-size: var(--text18);
+  font-weight: var(--weight700);
+  color: var(--color3);
+  opacity: var(--opacity70);
 }
 
-.projectCardImage{
-    mask-image: url("/images/projectMask.svg");
+.projectCardImage {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  width: 330px;
+  padding: 0;
+  scroll-snap-type: x mandatory;
+  mask-image: url("/images/projectMask.svg");
 }
 
-.projectCardContent{
-    position: relative;
-    width: min-content;
-    height: min-content;
+.projectCardImage img {
+  scroll-snap-align: center;
 }
 
-.projectCardContent button{
-    position: absolute;
-    right: 10px;
-    bottom: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: var(--color3);
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: transform 0.1s ease-in-out;
+.projectCardContent {
+  position: relative;
+  width: min-content;
+  height: min-content;
 }
 
-.projectCardContent button:hover{
-    transform: scale(1.16);
+.projectCardContent button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color3);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
 }
 
-.projectCardContent button:active{
-    transform: scale(1);
+.projectCardContent button:hover {
+  transform: scale(1.16);
 }
 
-
+.projectCardContent button:active {
+  transform: scale(1);
+}

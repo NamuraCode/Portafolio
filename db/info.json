@@ -104,6 +104,16 @@
         ]
     },
     "project": {
+        "toggle": {
+            "dev": [
+                "Desarrollo",
+                "Development"
+            ],
+            "art": [
+                "Arte",
+                "Art"
+            ]
+        },
         "title": [
             "proyectos",
             "projects"
@@ -114,35 +124,85 @@
                     "Makata Studio pagina web",
                     "Makata Studio landing page"
                 ],
-                "image": "/images/placeholder.jpg"
+                "image": [
+                    "/images/placeholder2.jpg",
+                    "/images/placeholder.jpg",
+                    "/images/placeholder2.jpg"
+                ],
+                "url": "https://portafolio-ten-wine.vercel.app/",
+                "type": "dev"
+            },
+            {
+                "title": [
+                    "Modelo 3D",
+                    "Model 3D"
+                ],
+                "image": [
+                    "/images/placeholder2.jpg"
+                ],
+                "url": "https://portafolio-ten-wine.vercel.app/",
+                "type": "art"
             },
             {
                 "title": [
                     "Makata Studio pagina web",
                     "Makata Studio landing page"
                 ],
-                "image": "/images/placeholder.jpg"
+                "image": [
+                    "/images/placeholder.jpg",
+                    "/images/placeholder2.jpg",
+                    "/images/placeholder.jpg"
+                ],
+                "url": "https://portafolio-ten-wine.vercel.app/",
+                "type": "dev"
+            },
+            {
+                "title": [
+                    "Modelo 3D",
+                    "Model 3D"
+                ],
+                "image": [
+                    "/images/placeholder.jpg"
+                ],
+                "url": "https://portafolio-ten-wine.vercel.app/",
+                "type": "art"
             },
             {
                 "title": [
                     "Makata Studio pagina web",
                     "Makata Studio landing page"
                 ],
-                "image": "/images/placeholder.jpg"
+                "image": [
+                    "/images/placeholder2.jpg",
+                    "/images/placeholder.jpg",
+                    "/images/placeholder2.jpg"
+                ],
+                "url": "https://portafolio-ten-wine.vercel.app/",
+                "type": "dev"
+            },
+            {
+                "title": [
+                    "Modelo 3D",
+                    "Model 3D"
+                ],
+                "image": [
+                    "/images/placeholder2.jpg"
+                ],
+                "url": "https://portafolio-ten-wine.vercel.app/",
+                "type": "art"
             },
             {
                 "title": [
                     "Makata Studio pagina web",
                     "Makata Studio landing page"
                 ],
-                "image": "/images/placeholder.jpg"
-            },
-            {
-                "title": [
-                    "Makata Studio pagina web",
-                    "Makata Studio landing page"
+                "image": [
+                    "/images/placeholder2.jpg",
+                    "/images/placeholder.jpg",
+                    "/images/placeholder2.jpg"
                 ],
-                "image": "/images/placeholder.jpg"
+                "url": "https://portafolio-ten-wine.vercel.app/",
+                "type": "dev"
             }
         ]
     },

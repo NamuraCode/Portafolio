@@ -10,7 +10,9 @@ interface jobProps {
 
 interface projectProps {
   title: string[];
-  image: string;
+  image: string[];
+  url: string;
+  type: string;
 }
 
 export const info = {
@@ -46,12 +48,18 @@ export const info = {
   },
   projects: {
     title: db.project.title,
+    toggle: {
+      dev: db.project.toggle.dev,
+      art: db.project.toggle.art,
+    },
     projects: () => {
       const projects: projectProps[] = [];
       db.project.projects.map((project) => {
         projects.push({
           title: project.title,
           image: project.image,
+          url: project.url,
+          type: project.type,
         });
       });
       return projects;

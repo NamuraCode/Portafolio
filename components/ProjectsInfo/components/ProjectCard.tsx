@@ -1,22 +1,61 @@
 "use client";
-import { useGlobal } from "@/store";
+import { useRef, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useGlobal } from "@/store";
 import styles from "../ProjectInfo.module.css";
 
 interface ProjectCardProps {
-  image: string;
+  images: string[];
   text: string[];
+  url: string;
 }
 
-export const ProjectCard = ({ text, image }: ProjectCardProps) => {
+export const ProjectCard = ({ text, images, url }: ProjectCardProps) => {
   const { language } = useGlobal();
+  const router = useRouter();
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const [sideX, setSideX] = useState(true);
+
+  const moveSlider = (index: number) => {
+    if (sliderRef.current) {
+      if (index < images.length - 1 && sideX) {
+        console.log(index);
+        index + 1 == images.length - 1 && setSideX(false);
+        sliderRef.current.scrollTo({
+          left: 330 * (index + 1),
+          behavior: "smooth",
+        });
+      } else {
+        console.log(index);
+        index - 1 == 0 && setSideX(true);
+        sliderRef.current.scrollTo({
+          left: (index - 1) * 330,
+          behavior: "smooth",
+        });
+      }
+    }
+  };
+
   return (
     <div className={styles.projectCard}>
       <div className={styles.projectCardContent}>
-        <div className={styles.projectCardImage}>
-          <Image src={image} width={330} height={270} alt="project" />
+        <div ref={sliderRef} className={styles.projectCardImage}>
+          {images.map((image, index) => {
+            return (
+              <Image
+                key={`projectImg${index}`}
+                id={`projectImg${index}`}
+                src={image}
+                width={330}
+                height={270}
+                alt="project"
+                onClick={() => moveSlider(index)}
+              />
+            );
+          })}
         </div>
-        <button>
+        <button onClick={() => router.push(url)}>
           <svg
             width="20"
             height="20"

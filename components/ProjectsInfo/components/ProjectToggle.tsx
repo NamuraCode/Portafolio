@@ -1,14 +1,22 @@
 "use client";
 import { useState } from "react";
+import { info } from "@/db/info";
+import { useGlobal, ProjectType } from "@/store";
 import styles from "../ProjectInfo.module.css";
 
 export const ProjectToggle = () => {
   const [isChecked, setIsChecked] = useState(true);
-  const toggleChecked = () => setIsChecked(!isChecked);
+  const { setProjectType, language } = useGlobal();
+  const { toggle } = info.projects;
+
+  const handleTypeProject = (active: boolean) => {
+    setIsChecked(active);
+    setProjectType(active ? ProjectType.dev : ProjectType.art);
+  }
+
   return (
     <div className={styles.projectToggle}>
-      <input type="checkbox" id="dev" defaultChecked={isChecked} />
-      <label htmlFor="dev" onClick={toggleChecked}>
+      <button className={`${!isChecked ? styles.activeProject : null}`} onClick={() => handleTypeProject(true)}>
         <svg
           width="17"
           height="17"
@@ -22,10 +30,9 @@ export const ProjectToggle = () => {
             fill="#F8F8F8"
           />
         </svg>
-        <span>Development</span>
-      </label>
-      <input type="checkbox" id="art"/>
-      <label htmlFor="art" onClick={toggleChecked}>
+        <span>{toggle.dev[language]}</span>
+      </button>
+      <button className={`${isChecked ? styles.activeProject : null}`} onClick={() => handleTypeProject(false)}>
         <svg
           width="17"
           height="17"
@@ -39,8 +46,8 @@ export const ProjectToggle = () => {
             fill="#F8F8F8"
           />
         </svg>
-        <span>Art</span>
-      </label>
+        <span>{toggle.art[language]}</span>
+      </button>
     </div>
   );
 };
