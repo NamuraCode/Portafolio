@@ -5,6 +5,7 @@
   --color1: #fafafa;
   --color2: #060602;
   --color3: #363639;
+  --colorBtn: rgb(54, 54, 57, 0.5);
   --color1Glass: #d9d9d9;
   --buttonBg1: #fafafa33;
   --gradient1: radial-gradient(
@@ -29,6 +30,7 @@
   --opacity70: 0.7;
   --opacity50: 0.5;
   --opacity20: 0.2;
+  --opacity100: 1;
 
   /* text weight */
   --weight200: 200;
@@ -59,8 +61,8 @@ body {
 body {
   user-select: none;
   background: var(--color1);
-  margin: 8px;
-  margin-bottom: 5rem
+  padding: 8px;
+  padding-bottom: 5rem
 }
 
 ::-webkit-scrollbar {

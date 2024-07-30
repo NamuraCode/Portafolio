@@ -1,4 +1,4 @@
-import { Background, Experience, HomeContent, Projects } from "@/sections";
+import { About, Background, Contact, Experience, HomeContent, Projects } from "@/sections";
 
 export const HomePage = () => {
   return (
@@ -7,6 +7,8 @@ export const HomePage = () => {
       <HomeContent />
       <Experience />
       <Projects />
+      <About />
+      <Contact />
     </>
   );
 };

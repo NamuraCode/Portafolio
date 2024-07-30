@@ -1,7 +1,9 @@
 .helperTitle{
     display: flex;
+    align-items: center;
     gap: 1.875rem;
     flex-direction: row;
+    margin-bottom: 5rem;
 }
 
 .helperTitle h2{

@@ -6,52 +6,11 @@
 .projectInfoCards {
   display: grid;
   width: 100%;
+  min-height: 80vh;
+  height: fit-content;
   gap: 3.75rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  place-items: center;
-}
-
-.projectToggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-  margin: 5rem 0 1.875rem 0;
-  float: left;
-}
-
-.projectToggle button {
-  display: flex;
-  gap: 0.625rem;
-  align-items: center;
-  border: none;
-  font-size: var(--text18);
-  font-weight: var(--weight700);
-  padding: 0.813rem 1.5rem;
-  background-color: var(--color3);
-  cursor: pointer;
-}
-
-.activeProject {
-  background-color: var(--color3);
-  opacity: var(--opacity50);
-}
-
-.projectToggle button {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-
-.projectToggle button:last-child {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.projectToggle button span {
-  color: var(--color1);
 }
 
 .projectCard {
@@ -64,6 +23,7 @@
   font-weight: var(--weight700);
   color: var(--color3);
   opacity: var(--opacity70);
+  text-wrap: balance;
 }
 
 .projectCardImage {
@@ -84,8 +44,8 @@
   width: 330px;
   height: 270px;
   background-color: var(--color3);
-  filter: blur(2px);
-  transition: filter 0.4s ease-in-out;
+  filter: blur(6px);
+  transition: filter 0.3s ease-in-out;
 }
 
 .projectCardImage:hover img {

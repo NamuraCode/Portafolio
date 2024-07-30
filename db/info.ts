@@ -1,4 +1,5 @@
 import db from "./info.json";
+import { Contact } from '../sections/Contact/Contact';
 
 interface jobProps {
   charge: string[];
@@ -64,5 +65,12 @@ export const info = {
       });
       return projects;
     },
+  },
+  aboutMe: {
+    title: db.aboutMe.title,
+    description: db.aboutMe.content,
+  },
+  contact: {
+    title: db.contact.title
   },
 };

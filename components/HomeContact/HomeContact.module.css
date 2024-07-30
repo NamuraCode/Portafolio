@@ -21,5 +21,6 @@
     color: var(--color1);
     line-height: normal;
     text-transform: uppercase;
+    text-wrap: balance;
 }
 

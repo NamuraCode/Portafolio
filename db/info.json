@@ -199,6 +199,19 @@
             }
         ]
     },
+    "aboutMe": {
+        "title": [
+            "sobre mi",
+            "about me"
+        ],
+        "content": [
+            "Desarrollador Full-Stack, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github. Creación y consumo de APIS mediante tecnologías como NodeJs, Express y React. Y bases de datos SQL (Mysql, sequelize) y NoSQL (MongoDb). Desde las cuales desarrolló soluciones digitales perdurables y escalables. Con experiencia en grupos de investigación de desarrollo de tecnologías y creación de páginas web con el stack MERN, bajo metodologías SCRUM diferenciando el trabajo por el esfuerzo de mejorar y la curiosidad de aprender e implementar tecnologías nuevas.",
+            "Full-Stack Developer, studied at Digital House and Misión Tic 2021. With skills in languages such as JavaScript, Python, Java, HTML and CSS. repositories with Git and Github. Creation and consumption of APIS using technologies such as NodeJs, Express and React, and SQL (Mysql, sequelize) and NoSQL (MongoDb) databases. From which he developed enduring and scalable digital solutions. With experience in research groups developing technologies and creating web pages with the MERN stack, under SCRUM methodologies differentiating the work by the effort to improve and the curiosity to learn and implement new technologies."
+        ]
+    },
+    "contact": {
+        "title": ["Contacto" ,"Contact"]
+    },
     "footer": {
         "copy": [
             "© 2024 David Naranjo. Todos los derechos resevados",

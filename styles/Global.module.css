@@ -1,4 +1,51 @@
-.sections{
-    background-color: var(--color1);
-    padding: 13.125rem calc(100vw / 5) 0rem calc(100vw / 5); 
+.sections {
+  background-color: var(--color1);
+  /* padding: 13.125rem calc(100vw / 5) 0rem calc(100vw / 5); */
+  padding: 13.125rem calc(100vw / 5) 0rem calc(100vw / 5);
+}
+
+.contact {
+  margin: auto;
+  /* padding: 13.125rem calc(100vw / 3) 0rem calc(100vw / 3); */
+}
+
+.containerToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 1.875rem;
+  float: left;
+}
+
+.buttonToggle {
+  display: flex;
+  width: fit-content;
+  gap: 0.625rem;
+  align-items: center;
+  border: none;
+  font-size: var(--text18);
+  font-weight: var(--weight700);
+  padding: 0.813rem 1.5rem;
+  background-color: var(--color3);
+  opacity: var(--opacity50);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
+  transition: opacity 0.1s ease;
+}
+
+.activeToggle {
+    opacity: var(--opacity100);
+  }
+
+.buttonToggle:last-child {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.buttonToggle span {
+  color: var(--color1);
 }
