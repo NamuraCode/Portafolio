@@ -29,14 +29,9 @@ export const ContactInfo = () => {
       .send(server, template, messageTemplate, {
         publicKey: keyPublic,
       })
-      .then(
-        () => {
-          formRef.current?.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then(() => {
+        formRef.current?.reset();
+      });
   }
   return (
     <form ref={formRef} className={styles.contactForm} onSubmit={handleSubmit}>

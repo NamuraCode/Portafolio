@@ -1,6 +1,9 @@
 .HomeContent {
     position: absolute;
     bottom: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 240px;
     height: 70px;
     background-color: transparent;

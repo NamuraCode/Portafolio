@@ -48,9 +48,9 @@
 .contactForm legend {
   margin-bottom: 0.625rem;
   text-transform: capitalize;
-  font-size: var(--text18);
+  font-size: var(--text14);
   font-weight: var(--weight600);
-  color: var(--colorBtn);
+  color: var(--colorCaption);
 }
 
 .contactForm input:focus,
@@ -61,6 +61,15 @@
 
 .contactForm > textarea:valid, .contactForm > input:valid {
   background: var(--color3);
+}
+
+.contactForm button{
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.contactForm button:hover{
+  background-color: var(--color3);
+  color: var(--color1);
 }
 
 

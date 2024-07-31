@@ -3,7 +3,7 @@ import styles from './HomeContent.module.css'
 
 export const HomeContent = () => {
   return (
-    <section className={styles.home}>
+    <section id="home" className={styles.home}>
       <HomeInfo />
       <HomeContact />
     </section>

@@ -47,5 +47,6 @@
 }
 
 .buttonToggle span {
+  font-size: var(--text18);
   color: var(--color1);
 }

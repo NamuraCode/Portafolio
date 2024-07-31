@@ -21,14 +21,12 @@ export const ProjectCard = ({ text, images, url }: ProjectCardProps) => {
   const moveSlider = (index: number) => {
     if (sliderRef.current) {
       if (index < images.length - 1 && sideX) {
-        console.log(index);
         index + 1 == images.length - 1 && setSideX(false);
         sliderRef.current.scrollTo({
           left: 330 * (index + 1),
           behavior: "smooth",
         });
       } else {
-        console.log(index);
         index - 1 == 0 && setSideX(true);
         sliderRef.current.scrollTo({
           left: (index - 1) * 330,
@@ -56,7 +54,7 @@ export const ProjectCard = ({ text, images, url }: ProjectCardProps) => {
             );
           })}
         </div>
-        <Link href={url} target="_blank">
+        <Link href={url} target="_blank" aria-label="projectCardRedirect">
           <svg
             width="20"
             height="20"

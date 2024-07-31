@@ -1,5 +1,5 @@
 .header{
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     width: calc(100vw - 16px);

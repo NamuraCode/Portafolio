@@ -9,7 +9,7 @@ interface HomeContactProps {
 
 export const ButtonHome = ({ text, image, redirect }: HomeContactProps) => {
   return (
-    <Link href={redirect} className={styles.buttonHome} target="_blank">
+    <Link href={redirect} className={styles.buttonHome} target="_blank" aria-label="home">
       {image}
       <span>{text}</span>
     </Link>

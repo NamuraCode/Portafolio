@@ -10,7 +10,7 @@ export const ProviderLayout = ({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="./images/namurasLogo.svg" sizes="any" />
+        <link rel="icon" href="./images/namurasLogo.svg" sizes="any"/>
       </head>
       <body>
         <GlobalProvider>

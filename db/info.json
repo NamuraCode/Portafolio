@@ -210,7 +210,25 @@
         ]
     },
     "contact": {
-        "title": ["Contacto" ,"Contact"]
+        "title": ["Contacto" ,"Contact"],
+        "label": {
+            "email": [
+                "correo",
+                "email"
+            ],
+            "name": [
+                "nombre",
+                "name"
+            ],
+            "message": [
+                "mensaje",
+                "message"
+            ],
+            "send": [
+                "enviar",
+                "send"
+            ]
+        }
     },
     "footer": {
         "copy": [

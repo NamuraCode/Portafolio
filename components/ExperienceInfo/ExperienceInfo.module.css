@@ -12,11 +12,14 @@
     padding-left: 1.625rem;
 }
 
+.experienceJobDescription, .subtitle, .experienceJob div p {
+    font-weight: var(--weight600);
+    color: var(--colorCaption);
+}
+
 .subtitle{
     padding-left: 1.875rem;
     font-size: var(--text14);
-    font-weight: var(--weight600);
-    opacity: var(--opacity70);
 }
 
 .expContentContainer::after{
@@ -36,8 +39,6 @@
 
 .experienceJobDescription{
     font-size: var(--text18);
-    font-weight: var(--weight600);
-    opacity: var(--opacity70);
 }
 
 .experienceJob::after{
@@ -66,8 +67,6 @@
 .experienceJob div p{
     width: 100%;
     font-size: var(--text14);
-    font-weight: var(--weight600);
-    opacity: var(--opacity70);
     text-wrap: balance;
 }
 

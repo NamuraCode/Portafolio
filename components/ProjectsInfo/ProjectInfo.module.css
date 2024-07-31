@@ -21,8 +21,7 @@
   margin-top: 0.625rem;
   font-size: var(--text18);
   font-weight: var(--weight700);
-  color: var(--color3);
-  opacity: var(--opacity70);
+  color: var(--colorCaption);
   text-wrap: balance;
 }
 

@@ -1,6 +1,9 @@
 .navbar {
-    flex-grow: 1;
+    --__colorNav: var(--color1);
+    position: relative;
     display: flex;
+    width: 100%;
+    flex-grow: 1;
     align-items: center;
     justify-content: center;
     padding: 2.25rem;
@@ -19,9 +22,8 @@
 .navbar ul li{
     font-size: var(--text18);
     font-weight: var(--weight500);
-    color: var(--color1);
-    opacity: var(--opacity70);
-    transition: opacity 0.2s ease;
+    color: var(--__colorNav);
+    transition: color 0.5s ease;
 }
 
 .navbar ul li:hover{
