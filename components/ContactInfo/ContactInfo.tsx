@@ -1,17 +1,61 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import styles from "./ContactInfo.module.css";
 import global from "@/styles/Global.module.css";
 
 export const ContactInfo = () => {
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
   const [active, setActive] = useState<boolean>(true);
+  const formRef = useRef<HTMLFormElement>(null);
+  function handleSubmit(evt: React.FormEvent<HTMLFormElement>) {
+    evt.preventDefault();
+
+    const server = process.env.NEXT_PUBLIC_KEY_SERVER!;
+    const template = process.env.NEXT_PUBLIC_KEY_TEMPLATE!;
+    const keyPublic = process.env.NEXT_PUBLIC_KEY_PUBLIC!;
+    if (!name || !email || !message || !formRef.current) return;
+
+    const messageTemplate = {
+      name: name,
+      email: email,
+      service: active ? "Development" : "Design",
+      message: message,
+    };
+    emailjs
+      .send(server, template, messageTemplate, {
+        publicKey: keyPublic,
+      })
+      .then(
+        () => {
+          formRef.current?.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
-    <form className={styles.contactForm}>
+    <form ref={formRef} className={styles.contactForm} onSubmit={handleSubmit}>
       <label htmlFor="name">name</label>
-      <input id="name" type="text" placeholder="Name" required />
+      <input
+        id="name"
+        type="text"
+        placeholder="Name"
+        required
+        onChange={(e) => setName(e.target.value)}
+      />
       <label htmlFor="email">email</label>
-      <input id="email" type="email" placeholder="Email" required />
+      <input
+        id="email"
+        type="email"
+        placeholder="Email"
+        required
+        onChange={(e) => setEmail(e.target.value)}
+      />
       <fieldset className={styles.formSelect}>
         <legend onClick={() => setActive(!active)}>Services</legend>
         <div className={global.containerToggle}>
@@ -60,7 +104,14 @@ export const ContactInfo = () => {
         </div>
       </fieldset>
       <label htmlFor="message">message</label>
-      <textarea placeholder="Message" name="message" id="message" required />
+      <textarea
+        placeholder="Message"
+        name="message"
+        id="message"
+        minLength={10}
+        required
+        onChange={(e) => setMessage(e.target.value)}
+      />
       <button type="submit">Send</button>
     </form>
   );

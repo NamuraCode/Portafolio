@@ -59,6 +59,11 @@
   background: var(--color3);
 }
 
+.contactForm > textarea:valid, .contactForm > input:valid {
+  background: var(--color3);
+}
+
+
 /* .contactForm input, .contactForm textarea {
     outline: none;
     background: var(--color3);
