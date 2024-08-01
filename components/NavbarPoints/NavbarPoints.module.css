@@ -1,5 +1,5 @@
 .navbarPoints {
-  position: fixed;
+  position: absolute;
   right: 2.375rem;
   display: flex;
   gap: 3.625rem;

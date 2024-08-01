@@ -1,12 +1,11 @@
 .sections {
   background-color: var(--color1);
-  /* padding: 13.125rem calc(100vw / 5) 0rem calc(100vw / 5); */
-  padding: 13.125rem calc(100vw / 5) 0rem calc(100vw / 5);
+  padding: 10rem calc(100vw / 5) 0rem calc(100vw / 5);
+  min-height: 100vh;
 }
 
 .contact {
   margin: auto;
-  /* padding: 13.125rem calc(100vw / 3) 0rem calc(100vw / 3); */
 }
 
 .containerToggle {

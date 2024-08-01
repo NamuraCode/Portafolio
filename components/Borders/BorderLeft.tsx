@@ -1,14 +1,11 @@
-"use client";
-import { useRouter } from "next/navigation";
 import styles from "./Borders.module.css";
 
 export const BorderLeft = () => {
-  const router = useRouter();
   return (
     <div className={styles.borderLeft}>
       <button
         className={styles.borderLLogo}
-        onSubmit={() => router.push("#home")}
+        onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
         name="home"
       >
         <svg

@@ -64,12 +64,14 @@
 }
 
 .contactForm button{
+  background-color: var(--color3);
+  color: var(--color1);
   transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
 .contactForm button:hover{
-  background-color: var(--color3);
-  color: var(--color1);
+  background-color: var(--color1);
+  color: var(--color3);
 }
 
 

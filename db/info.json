@@ -20,7 +20,7 @@
     "home": {
         "welcome": [
             "Hola, soy David Naranjo",
-            "Hello, i'm David Naranjo"
+            "Hello, I'm David Naranjo"
         ],
         "description": [
             "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github...",
@@ -148,6 +148,20 @@
             },
             {
                 "title": [
+                    "Ilustración digital de mis hobbies",
+                    "Ilustration of my and my hobbies"
+                ],
+                "image": [
+                    "/images/art1/namura4.jpg",
+                    "/images/art1/namura3.jpg",
+                    "/images/art1/namura2.jpg",
+                    "/images/art1/namura1.jpg"
+                ],
+                "url": "https://www.artstation.com/artwork/q9yZZN",
+                "type": "art"
+            },
+            {
+                "title": [
                     "Modelo jaguar para cortometraje",
                     "Model jaguar for cutscene"
                 ],
@@ -210,16 +224,33 @@
         ]
     },
     "contact": {
-        "title": ["Contacto" ,"Contact"],
+        "title": [
+            "Contacto",
+            "Contact"
+        ],
         "label": {
-            "email": [
-                "correo",
-                "email"
-            ],
             "name": [
                 "nombre",
                 "name"
             ],
+            "email": [
+                "correo",
+                "email"
+            ],
+            "service": {
+                "title": [
+                    "servicio",
+                    "service"
+                ],
+                "dev": [
+                    "desarrollo",
+                    "development"
+                ],
+                "art": [
+                    "arte",
+                    "art"
+                ]
+            },
             "message": [
                 "mensaje",
                 "message"

@@ -6,8 +6,8 @@
 .projectInfoCards {
   display: grid;
   width: 100%;
-  min-height: 80vh;
   height: fit-content;
+  place-items: center;
   gap: 3.75rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));

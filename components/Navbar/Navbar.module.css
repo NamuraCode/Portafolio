@@ -1,8 +1,9 @@
 .navbar {
     --__colorNav: var(--color1);
+    --__weightNav: var(--weight500);
     position: relative;
     display: flex;
-    width: 100%;
+    width: calc(100% - 18px);
     flex-grow: 1;
     align-items: center;
     justify-content: center;
@@ -21,7 +22,7 @@
 
 .navbar ul li{
     font-size: var(--text18);
-    font-weight: var(--weight500);
+    font-weight: var(--__weightNav);
     color: var(--__colorNav);
     transition: color 0.5s ease;
 }

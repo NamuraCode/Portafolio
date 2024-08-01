@@ -63,7 +63,6 @@ body {
   user-select: none;
   background: var(--color1);
   padding: 8px;
-  padding-bottom: 5rem
 }
 
 ::-webkit-scrollbar {
