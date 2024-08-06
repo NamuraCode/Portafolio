@@ -7,6 +7,8 @@
 
 .bgBorderUpLeft, .bgBorderUpRight{
   position: absolute;
+  width: 111px;
+  height: 111px;
   z-index: 1;
 }
 
@@ -19,7 +21,7 @@
   content: "";
   position: absolute;
   bottom: 0;
-  width: calc(50% - 170px);
+  width: calc(50% - 116px);
   height: 57px;
   background: var(--color1);
   z-index: 1;
@@ -57,7 +59,7 @@
 }
 
 .bgBorderRight::before{
-  left: -57px;
+  left: -56px;
   transform: scale(-1, 1);
 }
 

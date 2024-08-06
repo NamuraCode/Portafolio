@@ -21,7 +21,7 @@
 }
 
 .navbar ul li{
-    font-size: var(--text18);
+    font-size: var(--text14);
     font-weight: var(--__weightNav);
     color: var(--__colorNav);
     transition: color 0.5s ease;

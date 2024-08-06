@@ -7,7 +7,7 @@
 }
 
 .helperTitle h2{
-    font-size: var(--text48);
+    font-size: var(--text34);
     font-weight: var(--weight700);
     text-transform: capitalize;
     color: var(--color3);
