@@ -18,9 +18,9 @@
 }
 
 .projectCard p {
-  margin-top: 0.625rem;
-  font-size: var(--text18);
-  font-weight: var(--weight700);
+  margin-top: 1rem;
+  font-size: var(--text14);
+  font-weight: var(--weight600);
   color: var(--colorCaption);
   text-wrap: balance;
 }
@@ -29,8 +29,8 @@
   display: flex;
   align-items: center;
   overflow-x: scroll;
-  width: 330px;
-  height: 270px;
+  width: 260px;
+  height: 200px;
   padding: 0;
   scroll-snap-type: x mandatory;
   mask-image: url("/images/projectMask.svg");
@@ -39,9 +39,9 @@
 .projectCardImage img {
   scroll-snap-align: center;
   object-fit: cover;
-  min-width: 330px;
-  width: 330px;
-  height: 270px;
+  min-width: 260px;
+  width: 260px;
+  height: 200px;
   background-color: var(--color3);
   filter: blur(6px);
   transition: filter 0.3s ease-in-out;
@@ -59,22 +59,22 @@
 
 .projectCardContent a {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 4px;
+  bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: var(--color3);
   border: none;
-  border-radius: 20px;
+  border-radius: 12px;
   cursor: pointer;
   transition: transform 0.1s ease-in-out;
 }
 
 .projectCardContent a:hover {
-  transform: scale(1.16);
+  transform: scale(1.02);
 }
 
 .projectCardContent a:active {

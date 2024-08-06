@@ -23,8 +23,6 @@
   gap: 0.625rem;
   align-items: center;
   border: none;
-  font-size: var(--text18);
-  font-weight: var(--weight700);
   padding: 0.813rem 1.5rem;
   background-color: var(--color3);
   opacity: var(--opacity50);
@@ -46,6 +44,7 @@
 }
 
 .buttonToggle span {
-  font-size: var(--text18);
+  font-size: var(--text14);
+  font-weight: var(--weight700);
   color: var(--color1);
 }

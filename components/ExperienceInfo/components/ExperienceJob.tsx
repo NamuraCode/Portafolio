@@ -21,8 +21,8 @@ export const ExperienceJob = ({
   return (
     <div className={styles.experienceJob}>
       <div>
-        <h3>{charge[language]}</h3>
-        <h4>{company}</h4>
+        <h3>{company}</h3>
+        <h4>{charge[language]}</h4>
         <p>{time[language]}</p>
       </div>
       <p className={styles.experienceJobDescription}>{description[language]}</p>

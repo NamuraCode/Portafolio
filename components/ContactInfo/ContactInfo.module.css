@@ -10,7 +10,7 @@
 .contactForm button {
   padding: 0.938rem;
   margin-bottom: 1.875rem;
-  font-size: var(--text18);
+  font-size: var(--text14);
   font-weight: var(--weight600);
   border-radius: 0.938rem;
   border: none;
@@ -64,18 +64,37 @@
 }
 
 .contactForm button{
-  background-color: var(--color3);
+  display: flex;
+  gap: 0.4rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  align-self: center;
+  padding: 1rem 1.6rem;
+  font-size: var(--text16);
+  font-weight: var(--weight800);
   color: var(--color1);
+  background-color: var(--color3);
   transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
 .contactForm button:hover{
-  background-color: var(--color1);
   color: var(--color3);
+  background-color: var(--color1);
+
 }
 
+.contactForm button svg{
+  width: 1.5rem;
+  height: 1.1rem;
+}
 
-/* .contactForm input, .contactForm textarea {
-    outline: none;
-    background: var(--color3);
-} */
+.contactForm button svg path{
+  transition: stroke 0.1s ease-in-out;
+}
+
+.contactForm button:hover svg path {
+  stroke: var(--color3) !important;
+}
+

@@ -1,14 +1,19 @@
 .helperTitle{
     display: flex;
     align-items: center;
-    gap: 1.875rem;
+    gap: 1rem;
     flex-direction: row;
     margin-bottom: 5rem;
 }
 
 .helperTitle h2{
-    font-size: var(--text34);
-    font-weight: var(--weight700);
+    font-size: var(--text38);
+    font-weight: var(--weight800);
     text-transform: capitalize;
     color: var(--color3);
 }   
+
+.helperTitle svg {
+    width: 2.5rem;
+    height: auto;
+}

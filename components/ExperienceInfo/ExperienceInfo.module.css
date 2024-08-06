@@ -20,6 +20,7 @@
 .subtitle{
     padding-left: 1.875rem;
     font-size: var(--text14);
+    font-weight: var(--weight800);
 }
 
 .expContentContainer::after{
@@ -38,7 +39,7 @@
 }
 
 .experienceJobDescription{
-    font-size: var(--text18);
+    font-size: var(--text14);
 }
 
 .experienceJob::after{
@@ -58,15 +59,16 @@
 }
 
 .experienceJob div h3, .experienceJob div h4{
-    font-size: var(--text22);
+    font-size: var(--text20);
     font-weight: var(--weight800);
-    padding-bottom: 0.375rem;
     text-wrap: balance;
 }
 
 .experienceJob div p{
     width: 100%;
-    font-size: var(--text14);
+    margin-top: 0.4rem;
+    font-size: var(--text12);
+    font-weight: var(--weight700);
     text-wrap: balance;
 }
 
