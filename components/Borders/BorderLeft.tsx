@@ -1,10 +1,11 @@
 import styles from "./Borders.module.css";
+import globalStyles from "@/styles/Global.module.css";
 
-export const BorderLeft = () => {
+export const BorderLeft = ({ changeColor }: { changeColor: boolean }) => {
   return (
     <div className={styles.borderLeft}>
       <button
-        className={styles.borderLLogo}
+        className={`${styles.borderLLogo} ${changeColor ? globalStyles.fadeIn : ""}`}
         onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}
         name="home"
       >

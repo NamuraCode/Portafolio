@@ -17,3 +17,7 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+.changeColorPoints {
+  border-color: var(--color2) !important;
+}

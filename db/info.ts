@@ -17,12 +17,12 @@ interface projectProps {
 }
 
 export const info = {
-  header: {
-    about: db.navbar.about,
-    experience: db.navbar.experience,
-    projects: db.navbar.projects,
-    contact: db.navbar.contact,
-  },
+  header: [
+    db.navbar[0],
+    db.navbar[1],
+    db.navbar[2],
+    db.navbar[3],
+  ],
   home: {
     welcome: db.home.welcome,
     description: db.home.description,

@@ -5,9 +5,9 @@ export const HomePage = () => {
     <>
       <Background />
       <HomeContent />
+      <About />
       <Experience />
       <Projects />
-      <About />
       <Contact />
     </>
   );

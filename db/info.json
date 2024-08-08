@@ -1,22 +1,22 @@
 {
-    "navbar": {
-        "about": [
+    "navbar": [
+        [
             "sobre mi",
             "about"
         ],
-        "experience": [
+        [
             "experiencia",
             "experience"
         ],
-        "projects": [
+        [
             "proyectos",
             "projects"
         ],
-        "contact": [
+        [
             "contacto",
             "contact"
         ]
-    },
+    ],
     "home": {
         "welcome": [
             "Hola, soy David Naranjo",

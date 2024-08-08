@@ -5,7 +5,7 @@ import styles from "@/styles/Global.module.css";
 export const About = () => {
   const { title } = info.aboutMe;
   return (
-    <section id="about" className={styles.sections}>
+    <section id="about" className={`${styles.sections} ${styles.about}`}>
       <HelperTitle title={title}>
         <svg
           width="53"

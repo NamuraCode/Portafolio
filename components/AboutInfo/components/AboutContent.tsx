@@ -8,5 +8,21 @@ interface AboutContentProps {
 
 export const AboutContent = ({ text }: AboutContentProps) => {
   const { language } = useGlobal();
-  return <p className={styles.aboutContent}>{text[language]}</p>;
+  return (
+    <div className={styles.aboutContent}>
+      <div>
+        <p>{text[language]}</p>
+      </div>
+      <hr />
+      <div>
+        <h3>My favorite moments</h3>
+        {/* <p>{text[language]}</p> */}
+      </div>
+      <hr />
+      <div>
+        <h3>Hobbies</h3>
+        {/* <p>{text[language]}</p> */}
+      </div>
+    </div>
+  );
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { BorderLeft, BorderRight, Navbar, NavbarPoints } from "@/components";
 
 import gsap from "gsap";
@@ -13,28 +13,33 @@ import styles from "./Header.module.css";
 
 export const Header = () => {
   const headerRef = useRef<HTMLDivElement>(null);
+  const [navDiff, setNavDiff] = useState(false);
   useGSAP(() => {
-    gsap.to(
-      headerRef.current,
-      {
+    gsap.fromTo(
+      headerRef.current,{
+        position: "absolute",
+      },
+      {        
         position: "fixed",
-        opacity: 1,
         scrollTrigger: {
-          trigger: "#experience",
-          start: "0%",
-          end: "1%",
+          trigger: "#about",
+          start: "-1%",
+          end: "-1%",
           markers: true,
           scrub: true,
+          onUpdate: (self) => {
+            setNavDiff(self.progress > 0);
+          }
         },
       }
     );
   }, {});
   return (
     <header ref={headerRef} className={styles.header}>
-      <BorderLeft />
-      <Navbar />
-      <BorderRight />
-      <NavbarPoints />
+      <BorderLeft changeColor={navDiff} />
+      <Navbar changeColor={navDiff} />
+      <BorderRight changeColor={navDiff} />
+      <NavbarPoints changeColor={navDiff} />
     </header>
   );
 };

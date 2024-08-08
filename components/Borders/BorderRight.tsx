@@ -5,8 +5,9 @@ import { useState } from "react";
 import { useGlobal } from "@/store";
 
 import styles from "./Borders.module.css";
+import globalStyle from "@/styles/Global.module.css";
 
-export const BorderRight = () => {
+export const BorderRight = ({ changeColor }: { changeColor: boolean }) => {
   const [language, setLanguageButton] = useState(true);
   const { setLanguage } = useGlobal();
 
@@ -18,13 +19,13 @@ export const BorderRight = () => {
   return (
     <div className={styles.borderRight}>
       <button
-        className={styles.borderRLanguage}
+        className={`${styles.borderRLanguage} ${changeColor ? globalStyle.fadeIn : ""}`}
         onClick={setLanguageState}
         name="language"
       >
         {language ? "ES" : "EN"}
       </button>
-      <button className={styles.borderRTheme} name="theme">
+      <button className={`${styles.borderRTheme} ${changeColor ? globalStyle.fadeIn : ""}`} name="theme">
         <svg
           width="16"
           height="17"

@@ -9,7 +9,7 @@ export const HomeContact = () => {
   const { header } = info;
   return (
     <Link href="#contact" className={styles.HomeContent} aria-label="contact">
-      <span>{header.contact[language]}</span>
+      <span>{header[header.length - 1][language]}</span>
     </Link>
   );
 };
