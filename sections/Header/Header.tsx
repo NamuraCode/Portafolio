@@ -25,7 +25,6 @@ export const Header = () => {
           trigger: "#about",
           start: "-1%",
           end: "-1%",
-          markers: true,
           scrub: true,
           onUpdate: (self) => {
             setNavDiff(self.progress > 0);
