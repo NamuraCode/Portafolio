@@ -1,5 +1,5 @@
 import db from "./info.json";
-import { Contact } from '../sections/Contact/Contact';
+import { Contact } from "../sections/Contact/Contact";
 
 interface jobProps {
   charge: string[];
@@ -17,12 +17,7 @@ interface projectProps {
 }
 
 export const info = {
-  header: [
-    db.navbar[0],
-    db.navbar[1],
-    db.navbar[2],
-    db.navbar[3],
-  ],
+  header: [db.navbar[0], db.navbar[1], db.navbar[2], db.navbar[3]],
   home: {
     welcome: db.home.welcome,
     description: db.home.description,
@@ -71,6 +66,7 @@ export const info = {
     description: db.aboutMe.content,
   },
   contact: {
-    title: db.contact.title
+    title: db.contact.title,
   },
+  profileImages: db.profileImages,
 };
