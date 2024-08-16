@@ -1,0 +1,44 @@
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* widht: 51.19px */
+.animLoader{
+    animation: rotate 2s ease-in-out 2;
+}
+
+.hiddenLoader{
+    animation: goTop 1s ease-in-out both;
+    animation-delay: 2s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes goTop {
+    0% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        width: 95px;
+        height: 95px;
+        border-bottom-right-radius: 100%;
+        background-color: rgba(0, 0, 0, 0.678);
+    }
+}
