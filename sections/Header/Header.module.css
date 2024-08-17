@@ -2,7 +2,7 @@
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    width: calc(100vw - 16px);
+    width: calc(100vw - 8px);
     pointer-events: none;
     z-index: 3;
 }
