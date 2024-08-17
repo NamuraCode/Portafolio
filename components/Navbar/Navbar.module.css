@@ -23,6 +23,7 @@
     font-weight: var(--weight600);
     color: var(--color1);
     transition: color 1s ease;
+    pointer-events: all;
 }
 
 .changeColor{

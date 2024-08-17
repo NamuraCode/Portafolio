@@ -22,6 +22,7 @@
   border: none;
   border-radius: 60px;
   cursor: pointer;
+  pointer-events: all;
   z-index: 10;
 }
 
@@ -41,6 +42,7 @@
   background-color: var(--color3);
   border: none;
   cursor: pointer;
+  pointer-events: all;
   z-index: 10;
 }
 
@@ -63,6 +65,7 @@
   box-shadow: inset 0px 0px 10px -2px rgba(0,0,0,1);
   background-color: var(--color1);
   cursor: pointer;
+  pointer-events: all;
   z-index: 10;
 }
 

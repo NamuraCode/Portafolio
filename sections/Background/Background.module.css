@@ -9,7 +9,7 @@
   position: absolute;
   width: 111px;
   height: 111px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .bgBorderUpRight{
@@ -24,7 +24,7 @@
   width: calc(50% - 116px);
   height: 57px;
   background: var(--color1);
-  z-index: 1;
+  z-index: 2;
 }
 
 .bgBorderRight{

@@ -7,7 +7,29 @@
   width: 100%;
 }
 
+.canvas div {
+  z-index: 1;
+}
+
 .canvasBorder {
-    border-radius: 28px;
-    overflow: hidden;
+  border-radius: 28px;
+  overflow: hidden;
+  /* z-index: 2; */
+}
+
+.textBg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 5%;
+  font-size: var(--text600);
+  font-weight: var(--weight600);
+  font-family: "Alumni Sans", sans-serif;
+  color: var(--color1);
+  opacity: 0.2;
+  text-align: center;
+  letter-spacing: -2rem;
+  line-height: 24rem;
+  pointer-events: none;
+  z-index: 0;
 }

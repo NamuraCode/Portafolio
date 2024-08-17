@@ -10,6 +10,7 @@ export const LoaderLogo = () => {
   useEffect(() => {
     setTimeout(() => {
       setDisabled(true);
+      window.scrollTo({ top: 0, behavior: "instant" });
     }, 4000);
   }, []);
 
@@ -17,7 +18,7 @@ export const LoaderLogo = () => {
     <section className={`${styles.loader} ${disabled && styles.hiddenLoader}`}>
       <svg
         // className={`${styles.animLoader} ${disabled && styles.hiddenAnim}`}
-        className={`${styles.animLoader}`}
+        className={`${styles.animLoader} ${disabled && styles.hiddenAnim}`}
         width="136"
         height="137"
         viewBox="0 0 136 137"

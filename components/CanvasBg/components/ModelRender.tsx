@@ -11,7 +11,7 @@ export const ModelRender = () => {
   useFrame((state) => {
     if (!groupRef.current) return;
 
-    groupRef.current.rotation.x = state.clock.getElapsedTime() / 2;
+    // groupRef.current.rotation.x = state.clock.getElapsedTime() / 2;
   });
   return (
     <group ref={groupRef} rotation={[Math.PI / 2, 0, 0]} position={[0, 0, 0]}>

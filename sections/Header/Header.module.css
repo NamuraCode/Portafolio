@@ -3,5 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     width: calc(100vw - 16px);
-    z-index: 2;
+    pointer-events: none;
+    z-index: 3;
 }
