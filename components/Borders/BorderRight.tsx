@@ -1,15 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 import { useGlobal } from "@/store";
 
 import styles from "./Borders.module.css";
 import globalStyle from "@/styles/Global.module.css";
 
+type Theme = "light" | "dark";
+
 export const BorderRight = ({ changeColor }: { changeColor: boolean }) => {
   const [language, setLanguageButton] = useState(true);
+  const [theme, setTheme] = useState<Theme>("dark");
   const { setLanguage } = useGlobal();
+
+  const setThemeState = (e: ChangeEvent<HTMLInputElement>) => {
+    if (!e.target) return;
+    setTheme(e.currentTarget.checked ? 'dark' : 'light')
+    return document.body.setAttribute('data-theme', e.currentTarget.checked ? 'dark' : 'light')
+  };
 
   const setLanguageState = () => {
     setLanguageButton(!language);
@@ -19,13 +28,19 @@ export const BorderRight = ({ changeColor }: { changeColor: boolean }) => {
   return (
     <div className={styles.borderRight}>
       <button
-        className={`${styles.borderRLanguage} ${changeColor ? globalStyle.fadeIn : ""}`}
+        className={`${styles.borderRLanguage} ${
+          changeColor ? globalStyle.fadeIn : ""
+        }`}
         onClick={setLanguageState}
         name="language"
       >
         {language ? "ES" : "EN"}
       </button>
-      <button className={`${styles.borderRTheme} ${changeColor ? globalStyle.fadeIn : ""}`} name="theme">
+      <label
+        className={`${styles.borderRTheme} ${
+          changeColor ? globalStyle.fadeIn : ""
+        }`}
+      >
         <svg
           width="16"
           height="17"
@@ -115,7 +130,14 @@ export const BorderRight = ({ changeColor }: { changeColor: boolean }) => {
             fill="#363639"
           />
         </svg>
-      </button>
+        <input
+          type="checkbox"
+          defaultChecked={theme === "light"}
+          onChange={(e) => {
+            setThemeState(e);
+          }}
+        />
+      </label>
     </div>
   );
 };

@@ -12,7 +12,7 @@ export const ProviderLayout = ({
       <head>
         <link rel="icon" href="./images/namurasLogo.svg" sizes="any"/>
       </head>
-      <body id="home" data-theme="dark">
+      <body id="home" data-theme="light">
         <GlobalProvider>
             <Header />
             {children}
