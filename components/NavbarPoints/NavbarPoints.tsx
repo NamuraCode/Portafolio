@@ -8,7 +8,16 @@ export const NavbarPoints = ({ changeColor }: { changeColor: boolean }) => {
   return (
     <div className={` ${styles.navbarPoints}`}>
       {links.map((link) => (
-        <Link className={changeColor ? `${styles.changeColorPoints} ${globalStyles.fadeIn}` : ""} key={`link${link}`} href={`#${link}`} aria-label={link}></Link>
+        <Link
+          className={
+            changeColor
+              ? `${styles.changeColorPoints} ${globalStyles.fadeIn}`
+              : ""
+          }
+          key={`link${link}`}
+          href={`#${link}`}
+          aria-label={link}
+        ></Link>
       ))}
     </div>
   );
