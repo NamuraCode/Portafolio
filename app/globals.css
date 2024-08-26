@@ -82,6 +82,7 @@
 
 html,
 body {
+  --color1: #fafafa;
   max-width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;

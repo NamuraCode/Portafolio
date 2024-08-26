@@ -6,6 +6,7 @@ import { Canvas } from "@react-three/fiber";
 import styles from "./CanvasBg.module.css";
 import { ModelRender } from "./components/ModelRender";
 import { TextBg } from "./components";
+import { Effects } from "./components";
 
 interface Props {
   colorBg?: string;
@@ -18,10 +19,11 @@ export const CanvasBg = ({ colorBg = "#060602", hasBorder, hasBg }: Props) => {
     <div className={`${styles.canvas} ${hasBorder && styles.canvasBorder}`}>
       <Canvas camera={{ position: [0, 0, 5] }}>
         <ambientLight intensity={1} />
-        <directionalLight position={[0, 0, 1]} intensity={100} color={"red"} />
+        <directionalLight position={[0, 0, 1]} intensity={1} color={"white"} />
         {hasBg && <color attach="background" args={[`${colorBg}`]} />}
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enableZoom={false} enablePan={false} />
         <ModelRender />
+        <Effects />
       </Canvas>
       <TextBg />
     </div>
