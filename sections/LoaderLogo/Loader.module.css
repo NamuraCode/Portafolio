@@ -59,7 +59,7 @@
   }
 }
 
-@keyframes goTopLogo {
+/* @keyframes goTopLogo {
   0% {
     top: 42.2%;
     left: 46%;
@@ -70,7 +70,7 @@
     width: 51.19px;
     height: 51.19px;
   }
-}
+} */
 
 @keyframes hiddenAnimLoader {
   0% {

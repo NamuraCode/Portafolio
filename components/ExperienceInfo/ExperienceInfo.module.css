@@ -61,6 +61,7 @@
 .experienceJob div h3, .experienceJob div h4{
     font-size: var(--text20);
     font-weight: var(--weight800);
+    color: var(--color3);
     text-wrap: balance;
 }
 

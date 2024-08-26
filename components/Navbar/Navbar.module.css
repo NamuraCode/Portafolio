@@ -1,52 +1,91 @@
 .navbar {
-    position: relative;
-    display: flex;
-    width: calc(100% - 18px);
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    padding: 2.25rem;
+  position: relative;
+  display: flex;
+  width: calc(100% - 18px);
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 2.25rem;
 }
 
-.navbar ul{
-    display: flex;
-    height: 100%;
-    width: auto;
-    gap: 4.063rem;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
+.navbar ul {
+  display: flex;
+  height: 100%;
+  width: auto;
+  gap: 4.063rem;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar ul li{
-    font-size: var(--text14);
-    font-weight: var(--weight600);
-    color: var(--color1);
-    transition: color 1s ease;
-    pointer-events: all;
+.navbar ul li {
+  font-size: var(--text14);
+  font-weight: var(--weight600);
+  color: var(--color1);
+  transition: color 1s ease;
+  pointer-events: all;
 }
 
-.changeColor{
-    font-weight: var(--weight700) !important;
-    color: var(--color3) !important;
+.navbar ul li:hover {
+  opacity: 1;
 }
 
-.navbar ul li:hover{
-    opacity: 1;
+.navbar ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 2;
 }
 
-.navbar::before{ 
-    content: "";
-    position: absolute;
-    top: -100%;
-    left: -8px;
-    width: calc(100% + 16px);
-    height: 100%;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, var(--color1) 90%);
-    transition: top 0.2s ease;
-    z-index: -1;
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -8px;
+  width: calc(100% + 16px);
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--color1) 100%
+  );
+  transition: top 0.2s ease;
+  backdrop-filter: blur(16px);
+  mask: linear-gradient(180deg, black, transparent);
+  pointer-events: all;
+  z-index: -1;
 }
 
-.navChange::before{ 
-    top: -8px !important;
+.navChange::before {
+  top: -8px !important;
+}
+
+.changeColor {
+  font-weight: var(--weight700) !important;
+  color: var(--color3) !important;
+}
+
+.navbar ul li a::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 40px);
+  height: calc(100% + 30px);
+  border-radius: 20px;
+  background-color: var(--color1);
+  background-blend-mode: color;
+  opacity: 0;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.navbar ul li a:hover::before {
+  opacity: 0.2;
+}
+
+.changeColor a:hover::before {
+  background-color: var(--color2);
+  opacity: 0.2;
 }

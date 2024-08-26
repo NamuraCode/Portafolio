@@ -4,8 +4,8 @@ import { ChangeEvent, useState } from "react";
 
 import { useGlobal } from "@/store";
 
-import styles from "./Borders.module.css";
 import globalStyle from "@/styles/Global.module.css";
+import styles from "./Borders.module.css";
 
 type Theme = "light" | "dark";
 
@@ -16,8 +16,11 @@ export const BorderRight = ({ changeColor }: { changeColor: boolean }) => {
 
   const setThemeState = (e: ChangeEvent<HTMLInputElement>) => {
     if (!e.target) return;
-    setTheme(e.currentTarget.checked ? 'dark' : 'light')
-    return document.body.setAttribute('data-theme', e.currentTarget.checked ? 'dark' : 'light')
+    setTheme(e.currentTarget.checked ? "dark" : "light");
+    return document.body.setAttribute(
+      "data-theme",
+      e.currentTarget.checked ? "dark" : "light"
+    );
   };
 
   const setLanguageState = () => {
@@ -49,6 +52,7 @@ export const BorderRight = ({ changeColor }: { changeColor: boolean }) => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <rect
+            style={{ fill: "var(--color3)" }}
             x="11.8682"
             y="11.9115"
             width="7.73585"

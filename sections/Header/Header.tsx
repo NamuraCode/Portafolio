@@ -38,7 +38,7 @@ export const Header = () => {
       <BorderLeft changeColor={navDiff} />
       <Navbar changeColor={navDiff} />
       <BorderRight changeColor={navDiff} />
-      <NavbarPoints changeColor={navDiff} />
+      {/* <NavbarPoints changeColor={navDiff} /> */}
     </header>
   );
 };

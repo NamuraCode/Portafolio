@@ -67,6 +67,17 @@ export const info = {
   },
   contact: {
     title: db.contact.title,
+    label: {
+      name: db.contact.label.name,
+      email: db.contact.label.email,
+      service: {
+        title: db.contact.label.service.title,
+        dev: db.contact.label.service.dev,
+        art: db.contact.label.service.art,
+      },
+      message: db.contact.label.message,
+      send: db.contact.label.send,
+    },
   },
   profileImages: db.profileImages,
 };

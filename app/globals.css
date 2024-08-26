@@ -5,14 +5,13 @@
   --color1: #363639;
   --color2: #060602;
   --color3: #fafafa;
-  --colorCaption: #545454;
-  --colorBtn: rgb(54, 54, 57, 0.5);
+  --colorCaption: #cccccc;
   --color1Glass: #d9d9d9;
-  --buttonBg1: #fafafa33;
+  --colorBtn: rgba(177, 177, 185, 0.5);
   --gradient1: radial-gradient(
     circle,
-    rgba(250, 250, 250, 0.8) 0%,
-    rgb(250, 250, 250) 100%
+    rgba(185, 185, 194, 0.8) 0%,
+    var(--color3) 100%
   );
   --gradient2: linear-gradient(
     0deg,
@@ -42,6 +41,7 @@
   );
 
   /* text size */
+  --text10: 0.625rem;
   --text12: 0.75rem;
   --text14: 0.875rem;
   --text18: 1.125rem;

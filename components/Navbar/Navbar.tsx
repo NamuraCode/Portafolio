@@ -1,8 +1,9 @@
 "use client";
+
 import Link from "next/link";
 
-import { useGlobal } from "@/store";
 import { info } from "@/db/info";
+import { useGlobal } from "@/store";
 
 import styles from "./Navbar.module.css";
 
@@ -20,26 +21,6 @@ export const Navbar = ({ changeColor }: { changeColor: boolean }) => {
           </Link>
         </li>
         ))}
-        {/* <li className={changeColor ? styles.changeColor : ""}>
-          <Link href="#about" aria-label="about">
-            {header.about[language]}
-          </Link>
-        </li>
-        <li className={changeColor ? styles.changeColor : ""}>
-          <Link href="#experience" aria-label="experience">
-            {header.experience[language]}
-          </Link>
-        </li>
-        <li className={changeColor ? styles.changeColor : ""}>
-          <Link href="#projects" aria-label="projects">
-            {header.projects[language]}
-          </Link>
-        </li>
-        <li className={changeColor ? styles.changeColor : ""}>
-          <Link href="#contact" aria-label="contact">
-            {header.contact[language]}
-          </Link>
-        </li> */}
       </ul>
     </nav>
   );

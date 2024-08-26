@@ -2,6 +2,7 @@
     position: absolute;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: calc(100vw - 8px);
     pointer-events: none;
     z-index: 3;
