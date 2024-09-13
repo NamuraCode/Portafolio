@@ -69,7 +69,6 @@
   background-color: var(--color3);
   border: none;
   border-radius: 12px;
-  cursor: pointer;
   transition: transform 0.1s ease-in-out;
 }
 

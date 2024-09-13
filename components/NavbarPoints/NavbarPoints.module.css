@@ -16,7 +16,6 @@
   border: 1px solid var(--color1);
   background-color: transparent;
   pointer-events: all;
-  cursor: pointer;
 }
 
 .changeColorPoints {

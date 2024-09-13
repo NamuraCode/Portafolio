@@ -21,7 +21,6 @@
   background-color: transparent;
   border: none;
   border-radius: 60px;
-  cursor: pointer;
   pointer-events: all;
   z-index: 10;
 }
@@ -41,7 +40,6 @@
   color: var(--color1);
   background-color: var(--color3);
   border: none;
-  cursor: pointer;
   pointer-events: all;
   z-index: 10;
 }
@@ -64,7 +62,6 @@
   border: none;
   box-shadow: 0px 0px 6px -2px var(--color3);
   background-color: var(--color1);
-  cursor: pointer;
   pointer-events: all;
   z-index: 10;
 }

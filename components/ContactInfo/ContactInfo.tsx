@@ -2,18 +2,23 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+import { info } from "@/db/info";
+
 import styles from "./ContactInfo.module.css";
 import global from "@/styles/Global.module.css";
+import { useGlobal } from "@/store";
 
 export const ContactInfo = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [active, setActive] = useState<boolean>(true);
+  const { language } = useGlobal();
+  const { contact } = info
   const formRef = useRef<HTMLFormElement>(null);
+
   function handleSubmit(evt: React.FormEvent<HTMLFormElement>) {
     evt.preventDefault();
-
     const server = process.env.NEXT_PUBLIC_KEY_SERVER!;
     const template = process.env.NEXT_PUBLIC_KEY_TEMPLATE!;
     const keyPublic = process.env.NEXT_PUBLIC_KEY_PUBLIC!;
@@ -33,9 +38,10 @@ export const ContactInfo = () => {
         formRef.current?.reset();
       });
   }
+
   return (
     <form ref={formRef} className={styles.contactForm} onSubmit={handleSubmit}>
-      <label htmlFor="name">name</label>
+      <label htmlFor="name">{contact.label.name[language]}</label>
       <input
         id="name"
         type="text"
@@ -43,7 +49,7 @@ export const ContactInfo = () => {
         required
         onChange={(e) => setName(e.target.value)}
       />
-      <label htmlFor="email">email</label>
+      <label htmlFor="email">{contact.label.email[language]}</label>
       <input
         id="email"
         type="email"
@@ -52,7 +58,7 @@ export const ContactInfo = () => {
         onChange={(e) => setEmail(e.target.value)}
       />
       <fieldset className={styles.formSelect}>
-        <legend onClick={() => setActive(!active)}>Services</legend>
+        <legend onClick={() => setActive(!active)}>{contact.label.service.title[language]}</legend>
         <div className={global.containerToggle}>
           <label
             className={`${global.buttonToggle} ${
@@ -73,7 +79,7 @@ export const ContactInfo = () => {
                 fill="#F8F8F8"
               />
             </svg>
-            <span>Development</span>
+            <span>{contact.label.service.dev[language]}</span>
           </label>
           <label
             className={`${global.buttonToggle} ${
@@ -94,11 +100,11 @@ export const ContactInfo = () => {
                 fill="#F8F8F8"
               />
             </svg>
-            <span>Art</span>
+            <span>{contact.label.service.art[language]}</span>
           </label>
         </div>
       </fieldset>
-      <label htmlFor="message">message</label>
+      <label htmlFor="message">{contact.label.message[language]}</label>
       <textarea
         placeholder="Message"
         name="message"
@@ -122,7 +128,7 @@ export const ContactInfo = () => {
             strokeWidth="3"
           />
         </svg>
-        <span>Send</span>
+        <span>{contact.label.send[language]}</span>
       </button>
     </form>
   );
