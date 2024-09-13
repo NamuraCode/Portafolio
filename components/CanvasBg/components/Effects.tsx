@@ -46,4 +46,6 @@ export function Effects() {
     gl.autoClear = true;
     composer.render(delta);
   }, 1);
+
+  return <></>;
 }
