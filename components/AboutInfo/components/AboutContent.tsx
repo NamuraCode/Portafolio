@@ -1,21 +1,22 @@
 "use client";
+
 import { useGlobal } from "@/store";
+import { info } from "@/db/info";
+
 import styles from "../AboutInfo.module.css";
 
-interface AboutContentProps {
-  text: string[];
-}
-
-export const AboutContent = ({ text }: AboutContentProps) => {
+export const AboutContent = () => {
   const { language } = useGlobal();
+  const { description } = info.aboutMe;
+
   return (
     <div className={styles.aboutContent}>
       <div>
-        <p>{text[language]}</p>
+        <p>{description[language]}</p>
       </div>
       <hr />
       <div>
-        <h3>My favorite moments</h3>
+        <h3>{}</h3>
         {/* <p>{text[language]}</p> */}
       </div>
       <hr />
