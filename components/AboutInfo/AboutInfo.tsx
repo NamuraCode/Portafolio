@@ -7,7 +7,7 @@ export const AboutInfo = () => {
   const { description } = info.aboutMe;
   return (
     <div className={styles.aboutInfo}>
-      <AboutContent text={description} />
+      <AboutContent />
       <AboutImages />
     </div>
   );
