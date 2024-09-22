@@ -17,7 +17,7 @@ export const HomePage = () => {
       <Experience />
       <Projects />
       <Contact />
-      {/* <LoaderLogo /> */}
+      <LoaderLogo />
     </>
   );
 };

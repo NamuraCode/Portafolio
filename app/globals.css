@@ -71,6 +71,9 @@
   --weight700: 700;
   --weight800: 800;
   --weight900: 900;
+
+   /* border radius */
+  --borderRadiusCustom: .516rem;
 }
 
 * {

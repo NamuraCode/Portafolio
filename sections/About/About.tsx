@@ -1,5 +1,6 @@
 import { info } from "@/db/info";
-import { AboutInfo, HelperTitle } from "@/components";
+import { AboutInfo } from "@/components";
+import { HelperTitle } from "@/helpers";
 import styles from "@/styles/Global.module.css";
 
 export const About = () => {

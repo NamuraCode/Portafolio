@@ -27,11 +27,11 @@
   gap: 0.625rem;
   align-items: center;
   border: none;
-  padding: 0.813rem 1.5rem;
+  padding: 0.813rem 1rem;
   background-color: var(--color3);
   opacity: var(--opacity50);
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: var(--borderRadiusCustom);
+  border-bottom-left-radius: var(--borderRadiusCustom);
   transition: opacity 0.1s ease;
 }
 
@@ -42,8 +42,8 @@
 .buttonToggle:last-child {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: var(--borderRadiusCustom);
+  border-bottom-right-radius: var(--borderRadiusCustom);
 }
 
 .buttonToggle span {

@@ -1,24 +1,16 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+
+import { useProgress } from "@react-three/drei";
 
 import styles from "./Loader.module.css";
 
 export const LoaderLogo = () => {
-  const [disabled, setDisabled] = useState(false);
-  const loaderRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setDisabled(true);
-      window.scrollTo({ top: 0, behavior: "instant" });
-    }, 4000);
-  }, []);
+  const { progress } = useProgress();
 
   return (
-    <section className={`${styles.loader} ${disabled && styles.hiddenLoader}`}>
+    <section className={`${styles.loader} ${progress == 100 && styles.hiddenLoader}`}>
       <svg
-        // className={`${styles.animLoader} ${disabled && styles.hiddenAnim}`}
-        className={`${styles.animLoader} ${disabled && styles.hiddenAnim}`}
+        className={`${styles.animLoader}`}
         width="136"
         height="137"
         viewBox="0 0 136 137"
@@ -42,7 +34,6 @@ export const LoaderLogo = () => {
           strokeWidth="8"
         />
       </svg>
-      {/* <h3>{loaded}</h3> */}
     </section>
   );
 };

@@ -23,14 +23,14 @@
   animation: rotate 2s ease-in-out 2;
 }
 
-.hiddenAnim {
+/* .hiddenAnim {
   position: absolute;
   animation: goTopLogo 1s ease-in-out both;
-}
+} */
 
 .hiddenLoader {
   animation: hiddenAnimLoader 0.2s ease-in-out both;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
 }
 
 @keyframes rotate {

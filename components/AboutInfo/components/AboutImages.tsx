@@ -8,9 +8,9 @@ export const AboutImages = () => {
   const images = info.profileImages;
   return (
     <div className={styles.aboutImagesContainer}>
-      <button className={styles.ImgBtnPrev} data-snap-slider-goto="prev">
+      {/* <button className={styles.ImgBtnPrev} data-snap-slider-goto="prev">
         &larr;
-      </button>
+      </button> */}
       <div className={styles.aboutImages}>
         {images.map((path, index) => (
           <Image
@@ -23,9 +23,9 @@ export const AboutImages = () => {
           />
         ))}
       </div>
-      <button className={styles.ImgBtnNext} data-snap-slider-goto="next">
+      {/* <button className={styles.ImgBtnNext} data-snap-slider-goto="next">
         &rarr;
-      </button>
+      </button> */}
     </div>
   );
 };
