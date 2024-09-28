@@ -1,0 +1,116 @@
+{
+    "imagesAbout": [
+        {
+            "src": "/images/profile/1.jpg",
+            "alt": "myself-photo"
+        },
+        {
+            "src": "/images/profile/2.jpg",
+            "alt": "myself-photo"
+        },
+        {
+            "src": "/images/profile/3.jpg",
+            "alt": "model"
+        },
+        {
+            "src": "/images/profile/4.jpg",
+            "alt": "myself-photo"
+        },
+        {
+            "src": "/images/profile/5.jpg",
+            "alt": "model"
+        },
+        {
+            "src": "/images/profile/6.jpg",
+            "alt": "model"
+        },
+        {
+            "src": "/images/profile/7.jpg",
+            "alt": "model"
+        },
+        {
+            "src": "/images/profile/8.jpg",
+            "alt": "myself-photo"
+        }
+    ],
+    "imagesProject": [
+        {
+            "title": [
+                "Makata Studio pagina web",
+                "Makata Studio landing page"
+            ],
+            "image": [
+                "/images/placeholder2.jpg",
+                "/images/placeholder.jpg",
+                "/images/placeholder2.jpg"
+            ],
+            "url": "https://portafolio-ten-wine.vercel.app/",
+            "type": "dev"
+        },
+        {
+            "title": [
+                "Ilustración digital de mis hobbies",
+                "Ilustration of my and my hobbies"
+            ],
+            "image": [
+                "/images/projects/namura4.jpg",
+                "/images/projects/namura3.jpg",
+                "/images/projects/namura2.jpg",
+                "/images/projects/namura1.jpg"
+            ],
+            "url": "https://www.artstation.com/artwork/q9yZZN",
+            "type": "art"
+        },
+        {
+            "title": [
+                "Modelo jaguar para cortometraje",
+                "Model jaguar for cutscene"
+            ],
+            "image": [
+                "/images/projects/junior2.jpg",
+                "/images/projects/junior1.jpg"
+            ],
+            "url": "https://www.artstation.com/artwork/nQeLor",
+            "type": "art"
+        },
+        {
+            "title": [
+                "Makata Studio pagina web",
+                "Makata Studio landing page"
+            ],
+            "image": [
+                "/images/placeholder.jpg",
+                "/images/placeholder2.jpg",
+                "/images/placeholder.jpg"
+            ],
+            "url": "https://portafolio-ten-wine.vercel.app/",
+            "type": "dev"
+        },
+        {
+            "title": [
+                "Makata Studio pagina web",
+                "Makata Studio landing page"
+            ],
+            "image": [
+                "/images/placeholder2.jpg",
+                "/images/placeholder.jpg",
+                "/images/placeholder2.jpg"
+            ],
+            "url": "https://portafolio-ten-wine.vercel.app/",
+            "type": "dev"
+        },
+        {
+            "title": [
+                "Makata Studio pagina web",
+                "Makata Studio landing page"
+            ],
+            "image": [
+                "/images/placeholder2.jpg",
+                "/images/placeholder.jpg",
+                "/images/placeholder2.jpg"
+            ],
+            "url": "https://portafolio-ten-wine.vercel.app/",
+            "type": "dev"
+        }
+    ]
+}

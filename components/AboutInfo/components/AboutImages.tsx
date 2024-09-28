@@ -1,31 +1,26 @@
 import React from "react";
 import Image from "next/image";
 
-import { info } from "@/db/info";
+import { infoImages } from "@/db/info";
 import styles from "../AboutInfo.module.css";
 
 export const AboutImages = () => {
-  const images = info.profileImages;
+  const images = infoImages.imagesAbout;
+  
   return (
     <div className={styles.aboutImagesContainer}>
-      <button className={styles.ImgBtnPrev} data-snap-slider-goto="prev">
-        &larr;
-      </button>
       <div className={styles.aboutImages}>
         {images.map((path, index) => (
           <Image
             key={index}
-            src={path}
-            alt={`David-Naranjo${index}`}
+            src={path.src}
+            alt={`${path.alt}${index}`}
             width={1080}
             height={1920}
             loading="lazy"
           />
         ))}
       </div>
-      <button className={styles.ImgBtnNext} data-snap-slider-goto="next">
-        &rarr;
-      </button>
     </div>
   );
 };

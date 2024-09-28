@@ -12,7 +12,7 @@
   margin-bottom: 1.875rem;
   font-size: var(--text14);
   font-weight: var(--weight600);
-  border-radius: 0.938rem;
+  border-radius: var(--borderRadiusCustom);
   border: none;
   background-color: var(--colorBtn);
   color: var(--color1);

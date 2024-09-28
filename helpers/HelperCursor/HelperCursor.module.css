@@ -7,8 +7,13 @@
   -webkit-box-shadow: 0px 0px 0px 1px var(--color1);
   -moz-box-shadow: 0px 0px 0px 1px var(--color1);
   box-shadow: 0px 0px 0px 1px var(--color1);
-  transition: left 0s ease-in-out, top 0s ease-in-out;
   mix-blend-mode: difference;
   background-color: var(--color1);
   z-index: 10;
+  transition: left 0s ease-in-out, top 0s ease-in-out, mix-blend-mode 0.2s ease, box-shadow 0.2s ease, width 0.2s ease, height 0.2s ease;
+}
+
+.cursorHover {
+  width: 60px;
+  height: 60px;
 }
