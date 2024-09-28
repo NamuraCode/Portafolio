@@ -1,5 +1,5 @@
 import db from "./info.json";
-import { Contact } from "../sections/Contact/Contact";
+import dbImages from "./images.json";
 
 interface jobProps {
   charge: string[];
@@ -48,18 +48,6 @@ export const info = {
       dev: db.project.toggle.dev,
       art: db.project.toggle.art,
     },
-    projects: () => {
-      const projects: projectProps[] = [];
-      db.project.projects.map((project) => {
-        projects.push({
-          title: project.title,
-          image: project.image,
-          url: project.url,
-          type: project.type,
-        });
-      });
-      return projects;
-    },
   },
   aboutMe: {
     title: db.aboutMe.title,
@@ -80,4 +68,35 @@ export const info = {
     },
   },
   profileImages: db.profileImages,
+};
+
+interface imagesProps {
+  imagesAbout: {
+    src: string;
+    alt: string;
+  }[];
+  imagesProject: {
+    title: string[];
+    image: string[];
+    url: string;
+    type: string;
+  }[];
+}
+
+export const infoImages: imagesProps = {
+  imagesAbout: dbImages.imagesAbout.map((item) => {
+    return {
+      src: item.src,
+      alt: item.alt,
+    };
+  }),
+
+  imagesProject: dbImages.imagesProject.map((item) => {
+    return {
+      title: item.title,
+      image: item.image,
+      url: item.url,
+      type: item.type,
+    };
+  }),
 };

@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 
 export enum ProjectType {
   dev = "dev",
-  art = "art"
+  art = "art",
 }
 
 interface GlobalContext {
@@ -11,13 +11,21 @@ interface GlobalContext {
   // project type
   projectType: ProjectType;
   setProjectType: (type: ProjectType) => void;
+  // Cursor hover and text
+  isCursorHover: boolean;
+  cursorText: string;
+  setIsCursorHover: (isHover: boolean, text: string) => void;
 }
 
 const GlobalContext = createContext<GlobalContext | undefined>(undefined);
 
 export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
   const [language, setLanguageState] = useState(1);
-  const [projectType, setProjectTypeState] = useState<ProjectType>(ProjectType.dev);
+  const [projectType, setProjectTypeState] = useState<ProjectType>(
+    ProjectType.dev
+  );
+  const [isCursorHover, setIshoverToggle] = useState<boolean>(false);
+  const [cursorText, setCursorText] = useState<string>("");
 
   const setLanguage = (index: number) => {
     return setLanguageState(index);
@@ -25,13 +33,20 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
 
   const setProjectType = (type: ProjectType) => {
     return setProjectTypeState(type);
-  }
+  };
+
+  const setIsCursorHover = (isHover: boolean, text: string) => {
+    return setIshoverToggle(isHover), setCursorText(text);
+  };
 
   const value = {
     language,
     setLanguage,
     projectType,
-    setProjectType
+    setProjectType,
+    isCursorHover,
+    cursorText,
+    setIsCursorHover,
   };
 
   return (

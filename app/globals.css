@@ -8,16 +8,12 @@
   --colorCaption: #cccccc;
   --color1Glass: #d9d9d9;
   --colorBtn: rgba(177, 177, 185, 0.5);
-  --gradient1: radial-gradient(
-    circle,
-    rgba(185, 185, 194, 0.8) 0%,
-    var(--color3) 100%
-  );
-  --gradient2: linear-gradient(
-    0deg,
-    rgba(250, 250, 250, 1) 0%,
-    rgba(250, 250, 250, 0) 100%
-  );
+  --gradient1: radial-gradient(circle,
+      rgba(185, 185, 194, 0.8) 0%,
+      var(--color3) 100%);
+  --gradient2: linear-gradient(0deg,
+      rgba(250, 250, 250, 1) 0%,
+      rgba(250, 250, 250, 0) 100%);
 }
 
 :root {
@@ -29,16 +25,12 @@
   --colorBtn: rgb(54, 54, 57, 0.5);
   --color1Glass: #d9d9d9;
   --buttonBg1: #fafafa33;
-  --gradient1: radial-gradient(
-    circle,
-    rgba(52, 52, 55, 0.8) 0%,
-    rgba(52, 52, 55, 1) 100%
-  );
-  --gradient2: linear-gradient(
-    0deg,
-    rgba(250, 250, 250, 1) 0%,
-    rgba(250, 250, 250, 0) 100%
-  );
+  --gradient1: radial-gradient(circle,
+      rgba(52, 52, 55, 0.8) 0%,
+      rgba(52, 52, 55, 1) 100%);
+  --gradient2: linear-gradient(0deg,
+      rgba(250, 250, 250, 1) 0%,
+      rgba(250, 250, 250, 0) 100%);
 
   /* text size */
   --text10: 0.625rem;
@@ -72,7 +64,7 @@
   --weight800: 800;
   --weight900: 900;
 
-   /* border radius */
+  /* border radius */
   --borderRadiusCustom: .516rem;
 }
 
@@ -89,6 +81,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  overscroll-behavior-y: none;
   cursor: none;
 }
 
@@ -107,6 +100,6 @@ a {
   text-decoration: none;
 }
 
-*:hover{
+*:hover {
   cursor: none;
 }

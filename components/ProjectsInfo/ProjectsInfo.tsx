@@ -1,11 +1,11 @@
 "use client";
-import { info } from "@/db/info";
+import { infoImages } from "@/db/info";
 import { ProjectToggle, ProjectCard } from "./components";
 import styles from "./ProjectInfo.module.css";
 import { useGlobal } from "@/store";
 
 export const ProjectsInfo = () => {
-  const projects = info.projects.projects();
+  const projects = infoImages.imagesProject;
   const { projectType } = useGlobal();
 
   return (

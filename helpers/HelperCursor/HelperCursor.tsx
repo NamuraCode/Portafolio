@@ -1,4 +1,5 @@
 "use client";
+import { useGlobal } from "@/store";
 import styles from "./HelperCursor.module.css";
 
 interface HelperCursorProps {
@@ -6,5 +7,13 @@ interface HelperCursorProps {
 }
 
 export const HelperCursor = ({ positions }: HelperCursorProps) => {
-  return <div className={styles.cursor} style={{ left: positions.x - 5, top: positions.y - 5 }}></div>;
+  const { isCursorHover, cursorText } = useGlobal();
+  return (
+    <div
+      className={`${styles.cursor} ${isCursorHover ? styles.cursorHover : ""}`}
+      style={{ left: positions.x - 5, top: positions.y - 5 }}
+    >
+      <span>{cursorText}</span>
+    </div>
+  );
 };
