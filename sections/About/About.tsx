@@ -38,8 +38,10 @@ export const About = () => {
             fill="#363639"
           />
         </svg>
+      {/* ----------------- */}
       </HelperTitle>
       <AboutInfo />
+      {/* ----------------- */}
     </section>
   );
 };
