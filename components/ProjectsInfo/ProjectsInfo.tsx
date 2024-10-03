@@ -1,11 +1,12 @@
 "use client";
-import { infoImages } from "@/db/info";
-import { ProjectToggle, ProjectCard } from "./components";
+import { infoImagesProject } from "@/db/info";
+import { ProjectToggle } from "./components/ProjectToggle";
 import styles from "./ProjectInfo.module.css";
 import { useGlobal } from "@/store";
+import { HelperSlider } from "@/helpers";
 
 export const ProjectsInfo = () => {
-  const projects = infoImages.imagesProject;
+  const projects = infoImagesProject;
   const { projectType } = useGlobal();
 
   return (
@@ -16,11 +17,10 @@ export const ProjectsInfo = () => {
         {projects.map((project, index) => {
           return (
             projectType === project.type && (
-              <ProjectCard
-                key={`projectImg${index}`}
-                images={project.image}
-                text={project.title}
-                url={project.url}
+              <HelperSlider
+                key={`project${project.type.toUpperCase()}Number${index}`}
+                imagePropsProject={project}
+                isProject={true}
               />
             )
           );

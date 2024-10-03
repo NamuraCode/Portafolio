@@ -1,4 +1,7 @@
 "use client";
+
+import { useLayoutEffect } from "react";
+
 import { useGlobal } from "@/store";
 import styles from "./HelperCursor.module.css";
 
@@ -7,13 +10,32 @@ interface HelperCursorProps {
 }
 
 export const HelperCursor = ({ positions }: HelperCursorProps) => {
-  const { isCursorHover, cursorText } = useGlobal();
+  const { isCursorHover, cursorText, setIsCursorHover } = useGlobal();
+
+  // useLayoutEffect(() => {
+  //   window.addEventListener("scroll", (e) => {
+  //     setIsCursorHover(false);
+  //   });
+  //   return () => {
+  //     window.removeEventListener("scroll", () => {});
+  //   };
+  // }, []);
+
   return (
     <div
-      className={`${styles.cursor} ${isCursorHover ? styles.cursorHover : ""}`}
-      style={{ left: positions.x - 5, top: positions.y - 5 }}
+      className={`${styles.cursorContainer}
+        ${isCursorHover ? styles.cursorHover : ""}
+      `}
+      style={{ left: positions.x - 30, top: positions.y - 6 }}
     >
-      <span>{cursorText}</span>
+      <div
+        className={`${styles.cursor} 
+          ${isCursorHover ? styles.cursorBall : ""}
+        `}
+      ></div>
+      <span className={`${styles.cursorText} ${isCursorHover ? styles.showCursorText : ""}`}>
+        {cursorText}
+      </span>
     </div>
   );
 };

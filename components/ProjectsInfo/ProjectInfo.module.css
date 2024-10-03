@@ -8,13 +8,12 @@
   width: 100%;
   height: fit-content;
   place-items: center;
-  gap: 3.75rem;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .projectCard {
   width: min-content;
+  margin-bottom: 2rem;
 }
 
 .projectCard p {
@@ -64,8 +63,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   background-color: var(--color3);
   border: none;
   border-radius: 12px;
@@ -73,9 +72,9 @@
 }
 
 .projectCardContent a:hover {
-  transform: scale(1.02);
+  transform: scale(1.1);
 }
 
 .projectCardContent a:active {
-  transform: scale(1);
+  transform: scale(0.8);
 }
