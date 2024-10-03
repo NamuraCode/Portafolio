@@ -67,7 +67,6 @@ export const info = {
       send: db.contact.label.send,
     },
   },
-  profileImages: db.profileImages,
 };
 
 export interface ImageAboutProps {
