@@ -14,7 +14,7 @@ interface GlobalContext {
   // Cursor hover and text
   isCursorHover: boolean;
   cursorText: string;
-  setIsCursorHover: (isHover: boolean, text: string) => void;
+  setIsCursorHover: (isHover: boolean, text?: string) => void;
 }
 
 const GlobalContext = createContext<GlobalContext | undefined>(undefined);
@@ -35,8 +35,8 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
     return setProjectTypeState(type);
   };
 
-  const setIsCursorHover = (isHover: boolean, text: string) => {
-    return setIshoverToggle(isHover), setCursorText(text);
+  const setIsCursorHover = (isHover: boolean, text?: string) => {
+    return setIshoverToggle(isHover), setCursorText(text || "");
   };
 
   const value = {

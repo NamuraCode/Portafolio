@@ -59,7 +59,7 @@ export const ContactInfo = () => {
       />
       <fieldset className={styles.formSelect}>
         <legend onClick={() => setActive(!active)}>{contact.label.service.title[language]}</legend>
-        <div className={global.containerToggle}>
+        <div className={global.containerToggle} style={{ justifyContent: "left", marginBottom: "1.875rem" }}>
           <label
             className={`${global.buttonToggle} ${
               active && global.activeToggle
