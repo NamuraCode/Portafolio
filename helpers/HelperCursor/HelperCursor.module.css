@@ -15,10 +15,6 @@
   mix-blend-mode: normal;
 }
 
-button:hover  .cursorContainer{
-  transform: scale(2)!important;
-}
-
 .cursorText {
   position: absolute;
   top: -12%;

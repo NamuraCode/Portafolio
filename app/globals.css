@@ -31,6 +31,7 @@
   --gradient2: linear-gradient(0deg,
       rgba(250, 250, 250, 1) 0%,
       rgba(250, 250, 250, 0) 100%);
+  --colorHeader: #696969;
 
   /* text size */
   --text10: 0.625rem;
@@ -46,7 +47,7 @@
   --text38: 2.375rem;
   --text40: 2.5rem;
   --text48: 3rem;
-  --text600: 600px;
+  --text300: 18.75rem;
 
   /* text opacity */
   --opacity70: 0.7;

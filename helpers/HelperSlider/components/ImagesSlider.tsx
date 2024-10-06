@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
-
-import { ImageAboutProps } from "@/db/info";
 
 interface ImagesSliderProps {
   sliderImages?: string[];
@@ -15,9 +13,11 @@ export const ImagesSlider = ({
   sliderRef,
 }: ImagesSliderProps) => {
   const [sideX, setSideX] = useState(true);
-  const imageWidth = isProject ? 260 : 446;
-
+  const sliderImgRef = useRef<HTMLImageElement>(null);
+  
   const moveSlider = (index: number) => {
+    if(!sliderImgRef.current) return;
+    const imageWidth = isProject ? 260 : sliderImgRef.current.width;
     if (!sliderImages) return;
     if (sliderRef.current) {
       if (index < sliderImages.length - 1 && sideX) {
@@ -43,6 +43,7 @@ export const ImagesSlider = ({
         sliderImages.map((image, index) => {
           return (
             <Image
+              ref={sliderImgRef}
               key={`projectImg${index}`}
               id={`projectImg${index}`}
               src={image}

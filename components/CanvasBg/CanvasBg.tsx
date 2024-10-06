@@ -19,7 +19,7 @@ export const CanvasBg = ({ colorBg = "#060602", hasBorder, hasBg }: Props) => {
     <div className={`${styles.canvas} ${hasBorder && styles.canvasBorder}`}>
       <Canvas camera={{ position: [0, 0, 5] }}>
         <ambientLight intensity={1} />
-        <directionalLight position={[0, 0, 1]} intensity={1} color={"white"} />
+        <directionalLight position={[0, 0, 1]} intensity={4} color={"white"} />
         {hasBg && <color attach="background" args={[`${colorBg}`]} />}
         <OrbitControls enableZoom={false} enablePan={false} />
         <ModelRender />

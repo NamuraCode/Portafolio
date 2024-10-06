@@ -21,6 +21,7 @@ export const info = {
   home: {
     welcome: db.home.welcome,
     description: db.home.description,
+    showMore: db.home.showMore,
   },
   footer: {
     copy: db.footer.copy,
