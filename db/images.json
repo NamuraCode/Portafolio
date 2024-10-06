@@ -32,81 +32,57 @@
     "imagesProject": [
         {
             "title": [
-                "Makata Studio pagina web",
-                "Makata Studio landing page"
+                "Pagina Portafolio Web desarrollada en next.js con gsap y three.js",
+                "Page Portfolio Web created in next.js with gsap and three.js"
             ],
             "image": [
-                "/images/placeholder2.jpg",
-                "/images/placeholder.jpg",
-                "/images/placeholder2.jpg"
+                "/images/projects/ProfileWeb1.png"
             ],
-            "url": "https://portafolio-ten-wine.vercel.app/",
+            "url": "https://www.naranjodavid.com/",
             "type": "dev"
         },
         {
             "title": [
-                "Ilustración digital de mis hobbies",
-                "Ilustration of my and my hobbies"
+                "Retrato de practica subrealista en krita de mi y mis hobbies",
+                "Surrealistic practice portrait of me and my hobbies in Krita"
             ],
             "image": [
-                "/images/projects/namura4.jpg",
-                "/images/projects/namura3.jpg",
-                "/images/projects/namura2.jpg",
-                "/images/projects/namura1.jpg"
+                "/images/projects/IlustrationDN1.png",
+                "/images/projects/IlustrationDN2.png",
+                "/images/projects/IlustrationDN3.png",
+                "/images/projects/IlustrationDN4.png",
+                "/images/projects/IlustrationDN5.png"
             ],
             "url": "https://www.artstation.com/artwork/q9yZZN",
             "type": "art"
         },
         {
             "title": [
-                "Modelo jaguar para cortometraje",
-                "Model jaguar for cutscene"
+                "Modelo Jaguar 'Junior' para cortometraje Sinfonia Salvaje",
+                "Model Jaguar 'Junior' for short film Sinfonia Salvaje"
             ],
             "image": [
-                "/images/projects/junior2.jpg",
-                "/images/projects/junior1.jpg"
+                "/images/projects/junior1.png",
+                "/images/projects/junior2.png"
             ],
             "url": "https://www.artstation.com/artwork/nQeLor",
             "type": "art"
         },
         {
             "title": [
-                "Makata Studio pagina web",
-                "Makata Studio landing page"
+                "Modelo Bioma en botella hecho en blender",
+                "Biome model created in blender"
             ],
             "image": [
-                "/images/placeholder.jpg",
-                "/images/placeholder2.jpg",
-                "/images/placeholder.jpg"
+                "/images/projects/Biome1.png",
+                "/images/projects/Biome2.png",
+                "/images/projects/Biome3.png",
+                "/images/projects/Biome4.png",
+                "/images/projects/Biome5.png",
+                "/images/projects/Biome6.png"
             ],
-            "url": "https://portafolio-ten-wine.vercel.app/",
-            "type": "dev"
-        },
-        {
-            "title": [
-                "Makata Studio pagina web",
-                "Makata Studio landing page"
-            ],
-            "image": [
-                "/images/placeholder2.jpg",
-                "/images/placeholder.jpg",
-                "/images/placeholder2.jpg"
-            ],
-            "url": "https://portafolio-ten-wine.vercel.app/",
-            "type": "dev"
-        },
-        {
-            "title": [
-                "Makata Studio pagina web",
-                "Makata Studio landing page"
-            ],
-            "image": [
-                "/images/placeholder2.jpg",
-                "/images/placeholder.jpg",
-                "/images/placeholder2.jpg"
-            ],
-            "url": "https://portafolio-ten-wine.vercel.app/",
-            "type": "dev"
+            "url": "https://www.instagram.com/p/CLH1Y5qjOjK/?img_index=1",
+            "type": "art"
         }
     ]
 }

@@ -26,7 +26,7 @@ export const HelperSlider = ({
 }: HelperSliderProps) => {
   const { language, setIsCursorHover } = useGlobal();
   const sliderRef = useRef<HTMLDivElement>(null);
-  const cursorText = ["Dar Click", "Click Here"]
+  const cursorText = ["Click", "Click"]
   return (
     <div
       className={`${

@@ -10,16 +10,7 @@ interface HelperCursorProps {
 }
 
 export const HelperCursor = ({ positions }: HelperCursorProps) => {
-  const { isCursorHover, cursorText, setIsCursorHover } = useGlobal();
-
-  // useLayoutEffect(() => {
-  //   window.addEventListener("scroll", (e) => {
-  //     setIsCursorHover(false);
-  //   });
-  //   return () => {
-  //     window.removeEventListener("scroll", () => {});
-  //   };
-  // }, []);
+  const { isCursorHover, cursorText } = useGlobal();
 
   return (
     <div
