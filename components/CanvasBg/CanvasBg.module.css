@@ -14,7 +14,6 @@
 .canvasBorder {
   border-radius: 28px;
   overflow: hidden;
-  /* z-index: 2; */
 }
 
 .textBgContainer{
