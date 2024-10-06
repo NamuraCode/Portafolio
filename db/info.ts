@@ -21,6 +21,7 @@ export const info = {
   home: {
     welcome: db.home.welcome,
     description: db.home.description,
+    showMore: db.home.showMore,
   },
   footer: {
     copy: db.footer.copy,
@@ -67,36 +68,34 @@ export const info = {
       send: db.contact.label.send,
     },
   },
-  profileImages: db.profileImages,
 };
 
-interface imagesProps {
-  imagesAbout: {
-    src: string;
-    alt: string;
-  }[];
-  imagesProject: {
-    title: string[];
-    image: string[];
-    url: string;
-    type: string;
-  }[];
+export interface ImageAboutProps {
+  images: string;
+  alt: string;
 }
 
-export const infoImages: imagesProps = {
-  imagesAbout: dbImages.imagesAbout.map((item) => {
-    return {
-      src: item.src,
-      alt: item.alt,
-    };
-  }),
+export const infoImagesAbout = dbImages.imagesAbout.map((item) => {
+  const image: ImageAboutProps = {
+    images: item.images,
+    alt: item.alt,
+  };
+  return image;
+});
 
-  imagesProject: dbImages.imagesProject.map((item) => {
-    return {
-      title: item.title,
-      image: item.image,
-      url: item.url,
-      type: item.type,
-    };
-  }),
-};
+export interface ImageProjectProps {
+  title: string[];
+  images: string[];
+  url: string;
+  type: string;
+}
+
+export const infoImagesProject = dbImages.imagesProject.map((item) => {
+  const image: ImageProjectProps = {
+    title: item.title,
+    images: item.image,
+    url: item.url,
+    type: item.type,
+  };
+  return image;
+});

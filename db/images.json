@@ -1,35 +1,31 @@
 {
     "imagesAbout": [
         {
-            "src": "/images/profile/1.jpg",
+            "images": "/images/profile/1.jpg",
             "alt": "myself-photo"
         },
         {
-            "src": "/images/profile/2.jpg",
+            "images": "/images/profile/3.jpg",
+            "alt": "model"
+        },
+        {
+            "images": "/images/profile/4.jpg",
             "alt": "myself-photo"
         },
         {
-            "src": "/images/profile/3.jpg",
+            "images": "/images/profile/5.jpg",
             "alt": "model"
         },
         {
-            "src": "/images/profile/4.jpg",
-            "alt": "myself-photo"
-        },
-        {
-            "src": "/images/profile/5.jpg",
+            "images": "/images/profile/6.jpg",
             "alt": "model"
         },
         {
-            "src": "/images/profile/6.jpg",
+            "images": "/images/profile/7.jpg",
             "alt": "model"
         },
         {
-            "src": "/images/profile/7.jpg",
-            "alt": "model"
-        },
-        {
-            "src": "/images/profile/8.jpg",
+            "images": "/images/profile/8.jpg",
             "alt": "myself-photo"
         }
     ],

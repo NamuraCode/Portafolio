@@ -1,19 +1,56 @@
-.cursor {
+.cursorContainer {
   position: fixed;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  pointer-events: none;
-  -webkit-box-shadow: 0px 0px 0px 1px var(--color1);
-  -moz-box-shadow: 0px 0px 0px 1px var(--color1);
-  box-shadow: 0px 0px 0px 1px var(--color1);
-  mix-blend-mode: difference;
-  background-color: var(--color1);
-  z-index: 10;
-  transition: left 0s ease-in-out, top 0s ease-in-out, mix-blend-mode 0.2s ease, box-shadow 0.2s ease, width 0.2s ease, height 0.2s ease;
-}
-
-.cursorHover {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   width: 60px;
   height: 60px;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: left 0s ease-in-out, top 0s ease-in-out, mix-blend-mode 0.2s ease;
+  z-index: 100;
+}
+
+.cursorHover{
+  mix-blend-mode: normal;
+}
+
+.cursorText {
+  position: absolute;
+  top: -12%;
+  text-justify: distribute;
+  font-size: 13px;
+  font-weight: var(--weight600);
+  text-align: center;
+  opacity: 0;
+  text-transform: uppercase;
+  color: #fafafa;
+  transition: opacity 0.4s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
+  z-index: 20;
+}
+
+.showCursorText {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  pointer-events: none;
+  background-color: #fafafa;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, left 0.2s ease-in-out, top 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.cursorBall {
+  top: -35%;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fafafa;
+  background-color: rgb(250, 250, 250, 0.2);
 }

@@ -1,15 +1,10 @@
 .sections {
   background-color: var(--color1);
   padding: 10rem calc(100vw / 5) 0rem calc(100vw / 5);
-  min-height: 100vh;
 }
 
 .contact {
   margin: auto;
-}
-
-.about {
-  height: 100vh;
 }
 
 .containerToggle {
@@ -75,5 +70,11 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (width < 768px) {
+  .sections{
+    padding: 10rem 1rem 0rem 1rem;
   }
 }

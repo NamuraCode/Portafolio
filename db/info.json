@@ -25,7 +25,8 @@
         "description": [
             "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github...",
             "Full-Stack JavaScript Developer, studied at Digital House and Misión Tic 2021. With skills in languages such as JavaScript, Typescript, Python, Java, HTML and CSS. Repository management with Git and Github..."
-        ]
+        ],
+        "showMore": ["Ver mas","show More"]
     },
     "experience": {
         "title": [
@@ -172,15 +173,5 @@
             "© 2024 David Naranjo. Todos los derechos resevados",
             "© 2024 David Naranjo. All rights reserved"
         ]
-    },
-    "profileImages": [
-        "/images/profile/1.jpg",
-        "/images/profile/2.jpg",
-        "/images/profile/3.jpg",
-        "/images/profile/4.jpg",
-        "/images/profile/5.jpg",
-        "/images/profile/6.jpg",
-        "/images/profile/7.jpg",
-        "/images/profile/8.jpg"
-    ]
+    }
 }
