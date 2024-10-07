@@ -85,6 +85,7 @@ export const infoImagesAbout = dbImages.imagesAbout.map((item) => {
 
 export interface ImageProjectProps {
   title: string[];
+  description: string[];
   images: string[];
   url: string;
   type: string;
@@ -93,6 +94,7 @@ export interface ImageProjectProps {
 export const infoImagesProject = dbImages.imagesProject.map((item) => {
   const image: ImageProjectProps = {
     title: item.title,
+    description: item.description,
     images: item.image,
     url: item.url,
     type: item.type,

@@ -32,6 +32,7 @@
       rgba(250, 250, 250, 1) 0%,
       rgba(250, 250, 250, 0) 100%);
   --colorHeader: #696969;
+  --shadow: 10px 10px 10px #0000001f, -10px -10px 10px #00000009;
 
   /* text size */
   --text10: 0.625rem;

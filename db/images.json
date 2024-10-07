@@ -31,7 +31,8 @@
     ],
     "imagesProject": [
         {
-            "title": [
+            "title" : ["Pagina Web","Web Page"],
+            "description": [
                 "Pagina Portafolio Web desarrollada en next.js con gsap y three.js",
                 "Page Portfolio Web created in next.js with gsap and three.js"
             ],
@@ -42,7 +43,8 @@
             "type": "dev"
         },
         {
-            "title": [
+            "title" : ["Ilustración digital","Digital Illustration"],
+            "description": [
                 "Retrato de practica subrealista en krita de mi y mis hobbies",
                 "Surrealistic practice portrait of me and my hobbies in Krita"
             ],
@@ -57,7 +59,8 @@
             "type": "art"
         },
         {
-            "title": [
+            "title" : ["Modelo 3D","Model 3D"],
+            "description": [
                 "Modelo Jaguar 'Junior' para cortometraje Sinfonia Salvaje",
                 "Model Jaguar 'Junior' for short film Sinfonia Salvaje"
             ],
@@ -69,7 +72,8 @@
             "type": "art"
         },
         {
-            "title": [
+            "title" : ["Modelo 3D","Model 3D"],
+            "description": [
                 "Modelo Bioma en botella hecho en blender",
                 "Biome model created in blender"
             ],
