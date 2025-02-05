@@ -1,20 +1,20 @@
 {
     "navbar": [
         [
-            "sobre mi",
-            "about"
+            "Sobre Mi",
+            "About"
         ],
         [
-            "experiencia",
-            "experience"
+            "Experiencia",
+            "Experience"
         ],
         [
-            "proyectos",
-            "projects"
+            "Proyectos",
+            "Projects"
         ],
         [
-            "contacto",
-            "contact"
+            "Contacto",
+            "Contact"
         ]
     ],
     "home": {
@@ -132,8 +132,8 @@
     },
     "contact": {
         "title": [
-            "Contacto",
-            "Contact"
+            "Contactame",
+            "Contact me"
         ],
         "label": {
             "name": [

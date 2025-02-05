@@ -40,9 +40,11 @@ export const BorderRight = ({ changeColor }: { changeColor: boolean }) => {
         {language ? "ES" : "EN"}
       </button>
       <label
-        className={`${styles.borderRTheme} ${
-          changeColor ? globalStyle.fadeIn : ""
-        }`}
+        className={`
+          ${styles.borderRTheme} 
+          ${changeColor ? globalStyle.fadeIn : ""}
+          ${changeColor ? styles.borderRThemeActive : ""}
+        `}
       >
         <svg
           width="16"

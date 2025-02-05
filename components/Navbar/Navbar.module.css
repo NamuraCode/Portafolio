@@ -12,7 +12,7 @@
   display: flex;
   height: 100%;
   width: auto;
-  gap: 4.063rem;
+  gap: 3rem;
   list-style: none;
   align-items: center;
   justify-content: center;
@@ -72,6 +72,17 @@
   z-index: -1;
 }
 
+.navChange {
+  padding: 0.9rem;
+}
+
+.navChange ul {
+  background: var(--color1);
+  padding: 20px 25px;
+  border-radius: 22px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
 .navChange::before {
   top: -8px !important;
 }
@@ -108,5 +119,4 @@
   .navbar {
     display: none;
   }
-
 }

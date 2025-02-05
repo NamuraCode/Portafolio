@@ -1,20 +1,21 @@
-.helperTitle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-direction: row;
-    margin-bottom: 5rem;
+.helperTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: row;
+  margin-bottom: 5rem;
 }
 
-.helperTitle h2{
-    font-size: var(--text38);
-    font-weight: var(--weight800);
-    text-transform: capitalize;
-    color: var(--color3);
-}   
+.helperTitle h2 {
+  font-size: var(--text38);
+  font-weight: var(--weight800);
+  text-transform: capitalize;
+  color: var(--color3);
+  /* border-bottom: 3px solid var(--color3); */
+}
 
 .helperTitle svg {
-    width: 2.5rem;
-    height: auto;
+  width: 2.5rem;
+  height: auto;
 }

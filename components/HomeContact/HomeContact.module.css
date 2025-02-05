@@ -18,7 +18,7 @@
 }
 
 .HomeContent span {
-    font-size: var(--text14);
+    font-size: var(--text12);
     font-weight: var(--weight800);
     color: var(--color1);
     line-height: normal;

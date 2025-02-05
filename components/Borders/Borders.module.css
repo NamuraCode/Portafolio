@@ -66,6 +66,10 @@
   z-index: 10;
 }
 
+.borderRThemeActive {
+  right: 3.2rem;
+}
+
 .borderRTheme:hover {
   color: var(--);
 }

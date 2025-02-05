@@ -25,7 +25,7 @@ export const CanvasBg = ({ colorBg = "#060602", hasBorder, hasBg }: Props) => {
         <ModelRender />
         <Effects />
       </Canvas>
-      <TextBg />
+      {/* <TextBg /> */}
     </div>
   );
 };

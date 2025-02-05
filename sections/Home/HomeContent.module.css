@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     width: calc(100vw - 8px);
-    height: calc(100vh - 8px);
+    height: calc(70vh - 8px);
     pointer-events: none;
     z-index: 10;
 }
