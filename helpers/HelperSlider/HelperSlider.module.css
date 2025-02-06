@@ -128,3 +128,15 @@
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
+
+@media (width <= 1024px) {
+    .helperAboutContainer{
+        width: 70%
+    }
+}
+
+@media (width <= 500px) {
+    .helperAboutContainer{
+        width: 100%
+    }
+}

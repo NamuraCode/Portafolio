@@ -16,16 +16,6 @@ export const AboutContent = () => {
         <HelperTitle title={["Sobre Mi", "About Me"]} />
         <p>{description[language]}</p>
       </div>
-      <hr />
-      <div>
-        <h3>{}</h3>
-        {/* <p>{text[language]}</p> */}
-      </div>
-      <hr />
-      <div>
-        <h3>Hobbies</h3>
-        {/* <p>{text[language]}</p> */}
-      </div>
     </div>
   );
 };

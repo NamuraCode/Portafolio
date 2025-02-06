@@ -52,3 +52,15 @@
     color: var(--color1);
     line-height: 0;
 }
+
+
+@media (width <= 1024px) {
+    .homeInfo {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+    .homeInfo p {
+        width: 90%;
+    }
+}

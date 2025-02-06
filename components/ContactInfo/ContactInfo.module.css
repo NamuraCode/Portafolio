@@ -58,11 +58,12 @@
   background: var(--color3);
 }
 
-.contactForm > textarea:valid, .contactForm > input:valid {
+.contactForm > textarea:valid,
+.contactForm > input:valid {
   background: var(--color3);
 }
 
-.contactForm button{
+.contactForm button {
   display: flex;
   gap: 0.4rem;
   flex-direction: row;
@@ -78,18 +79,17 @@
   transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
-.contactForm button:hover{
+.contactForm button:hover {
   color: var(--color3);
   background-color: var(--color1);
-
 }
 
-.contactForm button svg{
+.contactForm button svg {
   width: 1.5rem;
   height: 1.1rem;
 }
 
-.contactForm button svg path{
+.contactForm button svg path {
   transition: stroke 0.1s ease-in-out;
 }
 
@@ -97,3 +97,8 @@
   stroke: var(--color3) !important;
 }
 
+@media (width <= 1024px) {
+  .contactForm {
+    width: 100%;
+  }
+}
