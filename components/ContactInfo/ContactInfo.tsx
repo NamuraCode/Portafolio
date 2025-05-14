@@ -35,7 +35,8 @@ export const ContactInfo = () => {
         publicKey: keyPublic,
       })
       .then(() => {
-        formRef.current?.reset();
+        if(!formRef.current) return;
+        formRef.current.reset();
       });
   }
 
