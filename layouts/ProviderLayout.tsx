@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/next";
 import { GlobalProvider } from "@/store";
 
 import { HelperCursor } from "@/helpers";
@@ -24,6 +25,7 @@ export const ProviderLayout = ({
         data-theme="light"
         onMouseMove={(e) => setPositionsCursor({ x: e.clientX, y: e.clientY })}
       >
+        <Analytics />
         <GlobalProvider>
           <HelperCursor positions={positionsCursor} />
           <Header />
