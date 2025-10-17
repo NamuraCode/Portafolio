@@ -40,7 +40,8 @@
 }
 
 .textSm {
-  font-size: 0.875rem; /* text-sm */
+  font-size: var(--text14);
+  font-weight: var(--weight600);
 }
 
 .leadingRelaxed {
@@ -60,8 +61,9 @@
 }
 
 .navLink {
-  color: var(--color3);
   font-size: 0.875rem;
+  font-weight: var(--weight600);
+    color: var(--colorCaption);
   transition: color 0.2s;
   text-decoration: none;
 }
