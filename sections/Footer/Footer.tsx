@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -8,7 +8,6 @@ export default function Footer() {
   const socialLinks = [
     { icon: Github, href: "https://github.com/NamuraCode", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/david-naranjo/", label: "LinkedIn" },
-    { icon: Twitter, href: "https://x.com/naranjo_da63225", label: "Twitter" },
     { icon: Mail, href: "mailto:naranjo.david.1999@gmail.com", label: "Email" },
   ];
 
