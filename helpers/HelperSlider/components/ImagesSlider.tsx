@@ -4,7 +4,7 @@ import Image from "next/image";
 interface ImagesSliderProps {
   sliderImages?: string[];
   isProject?: boolean;
-  sliderRef: React.RefObject<HTMLDivElement>;
+  sliderRef: React. RefObject<HTMLDivElement | null>;
 }
 
 export const ImagesSlider = ({
