@@ -1,10 +1,11 @@
 import Link from "next/link";
 import styles from "../HomeInfo.module.css"
+import { ReactNode } from "react";
 
 interface HomeContactProps {
     text: string
     redirect: string
-    image: JSX.Element
+    image: ReactNode
 }
 
 export const ButtonHome = ({ text, image, redirect }: HomeContactProps) => {
