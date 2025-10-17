@@ -8,10 +8,12 @@ import {
   Projects,
 } from "@/sections";
 import Footer from "@/sections/Footer/Footer";
+import ReactLenis from "lenis/react";
 
 export const HomePage = () => {
   return (
     <>
+      <ReactLenis root />
       <LoaderLogo />
       <Background />
       <HomeContent />
