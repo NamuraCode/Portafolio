@@ -26,7 +26,10 @@
             "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github...",
             "Full-Stack JavaScript Developer, studied at Digital House and Misión Tic 2021. With skills in languages such as JavaScript, Typescript, Python, Java, HTML and CSS. Repository management with Git and Github..."
         ],
-        "showMore": ["Ver mas","show More"]
+        "showMore": [
+            "Ver mas",
+            "show More"
+        ]
     },
     "experience": {
         "title": [
@@ -126,8 +129,8 @@
             "about me"
         ],
         "content": [
-            "Desarrollador Full-Stack, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github. Creación y consumo de APIS mediante tecnologías como NodeJs, Express y React. Y bases de datos SQL (Mysql, sequelize) y NoSQL (MongoDb). Desde las cuales desarrolló soluciones digitales perdurables y escalables. Con experiencia en grupos de investigación de desarrollo de tecnologías y creación de páginas web con el stack MERN, bajo metodologías SCRUM diferenciando el trabajo por el esfuerzo de mejorar y la curiosidad de aprender e implementar tecnologías nuevas.",
-            "Full-Stack Developer, studied at Digital House and Misión Tic 2021. With skills in languages such as JavaScript, Python, Java, HTML and CSS. repositories with Git and Github. Creation and consumption of APIS using technologies such as NodeJs, Express and React, and SQL (Mysql, sequelize) and NoSQL (MongoDb) databases. From which he developed enduring and scalable digital solutions. With experience in research groups developing technologies and creating web pages with the MERN stack, under SCRUM methodologies differentiating the work by the effort to improve and the curiosity to learn and implement new technologies."
+            "Desarrollador de Software, actualmente estudiando Ingeniería en Desarrollo de Software en la Institución Universitaria Pascual Bravo, con formación complementaria en Digital House y Misión TIC 2021.Con habilidades en JavaScript, TypeScript, Python, Java, C#, HTML y CSS, así como experiencia en la creación y uso de APIs REST, manejo de herramientas modernas como Vite.js, Next.js, Astro, Framer, GSAP y CSS para el desarrollo de páginas web animadas con estructuras semánticas y optimizadas para SEO, aplicando prácticas de optimización de rendimiento web. Trabajando en proyectos full-stack con el stack MERN, integrando modelos 3D interactivos en aplicaciones web y móviles (iOS y Android). Manejo de Git y GitHub, incluyendo flujos de trabajo CI/CD con GitHub Actions. Desarrollo tecnológico, aplicando metodologías ágiles SCRUM, soy una persona constantemente curiosa, capaz de aprender de forma continua y comprometida con la creación de soluciones digitales escalables, sostenibles e innovadoras.",
+            "Software Developer, currently studying Software Development Engineering at the Pascual Bravo University Institution, with complementary training at Digital House and Misión TIC 2021.With skills in JavaScript, TypeScript, Python, Java, C#, HTML, and CSS, as well as experience in creating and using REST APIs, I am proficient in modern tools such as Vite.js, Next.js, Astro, Framer, GSAP, and CSS for developing animated web pages with semantic and SEO-friendly structures, applying web performance optimization practices. Working on full-stack projects with the MERN stack, integrating interactive 3D models into web and mobile applications (iOS and Android). Proficient in Git and GitHub, including CI/CD workflows with GitHub Actions. Technological development, applying agile SCRUM methodologies, I am constantly curious, capable of continuous learning, and committed to creating scalable, sustainable, and innovative digital solutions. "
         ]
     },
     "contact": {

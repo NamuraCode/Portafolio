@@ -1,14 +1,20 @@
 .projectInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin-top: 1.875rem;
 }
 
 .projectInfoCards {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
   width: 100%;
   height: fit-content;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /* place-items: center; */
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
 }
 
 .projectCard {
@@ -77,4 +83,8 @@
 
 .projectCardContent a:active {
   transform: scale(0.8);
+}
+
+.hiddenProjects {
+  display: none;
 }

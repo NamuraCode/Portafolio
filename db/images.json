@@ -27,59 +27,143 @@
     ],
     "imagesProject": [
         {
-            "title" : ["Pagina Web","Web Page"],
+            "title" : ["Portafolio Web","Portfolio Web"],
             "description": [
-                "Pagina Portafolio Web desarrollada en next.js con gsap y three.js",
-                "Page Portfolio Web created in next.js with gsap and three.js"
+                "portafolio profesional de desarrollador de software, con competencias técnicas, experiencia laboral y proyectos realizados",
+                "Professional software developer portfolio, with technical skills, work experience and completed projects"
             ],
             "image": [
-                "/images/projects/ProfileWeb1.png"
+                "/images/projects/ProfileWeb1.webp"
             ],
             "url": "https://www.naranjodavid.com/",
             "type": "dev"
         },
         {
-            "title" : ["Ilustración digital","Digital Illustration"],
+            "title" : ["Makata Web Interactiva","Makata Interactive Web"],
             "description": [
-                "Retrato de practica subrealista en krita de mi y mis hobbies",
-                "Surrealistic practice portrait of me and my hobbies in Krita"
+                "Makata estudio creativo con servicios integrales de branding, diseño UX/UI, modelado 3D y desarrollo web/app",
+                "Makata creative studio with comprehensive services in branding, UX/UI design, 3D modeling, and web/app dev"
             ],
             "image": [
-                "/images/projects/IlustrationDN1.png",
-                "/images/projects/IlustrationDN2.png",
-                "/images/projects/IlustrationDN3.png",
-                "/images/projects/IlustrationDN4.png",
-                "/images/projects/IlustrationDN5.png"
+                "/images/projects/makata1.webp"
+            ],
+            "url": "https://www.makata.tv/",
+            "type": "dev"
+        },
+        {
+            "title" : ["Rhezo Pagina Web","Rhezo Web Page"],
+            "description": [
+                "Rhezo es una plataforma que conecta talento con start-ups tecnológicas y ayuda a reclutadores a formar equipos de manera ágil.",
+                "Rhezo is a platform that connects talent with tech startups and helps recruiters build teams quickly."
+            ],
+            "image": [
+                "/images/projects/rhezo1.webp"
+            ],
+            "url": "https://www.rhezo.io/",
+            "type": "dev"
+        },
+        {
+            "title" : ["Mimir Web Interactiva","Mimir Interactive Web"],
+            "description": [
+                "AskMimir (askmimir.ai) presenta una herramienta de inteligencia artificial educativa que facilita el aprendizaje interactivo en diversos temas.",
+                "AskMimir (askmimir.ai) features an educational AI tool that facilitates interactive learning across various subjects."
+            ],
+            "image": [
+                "/images/projects/mimir1.webp"
+            ],
+            "url": "https://www.askmimir.ai/",
+            "type": "dev"
+        },
+        {
+            "title" : ["Heypeer Web Inmersiva","Heypeer Immersive Web"],
+            "description": [
+                "Heypeer web site permite interactuar con un modelo 3D en tiempo real en la ciudad de Nueva York",
+                "Heypeer web site allows you to interact with a 3D model in real time in New York City"
+            ],
+            "image": [
+                "/images/projects/peer1.webp"
+            ],
+            "url": "https://heypeer.ai/",
+            "type": "hidden"
+        },
+        {
+            "title" : ["Infini Ecommerce","Infini Ecommerce"],
+            "description": [
+                "Infini es un ecommerce donde se venden diversos productos siendo el principal Magical Water",
+                "Infini is an ecommerce where various products are sold, with the main one being Magical Water"
+            ],
+            "image": [
+                "/images/projects/infini1.webp"
+            ],
+            "url": "https://infiniwater.com/",
+            "type": "dev"
+        },
+        {
+            "title" : ["3Core Web Site","Web Page"],
+            "description": [
+                "3CORE Studio una agencia especializada en desarrollo web, aplicaciones móviles y software a medida",
+                "3CORE Studio is an agency specializing in web development, mobile applications, and custom software"
+            ],
+            "image": [
+                "/images/projects/3core1.webp"
+            ],
+            "url": "https://3-core.vercel.app/",
+            "type": "dev"
+        },
+        {
+            "title" : ["Wemoms App","Wemoms App"],
+            "description": [
+                "Aplicación móvil de seguimiento de embarazo con modelos 3D interactivos.",
+                "Mobile pregnancy tracking app with interactive 3D models."
+            ],
+            "image": [
+                "/images/projects/wemoms1.webp"
+            ],
+            "url": "https://www.behance.net/gallery/196940925/WeMoms-App",
+            "type": "dev"
+        },
+        {
+            "title" : ["Pintura Digital Retrato","Digital Painting Portrait"],
+            "description": [
+                "Retrato de práctica surrealista de mi y mis pasatiempos en Krita",
+                "Surrealist practice portrait of me and my hobbies in Krita"
+            ],
+            "image": [
+                "/images/projects/IlustrationDN1.webp",
+                "/images/projects/IlustrationDN2.webp",
+                "/images/projects/IlustrationDN3.webp",
+                "/images/projects/IlustrationDN4.webp",
+                "/images/projects/IlustrationDN5.webp"
             ],
             "url": "https://www.artstation.com/artwork/q9yZZN",
             "type": "art"
         },
         {
-            "title" : ["Modelo 3D","Model 3D"],
+            "title" : ["Junior Sinfonia Salvaje SENA","Junior Sinfonia Salvaje SENA"],
             "description": [
-                "Modelo Jaguar 'Junior' para cortometraje Sinfonia Salvaje",
-                "Model Jaguar 'Junior' for short film Sinfonia Salvaje"
+                "Modelo 3D del personaje de junior, concept art de un jaguar  para el cortometraje sinfonía salvaje",
+                "3D model of the junior character, concept art of a jaguar for the short film wild symphony"
             ],
             "image": [
-                "/images/projects/Junior1.png",
-                "/images/projects/Junior2.png"
+                "/images/projects/Junior1.webp",
+                "/images/projects/Junior2.webp"
             ],
             "url": "https://www.artstation.com/artwork/nQeLor",
             "type": "art"
         },
         {
-            "title" : ["Modelo 3D","Model 3D"],
+            "title" : ["Bioma en botella","Biome in a bottle"],
             "description": [
-                "Modelo Bioma en botella hecho en blender",
-                "Biome model created in blender"
+                "Modelo de Bioma creado en blender para practica personal",
+                "Biome model created in blender for personal practice"
             ],
             "image": [
-                "/images/projects/Biome1.png",
-                "/images/projects/Biome2.png",
-                "/images/projects/Biome3.png",
-                "/images/projects/Biome4.png",
-                "/images/projects/Biome5.png",
-                "/images/projects/Biome6.png"
+                "/images/projects/Biome1.webp",
+                "/images/projects/Biome2.webp",
+                "/images/projects/Biome3.webp",
+                "/images/projects/Biome4.webp",
+                "/images/projects/Biome5.webp",
+                "/images/projects/Biome6.webp"
             ],
             "url": "https://www.instagram.com/p/CLH1Y5qjOjK/?img_index=1",
             "type": "art"

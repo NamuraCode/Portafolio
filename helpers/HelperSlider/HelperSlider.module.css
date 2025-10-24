@@ -14,7 +14,6 @@
 .helperProject {
     width: min-content;
     min-height: 340px;
-    margin-bottom: 2rem;
     padding: .6rem;
     padding-bottom: 1rem;
     border-radius: 24px;
@@ -31,7 +30,7 @@
 
 .helperProject p {
     padding: 0px 0.4rem 0rem 0.4rem;
-    font-size: var(--text14);
+    font-size: var(--text12);
     font-weight: var(--weight500);
     color: var(--colorCaption);
     text-wrap: balance;

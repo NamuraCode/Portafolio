@@ -1,6 +1,7 @@
 .sections {
   background-color: var(--color1);
-  padding: 10rem calc(100vw / 5) 0rem calc(100vw / 5);
+  padding: 10rem calc(100vw / 5);
+  padding-bottom: 0rem;
 }
 
 .contact {

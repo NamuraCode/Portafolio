@@ -21,14 +21,12 @@ export const ImagesSlider = ({
     if (!sliderImages) return;
     if (sliderRef.current) {
       if (index < sliderImages.length - 1 && sideX) {
-        console.log(index);
         index + 1 == sliderImages.length - 1 && setSideX(false);
         sliderRef.current.scrollTo({
           left: imageWidth * (index + 1),
           behavior: "smooth",
         });
       } else {
-        console.log(index);
         index - 1 == 0 && setSideX(true);
         sliderRef.current.scrollTo({
           left: (index - 1) * imageWidth,

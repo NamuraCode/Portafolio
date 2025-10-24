@@ -13,7 +13,7 @@ import ReactLenis from "lenis/react";
 export const HomePage = () => {
   return (
     <>
-      <ReactLenis root />
+      {/* <ReactLenis root /> */}
       <LoaderLogo />
       <Background />
       <HomeContent />
