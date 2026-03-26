@@ -1,18 +1,14 @@
 import db from "./info.json";
 import dbImages from "./images.json";
+import type { ImageProjectProps } from "@/helpers/HelperSlider/HelperSlider";
 
-interface jobProps {
+export type { ImageProjectProps };
+
+export interface JobProps {
   charge: string[];
   company: string;
   time: string[];
   description: string[];
-  type: string;
-}
-
-interface projectProps {
-  title: string[];
-  image: string[];
-  url: string;
   type: string;
 }
 
@@ -29,18 +25,14 @@ export const info = {
   experience: {
     title: db.experience.title,
     subtitle: db.experience.subtitle,
-    jobs: (index: number) => {
-      const jobs: jobProps[] = [];
-      db.experience.jobs.map((job) => {
-        jobs.push({
-          charge: job.charge,
-          company: job.company,
-          time: job.time,
-          description: job.description,
-          type: job.type,
-        });
-      });
-      return jobs;
+    jobs: (): JobProps[] => {
+      return db.experience.jobs.map((job) => ({
+        charge: job.charge,
+        company: job.company,
+        time: job.time,
+        description: job.description,
+        type: job.type,
+      }));
     },
   },
   projects: {
@@ -82,14 +74,6 @@ export const infoImagesAbout = dbImages.imagesAbout.map((item) => {
   };
   return image;
 });
-
-export interface ImageProjectProps {
-  title: string[];
-  description: string[];
-  images: string[];
-  url: string;
-  type: string;
-}
 
 export const infoImagesProject = dbImages.imagesProject.map((item) => {
   const image: ImageProjectProps = {

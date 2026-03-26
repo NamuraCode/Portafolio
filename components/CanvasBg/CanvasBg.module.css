@@ -32,7 +32,7 @@
 .textBg {
   font-size: calc(100vw / 3);
   font-weight: var(--weight600);
-  font-family: "Alumni Sans", sans-serif;
+  font-family: var(--font-alumni-sans), sans-serif;
   color: var(--color1);
   opacity: 0.2;
   line-height: normal;

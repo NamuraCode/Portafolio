@@ -1,17 +1,21 @@
 "use client";
-import { info } from "@/db/info";
+import { useGlobal } from "@/store";
 import { ButtonHome } from "./components/ButtonHome";
 import styles from "./HomeInfo.module.css";
-import { useGlobal } from "@/store";
 import Link from "next/link";
 
-export const HomeInfo = () => {
+interface HomeInfoProps {
+  welcome: string[];
+  description: string[];
+  showMore: string[];
+}
+
+export const HomeInfo = ({ welcome, description, showMore }: HomeInfoProps) => {
   const { language } = useGlobal();
-  const { home } = info;
   return (
     <div className={styles.homeInfo}>
-      <h1>{home.welcome[language]}</h1>
-      <p>{home.description[language]}<Link href={"/"}>{home.showMore[language]}</Link></p>
+      <h1>{welcome[language]}</h1>
+      <p>{description[language]}<Link href={"/"}>{showMore[language]}</Link></p>
       <div className={styles.buttons}>
         <ButtonHome
           text="Linkedin"

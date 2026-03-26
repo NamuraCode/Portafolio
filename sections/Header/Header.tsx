@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { BorderLeft, BorderRight, Navbar, NavbarPoints } from "@/components";
+import { info } from "@/db/info";
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -16,10 +17,9 @@ export const Header = () => {
   const [navDiff, setNavDiff] = useState(false);
   useGSAP(() => {
     gsap.fromTo(
-      headerRef.current,{
-        position: "absolute",
-      },
-      {        
+      headerRef.current,
+      { position: "absolute" },
+      {
         position: "fixed",
         scrollTrigger: {
           trigger: "#about",
@@ -28,7 +28,7 @@ export const Header = () => {
           scrub: true,
           onUpdate: (self) => {
             setNavDiff(self.progress > 0);
-          }
+          },
         },
       }
     );
@@ -36,7 +36,7 @@ export const Header = () => {
   return (
     <header ref={headerRef} className={styles.header}>
       <BorderLeft changeColor={navDiff} />
-      <Navbar changeColor={navDiff} />
+      <Navbar changeColor={navDiff} items={info.header} />
       <BorderRight changeColor={navDiff} />
       {/* <NavbarPoints changeColor={navDiff} /> */}
     </header>

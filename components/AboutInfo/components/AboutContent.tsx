@@ -1,14 +1,16 @@
 "use client";
 
 import { useGlobal } from "@/store";
-import { info } from "@/db/info";
 
 import styles from "../AboutInfo.module.css";
 import { HelperTitle } from "@/helpers";
 
-export const AboutContent = () => {
+interface AboutContentProps {
+  description: string[];
+}
+
+export const AboutContent = ({ description }: AboutContentProps) => {
   const { language } = useGlobal();
-  const { description } = info.aboutMe;
 
   return (
     <div className={styles.aboutContent}>

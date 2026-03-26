@@ -1,23 +1,26 @@
 "use client";
-import { info } from "@/db/info";
+import type { JobProps } from "@/db/info";
 import styles from "./ExperienceInfo.module.css";
 import { useGlobal } from "@/store";
 import { ExperienceJob } from "./components/ExperienceJob";
 
-export const ExperienceInfo = () => {
+interface ExperienceInfoProps {
+  jobs: JobProps[];
+  subtitle: string[];
+}
+
+export const ExperienceInfo = ({ jobs, subtitle }: ExperienceInfoProps) => {
   const { language } = useGlobal();
-  const { experience } = info;
-  const { jobs } = experience;
   return (
     <div className={styles.expContent}>
       <div className={styles.expContentContainer}>
-        {jobs(language).map((job, index) =>
+        {jobs.map((job, index) =>
           job.type === "dev" && <ExperienceJob key={index} {...job} />
         )}
       </div>
-      <p className={styles.subtitle}>{experience.subtitle[language]}</p>
+      <p className={styles.subtitle}>{subtitle[language]}</p>
       <div className={styles.expContentContainer}>
-        {jobs(language).map((job, index) =>
+        {jobs.map((job, index) =>
           job.type === "art" && <ExperienceJob key={index} {...job} />
         )}
       </div>

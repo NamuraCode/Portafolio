@@ -1,17 +1,19 @@
 "use client";
 import { useRef } from "react";
 import Link from "next/link";
-import {
-  infoImagesAbout,
-  infoImagesProject,
-  ImageProjectProps,
-  ImageAboutProps,
-} from "@/db/info";
 
 import { useGlobal } from "@/store";
 
 import { ImagesSlider } from "./components/ImagesSlider";
 import styles from "./HelperSlider.module.css";
+
+export interface ImageProjectProps {
+  title: string[];
+  description: string[];
+  images: string[];
+  url: string;
+  type: string;
+}
 
 interface HelperSliderProps {
   imagePropsProject?: ImageProjectProps;
