@@ -1,29 +1,30 @@
 "use client";
 
-import { useLayoutEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import { useGlobal } from "@/store";
 import styles from "./HelperCursor.module.css";
 
-interface HelperCursorProps {
-  positions: { x: number; y: number };
-}
-
-export const HelperCursor = ({ positions }: HelperCursorProps) => {
+export const HelperCursor = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
   const { isCursorHover, cursorText } = useGlobal();
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const onMove = (e: MouseEvent) => {
+      el.style.transform = `translate(${e.clientX - 30}px, ${e.clientY - 6}px)`;
+    };
+    window.addEventListener("mousemove", onMove, { passive: true });
+    return () => window.removeEventListener("mousemove", onMove);
+  }, []);
 
   return (
     <div
-      className={`${styles.cursorContainer}
-        ${isCursorHover ? styles.cursorHover : ""}
-      `}
-      style={{ left: positions.x - 30, top: positions.y - 6 }}
+      ref={containerRef}
+      className={`${styles.cursorContainer} ${isCursorHover ? styles.cursorHover : ""}`}
     >
-      <div
-        className={`${styles.cursor} 
-          ${isCursorHover ? styles.cursorBall : ""}
-        `}
-      ></div>
+      <div className={`${styles.cursor} ${isCursorHover ? styles.cursorBall : ""}`}></div>
       <span className={`${styles.cursorText} ${isCursorHover ? styles.showCursorText : ""}`}>
         {cursorText}
       </span>

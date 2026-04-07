@@ -6,8 +6,7 @@
 }
 
 .contactForm input,
-.contactForm textarea,
-.contactForm button {
+.contactForm textarea {
   padding: 0.938rem;
   margin-bottom: 1.875rem;
   font-size: var(--text14);
@@ -19,23 +18,15 @@
   transition: background-color 0.1s ease;
 }
 
-.contactForm button {
-  background-color: var(--color1);
-  font-weight: var(--weight700);
-  color: var(--color3);
-  transition: box-shadow 0.2s ease;
-  outline: 1px solid var(--color3);
-}
-
 .contactForm fieldset {
   border: none;
 }
 
 .contactForm textarea {
-  min-width: 100%;
-  max-width: 100%;
+  width: 100%;
   min-height: 150px;
   height: 100%;
+  resize: vertical;
 }
 
 .contactForm input::placeholder,
@@ -72,10 +63,14 @@
   width: 100%;
   align-self: center;
   padding: 1rem 1.6rem;
+  margin-bottom: 1.875rem;
   font-size: var(--text16);
   font-weight: var(--weight800);
+  border-radius: var(--borderRadiusCustom);
+  border: none;
   color: var(--color1);
   background-color: var(--color3);
+  outline: 1px solid var(--color3);
   transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 

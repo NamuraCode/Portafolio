@@ -8,12 +8,12 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  pointer-events: all;
+  pointer-events: none;
   animation: goTop 0.8s ease-in-out both;
   animation-delay: 5s;
+  will-change: width, height, border-radius;
   background-color: var(--color1);
   z-index: 1000;
-  pointer-events: none;
 }
 
 .animLoader {
@@ -21,16 +21,11 @@
   top: 42.2%;
   left: 46%;
   animation: rotate 2s ease-in-out 2;
+  will-change: transform;
 }
-
-/* .hiddenAnim {
-  position: absolute;
-  animation: goTopLogo 1s ease-in-out both;
-} */
 
 .hiddenLoader {
   animation: hiddenAnimLoader 0.2s ease-in-out both;
-  /* animation-delay: 1s; */
 }
 
 @keyframes rotate {
@@ -59,18 +54,6 @@
   }
 }
 
-/* @keyframes goTopLogo {
-  0% {
-    top: 42.2%;
-    left: 46%;
-  }
-  100% {
-    top: 1.563rem;
-    left: 1.563rem;
-    width: 51.19px;
-    height: 51.19px;
-  }
-} */
 
 @keyframes hiddenAnimLoader {
   0% {
