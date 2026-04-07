@@ -70,10 +70,6 @@
   right: 3.2rem;
 }
 
-.borderRTheme:hover {
-  color: var(--);
-}
-
 .borderRTheme input {
   display: none;
 }

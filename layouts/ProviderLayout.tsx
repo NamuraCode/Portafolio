@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import { GlobalProvider } from "@/store";
 import { Montserrat, Alumni_Sans, Onest } from "next/font/google";
@@ -30,10 +29,6 @@ export const ProviderLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const [positionsCursor, setPositionsCursor] = useState<{
-    x: number;
-    y: number;
-  }>({ x: 20, y: 20 });
   return (
     <html lang="en" className={`${montserrat.variable} ${alumniSans.variable} ${onest.variable}`}>
       <head>
@@ -42,11 +37,10 @@ export const ProviderLayout = ({
       <body
         id="home"
         data-theme="light"
-        onMouseMove={(e) => setPositionsCursor({ x: e.clientX, y: e.clientY })}
       >
         <Analytics />
         <GlobalProvider>
-          <HelperCursor positions={positionsCursor} />
+          <HelperCursor />
           <Header />
           {children}
         </GlobalProvider>

@@ -10,9 +10,8 @@
 }
 
 .navbarPoints a {
-  content: "";
   border-radius: 60px;
-  padding: 5px 5px;
+  padding: 5px;
   border: 1px solid var(--color1);
   background-color: transparent;
   pointer-events: all;

@@ -1,5 +1,7 @@
 .cursorContainer {
   position: fixed;
+  left: 0;
+  top: 0;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -7,7 +9,8 @@
   height: 60px;
   pointer-events: none;
   mix-blend-mode: difference;
-  transition: left 0s ease-in-out, top 0s ease-in-out, mix-blend-mode 0.2s ease;
+  transition: mix-blend-mode 0.2s ease;
+  will-change: transform, mix-blend-mode;
   z-index: 100;
 }
 
@@ -17,7 +20,6 @@
 
 .cursorText {
   position: absolute;
-  text-justify: distribute;
   font-size: 13px;
   font-weight: var(--weight600);
   text-align: center;
