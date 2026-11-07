@@ -19,7 +19,7 @@ export const Navbar = ({ changeColor, items }: NavbarProps) => {
       <ul>
         {items.map((item, index) => (
           <li key={index} className={changeColor ? styles.changeColor : ""}>
-            <Link href={`#${item[1]}`} aria-label={item[language]}>
+            <Link href={`#${item[1].toLowerCase()}`}>
               {item[language]}
             </Link>
           </li>

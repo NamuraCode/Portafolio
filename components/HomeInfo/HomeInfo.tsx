@@ -3,19 +3,34 @@ import { useGlobal } from "@/store";
 import { ButtonHome } from "./components/ButtonHome";
 import styles from "./HomeInfo.module.css";
 import Link from "next/link";
+import { ArrowDown } from "lucide-react";
 
 interface HomeInfoProps {
+  role: string[];
   welcome: string[];
   description: string[];
   showMore: string[];
 }
 
-export const HomeInfo = ({ welcome, description, showMore }: HomeInfoProps) => {
+export const HomeInfo = ({
+  role,
+  welcome,
+  description,
+  showMore,
+}: HomeInfoProps) => {
   const { language } = useGlobal();
   return (
     <div className={styles.homeInfo}>
+      <span className={styles.role}>
+        <span className={styles.roleDot} aria-hidden="true" />
+        {role[language]}
+      </span>
       <h1>{welcome[language]}</h1>
-      <p>{description[language]}<Link href={"/"}>{showMore[language]}</Link></p>
+      <p>{description[language]}</p>
+      <Link href="#about" className={styles.showMore}>
+        {showMore[language]}
+        <ArrowDown aria-hidden="true" />
+      </Link>
       <div className={styles.buttons}>
         <ButtonHome
           text="Linkedin"

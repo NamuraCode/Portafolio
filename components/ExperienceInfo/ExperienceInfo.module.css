@@ -1,104 +1,161 @@
 .expContent {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3.5rem;
+}
+
+.expGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--text12);
+  font-weight: var(--weight700);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--colorCaption);
+}
+
+.subtitle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--border);
 }
 
 .expContentContainer {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding-left: 1.625rem;
+  list-style: none;
+  padding-left: 1.75rem;
 }
 
-.experienceJobDescription,
-.subtitle,
-.experienceJob div p {
-  font-weight: var(--weight600);
-  color: var(--colorCaption);
-}
-
-.subtitle {
-  padding-left: 1.875rem;
-  font-size: var(--text14);
-  font-weight: var(--weight800);
-}
-
-.expContentContainer::after {
+.expContentContainer::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 0.5rem;
+  bottom: 0.5rem;
   left: 0;
-  width: 2px;
-  height: 100%;
-  background-color: var(--color3);
+  width: 1px;
+  background-color: var(--borderStrong);
 }
 
 .experienceJob {
-  display: flex;
-  flex-direction: row;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 2.5rem;
+  padding: 1.5rem;
+  border-radius: var(--radiusLg);
+  border: 1px solid transparent;
+  transition: background-color 0.4s var(--ease), border-color 0.4s var(--ease);
 }
 
-.experienceJobDescription {
-  font-size: var(--text14);
-}
-
-.experienceJob::after {
+.experienceJob::before {
   content: "";
   position: absolute;
-  left: -3px;
-  width: 8px;
-  height: 8px;
-  margin-top: 6px;
+  top: 2.05rem;
+  left: calc(-1.75rem - 4px);
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
+  background-color: var(--color1);
+  border: 2px solid var(--color3);
+  transition: background-color 0.4s var(--ease);
+}
+
+.experienceJob:hover {
+  background-color: var(--surface);
+  border-color: var(--border);
+}
+
+.experienceJob:hover::before {
   background-color: var(--color3);
 }
 
-.experienceJob div {
-  width: 50%;
-  padding: 0 4rem;
+.jobMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.experienceJob div h3,
-.experienceJob div h4 {
+.jobTime {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  font-size: var(--text12);
+  font-weight: var(--weight600);
+  color: var(--colorCaption);
+  border-radius: var(--radiusPill);
+  border: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+
+.jobMeta h3 {
   font-size: var(--text20);
   font-weight: var(--weight800);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
   color: var(--color3);
   text-wrap: balance;
 }
 
-.experienceJob div p {
-  width: 100%;
-  margin-top: 0.4rem;
-  font-size: var(--text12);
-  font-weight: var(--weight700);
-  text-wrap: balance;
+.jobMeta h4 {
+  margin-top: 0.25rem;
+  font-size: var(--text14);
+  font-weight: var(--weight600);
+  color: var(--colorCaption);
 }
 
-.experienceJob div h4 {
-  padding-bottom: 0;
+.experienceJobDescription {
+  font-size: var(--text14);
+  font-weight: var(--weight500);
+  line-height: 1.7;
+  color: var(--colorCaption);
+  text-wrap: pretty;
 }
 
-.experienceJob p {
-  width: 50%;
-  text-wrap: balance;
+.jobStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.jobStack li {
+  padding: 0.25rem 0.6rem;
+  font-size: 11px;
+  font-weight: var(--weight600);
+  color: var(--color3);
+  border-radius: var(--radiusPill);
+  background-color: var(--border);
 }
 
 @media (width <= 1024px) {
   .experienceJob {
-    flex-direction: column;
-    padding: 0 4rem;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
+
+@media (width < 768px) {
+  .expContentContainer {
+    padding-left: 1.25rem;
   }
 
-  .experienceJob div {
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 2rem;
+  .experienceJob {
+    padding: 1.25rem 0.5rem 1.25rem 0.75rem;
   }
 
-  .experienceJob p {
-    width: 100%;
+  .experienceJob::before {
+    left: calc(-1.25rem - 4px);
+    top: 1.8rem;
   }
 }

@@ -9,21 +9,28 @@ export interface JobProps {
   company: string;
   time: string[];
   description: string[];
+  stack: string[];
   type: string;
+}
+
+export interface SkillGroup {
+  title: string[];
+  items: string[];
 }
 
 export const info = {
   header: [db.navbar[0], db.navbar[1], db.navbar[2], db.navbar[3]],
   home: {
+    role: db.home.role,
+    cta: db.home.cta,
     welcome: db.home.welcome,
     description: db.home.description,
     showMore: db.home.showMore,
   },
-  footer: {
-    copy: db.footer.copy,
-  },
+  footer: db.footer,
   experience: {
     title: db.experience.title,
+    devSubtitle: db.experience.devSubtitle,
     subtitle: db.experience.subtitle,
     jobs: (): JobProps[] => {
       return db.experience.jobs.map((job) => ({
@@ -31,6 +38,7 @@ export const info = {
         company: job.company,
         time: job.time,
         description: job.description,
+        stack: job.stack,
         type: job.type,
       }));
     },
@@ -45,9 +53,14 @@ export const info = {
   aboutMe: {
     title: db.aboutMe.title,
     description: db.aboutMe.content,
+    skillsTitle: db.aboutMe.skillsTitle,
+    skills: db.aboutMe.skills as SkillGroup[],
   },
   contact: {
     title: db.contact.title,
+    intro: db.contact.intro,
+    placeholder: db.contact.placeholder,
+    status: db.contact.status,
     label: {
       name: db.contact.label.name,
       email: db.contact.label.email,

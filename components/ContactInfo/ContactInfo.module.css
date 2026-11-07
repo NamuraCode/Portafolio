@@ -1,21 +1,39 @@
+.intro {
+  max-width: 460px;
+  margin: -1.75rem auto 3rem;
+  font-size: var(--text16);
+  font-weight: var(--weight500);
+  line-height: 1.6;
+  text-align: center;
+  color: var(--colorCaption);
+  text-wrap: balance;
+}
+
 .contactForm {
   display: flex;
-  width: 60%;
+  width: 100%;
+  max-width: 560px;
   flex-direction: column;
   margin: auto;
+  padding: 2rem;
+  border-radius: calc(var(--radiusLg) + 4px);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadowSoft);
 }
 
 .contactForm input,
 .contactForm textarea {
-  padding: 0.938rem;
-  margin-bottom: 1.875rem;
+  padding: 0.95rem 1rem;
+  margin-bottom: 1.5rem;
   font-size: var(--text14);
-  font-weight: var(--weight600);
-  border-radius: var(--borderRadiusCustom);
-  border: none;
-  background-color: var(--colorBtn);
-  color: var(--color1);
-  transition: background-color 0.1s ease;
+  font-weight: var(--weight500);
+  border-radius: var(--radiusMd);
+  border: 1px solid var(--border);
+  background-color: var(--color1);
+  color: var(--color3);
+  transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease),
+    background-color 0.3s var(--ease);
 }
 
 .contactForm fieldset {
@@ -25,53 +43,59 @@
 .contactForm textarea {
   width: 100%;
   min-height: 150px;
-  height: 100%;
   resize: vertical;
+  line-height: 1.6;
 }
 
 .contactForm input::placeholder,
 .contactForm textarea::placeholder {
-  opacity: 0;
+  color: var(--colorCaption);
+  opacity: 0.6;
 }
 
 .contactForm label,
 .contactForm legend {
-  margin-bottom: 0.625rem;
-  text-transform: capitalize;
-  font-size: var(--text14);
-  font-weight: var(--weight600);
+  margin-bottom: 0.55rem;
+  font-size: var(--text12);
+  font-weight: var(--weight700);
+  letter-spacing: 0.04em;
   color: var(--colorCaption);
+}
+
+.contactForm input:hover,
+.contactForm textarea:hover {
+  border-color: var(--borderStrong);
 }
 
 .contactForm input:focus,
 .contactForm textarea:focus {
   outline: none;
-  background: var(--color3);
+  border-color: var(--color3);
+  box-shadow: 0 0 0 4px var(--border);
 }
 
-.contactForm > textarea:valid,
-.contactForm > input:valid {
-  background: var(--color3);
+.contactForm fieldset > div {
+  margin-bottom: 1.5rem;
+  box-shadow: none;
+  background-color: var(--color1);
 }
 
 .contactForm button {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.5rem;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
-  align-self: center;
   padding: 1rem 1.6rem;
-  margin-bottom: 1.875rem;
   font-size: var(--text16);
-  font-weight: var(--weight800);
-  border-radius: var(--borderRadiusCustom);
-  border: none;
+  font-weight: var(--weight700);
+  border-radius: var(--radiusMd);
+  border: 1px solid var(--color3);
   color: var(--color1);
   background-color: var(--color3);
-  outline: 1px solid var(--color3);
-  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  transition: background-color 0.3s var(--ease), color 0.3s var(--ease),
+    transform 0.3s var(--ease), opacity 0.3s var(--ease);
 }
 
 .contactForm button:hover {
@@ -79,21 +103,51 @@
   background-color: var(--color1);
 }
 
+.contactForm button:active {
+  transform: scale(0.98);
+}
+
+.contactForm button:disabled {
+  opacity: 0.6;
+}
+
 .contactForm button svg {
   width: 1.5rem;
   height: 1.1rem;
+  transition: transform 0.3s var(--ease);
+}
+
+.contactForm button:hover svg {
+  transform: translateX(3px);
 }
 
 .contactForm button svg path {
-  transition: stroke 0.1s ease-in-out;
+  transition: stroke 0.3s var(--ease);
 }
 
 .contactForm button:hover svg path {
   stroke: var(--color3) !important;
 }
 
-@media (width <= 1024px) {
+.status {
+  min-height: 1.25rem;
+  margin-top: 1rem;
+  font-size: var(--text14);
+  font-weight: var(--weight600);
+  text-align: center;
+  color: var(--color3);
+}
+
+.statusError {
+  color: #c2410c;
+}
+
+@media (width < 768px) {
   .contactForm {
-    width: 100%;
+    padding: 1.25rem;
   }
+}
+
+.contactForm fieldset label {
+  margin-bottom: 0;
 }

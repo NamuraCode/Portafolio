@@ -1,7 +1,7 @@
 {
     "navbar": [
         [
-            "Sobre Mi",
+            "Sobre mí",
             "About"
         ],
         [
@@ -18,58 +18,115 @@
         ]
     ],
     "home": {
+        "role": [
+            "Full Stack Developer · React, Node.js y 3D",
+            "Full Stack Developer · React, Node.js & 3D"
+        ],
         "welcome": [
             "Hola, soy David Naranjo",
-            "Hello, I'm David Naranjo"
+            "Hi, I'm David Naranjo"
         ],
         "description": [
-            "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github...",
-            "Full-Stack JavaScript Developer, studied at Digital House and Misión Tic 2021. With skills in languages such as JavaScript, Typescript, Python, Java, HTML and CSS. Repository management with Git and Github..."
+            "Desarrollador Full Stack con casi cinco años construyendo aplicaciones web, móviles y 3D de punta a punta: APIs seguras con Node.js y Express, bases de datos SQL y NoSQL, e interfaces rápidas con React, Next.js y Three.js.",
+            "Full Stack Developer with nearly five years building web, mobile and 3D applications end to end: secure Node.js and Express APIs, SQL and NoSQL databases, and fast interfaces with React, Next.js and Three.js."
         ],
         "showMore": [
-            "Ver mas",
-            "show More"
+            "Conoce más sobre mí",
+            "Learn more about me"
+        ],
+        "cta": [
+            "Hablemos",
+            "Let's talk"
         ]
     },
     "experience": {
         "title": [
-            "experiencia",
-            "experience"
+            "Experiencia",
+            "Experience"
+        ],
+        "devSubtitle": [
+            "Desarrollo Full Stack",
+            "Full Stack Development"
         ],
         "subtitle": [
-            "complementarias",
-            "complementary"
+            "Hobbies · Arte 3D",
+            "Hobbies · 3D Art"
         ],
         "jobs": [
             {
                 "charge": [
-                    "Full-Stack junior",
-                    "Full-Stack junior"
+                    "Front-End Developer",
+                    "Front-End Developer"
                 ],
-                "company": "Makata Studio",
+                "company": "DALOG Diagnosesysteme GmbH",
                 "time": [
-                    "Febrero 2022 - Actualmente...",
-                    "February 2022 - Currently..."
+                    "Jun 2026 — Presente",
+                    "Jun 2026 — Present"
                 ],
                 "description": [
-                    "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github.",
-                    "Desarrollador Full-Stack JavaScript, cursado en Digital House y Misión Tic 2021. Con competencias en lenguajes como, JavaScript, Typescript, Python, Java, HTML y CSS. Gestión de repositorios con Git y Github. "
+                    "Plataforma de monitoreo de maquinaria industrial. Mantengo y modernizo una aplicación React legacy, entregando correcciones y nuevas features en cada sprint (dashboards de estado de máquinas, visualización de alertas y reportes operativos). Moví el procesamiento pesado de datos a Web Workers para mantener la UI fluida con grandes volúmenes de datos de sensores, y trabajo con el equipo back-end en el diseño de endpoints y la optimización de payloads.",
+                    "Industrial machine monitoring platform. I maintain and modernize a legacy React application, shipping bug fixes and new features every sprint (machine status dashboards, alert visualization and operational reports). I moved heavy data processing to Web Workers to keep the UI responsive with large sensor datasets, and work with the back-end team on endpoint design and payload optimization."
+                ],
+                "stack": [
+                    "React",
+                    "TypeScript",
+                    "Vite",
+                    "Web Workers",
+                    "Axios",
+                    "REST APIs",
+                    "Azure"
                 ],
                 "type": "dev"
             },
             {
                 "charge": [
-                    "Full-Stack junior",
-                    "Full-Stack junior"
+                    "Full Stack · Mobile · 3D Developer",
+                    "Full Stack · Mobile · 3D Developer"
+                ],
+                "company": "Makata Studio",
+                "time": [
+                    "Feb 2022 — Jun 2026",
+                    "Feb 2022 — Jun 2026"
+                ],
+                "description": [
+                    "Estudio digital que crea productos web, móviles y 3D para clientes, del back end a la UI. Construí back ends con Node.js y Express con rutas protegidas por autenticación, autorización y control de acceso por roles; modelé bases de datos MongoDB, MySQL y MariaDB con ORMs e integré Supabase y Firebase. Desarrollé apps full stack con React y Next.js (Redux, Zustand, Jest), experiencias 3D con Three.js y R3F, y apps nativas iOS y Android.",
+                    "Digital studio building web, mobile and 3D products for clients, from back end to UI. I built Node.js and Express back ends with routes protected by authentication, authorization and role-based access control; modeled MongoDB, MySQL and MariaDB databases through ORMs and integrated Supabase and Firebase. I developed full stack apps with React and Next.js (Redux, Zustand, Jest), 3D experiences with Three.js and R3F, and native iOS and Android apps."
+                ],
+                "stack": [
+                    "Node.js",
+                    "Express",
+                    "MongoDB",
+                    "MySQL",
+                    "Supabase",
+                    "Next.js",
+                    "Three.js",
+                    "Swift",
+                    "Kotlin",
+                    "n8n"
+                ],
+                "type": "dev"
+            },
+            {
+                "charge": [
+                    "Full Stack Developer",
+                    "Full Stack Developer"
                 ],
                 "company": "Protalento",
                 "time": [
-                    "Agosto 2020 - Abril 2021",
-                    "August 2020 - April. 2021"
+                    "Sep 2021 — Abr 2022",
+                    "Sep 2021 — Apr 2022"
                 ],
                 "description": [
-                    "Desarrollo Back End y Front End. Como prácticas en cada módulo se desarrollaban ejercicios, adicional dos páginas web, mercado liebre replica de mercado libre y kruto store e-commerce página desarrollada.",
-                    "Desarrollo Back End y Front End. Como prácticas en cada módulo se desarrollaban ejercicios, adicional dos páginas web, mercado liebre replica de mercado libre y kruto store e-commerce página desarrollada."
+                    "Diseñé y construí una API RESTful con Node.js y Express siguiendo el patrón MVC, con datos, relaciones y consultas en MySQL usando Sequelize. Implementé middleware de autenticación y autorización por roles para rutas protegidas, y desarrollé el front end en React con formularios dinámicos, filtros y vistas de producto, documentando la API.",
+                    "Designed and built a RESTful API with Node.js and Express following the MVC pattern, modeling data, relationships and queries on MySQL with Sequelize. Implemented authentication and role-based authorization middleware for protected routes, and built the React front end with dynamic forms, filters and product views, documenting the API."
+                ],
+                "stack": [
+                    "Node.js",
+                    "Express",
+                    "Sequelize",
+                    "MySQL",
+                    "React",
+                    "React Router"
                 ],
                 "type": "dev"
             },
@@ -80,14 +137,15 @@
                 ],
                 "company": "Freelance",
                 "time": [
-                    "Febrero 2020 – Actualmente...",
-                    "February 2020 – Currently..."
+                    "Feb 2020 — Presente",
+                    "Feb 2020 — Present"
                 ],
                 "description": [
-                    "Soluciones digitales de arte 3D y 2D, para empresas y particulares, el foco fue el diseño 3D y el 2D para proyectos animados, diseño de personajes, y renderizado de productos audiovisuales.",
-                    "Soluciones digitales de arte 3D y 2D, para empresas y particulares, el foco fue el diseño 3D y el 2D para proyectos animados, diseño de personajes, y renderizado de productos audiovisuales."
+                    "Soluciones de arte digital 3D y 2D para empresas y particulares: diseño de personajes, modelado 3D para proyectos animados y renderizado de piezas audiovisuales.",
+                    "3D and 2D digital art for companies and individuals: character design, 3D modeling for animated projects, and rendering for audiovisual productions."
                 ],
-                "type": "art"
+                "type": "art",
+                "stack": []
             },
             {
                 "charge": [
@@ -96,14 +154,15 @@
                 ],
                 "company": "Semillero de Investigación ITADIR",
                 "time": [
-                    "Marzo 2019 – Agosto 2019",
-                    "March 2019 – August 2019"
+                    "Mar 2019 — Ago 2019",
+                    "Mar 2019 — Aug 2019"
                 ],
                 "description": [
-                    "Desempeñe el cargo de artista 3D e investigador de proyectos en realidad aumentada, realidad virtual, captura de movimiento y el proyecto asignado, un cortometraje animado llamado sinfonía salvaje.",
-                    "Desempeñe el cargo de artista 3D e investigador de proyectos en realidad aumentada, realidad virtual, captura de movimiento y el proyecto asignado, un cortometraje animado llamado sinfonía salvaje."
+                    "Artista 3D e investigador en proyectos de realidad aumentada, realidad virtual y captura de movimiento. Participé en el cortometraje animado «Sinfonía Salvaje».",
+                    "3D artist and researcher on augmented reality, virtual reality and motion capture projects. Worked on the animated short film \"Sinfonía Salvaje\" (Wild Symphony)."
                 ],
-                "type": "art"
+                "type": "art",
+                "stack": []
             }
         ]
     },
@@ -119,62 +178,202 @@
             ]
         },
         "title": [
-            "proyectos",
-            "projects"
+            "Proyectos",
+            "Projects"
         ]
     },
     "aboutMe": {
         "title": [
-            "sobre mi",
-            "about me"
+            "Sobre mí",
+            "About me"
         ],
         "content": [
-            "Desarrollador de Software, actualmente estudiando Ingeniería en Desarrollo de Software en la Institución Universitaria Pascual Bravo, con formación complementaria en Digital House y Misión TIC 2021.Con habilidades en JavaScript, TypeScript, Python, Java, C#, HTML y CSS, así como experiencia en la creación y uso de APIs REST, manejo de herramientas modernas como Vite.js, Next.js, Astro, Framer, GSAP y CSS para el desarrollo de páginas web animadas con estructuras semánticas y optimizadas para SEO, aplicando prácticas de optimización de rendimiento web. Trabajando en proyectos full-stack con el stack MERN, integrando modelos 3D interactivos en aplicaciones web y móviles (iOS y Android). Manejo de Git y GitHub, incluyendo flujos de trabajo CI/CD con GitHub Actions. Desarrollo tecnológico, aplicando metodologías ágiles SCRUM, soy una persona constantemente curiosa, capaz de aprender de forma continua y comprometida con la creación de soluciones digitales escalables, sostenibles e innovadoras.",
-            "Software Developer, currently studying Software Development Engineering at the Pascual Bravo University Institution, with complementary training at Digital House and Misión TIC 2021.With skills in JavaScript, TypeScript, Python, Java, C#, HTML, and CSS, as well as experience in creating and using REST APIs, I am proficient in modern tools such as Vite.js, Next.js, Astro, Framer, GSAP, and CSS for developing animated web pages with semantic and SEO-friendly structures, applying web performance optimization practices. Working on full-stack projects with the MERN stack, integrating interactive 3D models into web and mobile applications (iOS and Android). Proficient in Git and GitHub, including CI/CD workflows with GitHub Actions. Technological development, applying agile SCRUM methodologies, I am constantly curious, capable of continuous learning, and committed to creating scalable, sustainable, and innovative digital solutions. "
+            "Soy desarrollador Full Stack con casi cinco años de experiencia construyendo aplicaciones web, móviles y 3D de punta a punta. Actualmente trabajo en DALOG Diagnosesysteme GmbH, optimizando una plataforma React que entrega grandes volúmenes de datos de sensores industriales en tiempo real.\n\nEn el back end construyo APIs con Node.js y Express con rutas protegidas, autenticación y middleware de autorización por roles, y capas de datos sobre MySQL, MariaDB y MongoDB usando ORMs y arquitectura MVC. En el front end trabajo con React, Next.js, TypeScript y Three.js, con un fuerte enfoque en rendimiento, Core Web Vitals y SEO técnico.\n\nEstudio Ingeniería en Desarrollo de Software en la Institución Universitaria Pascual Bravo y soy Tecnólogo en Tecnología 3D Generalista del SENA, con diplomados de Digital House, la UPB y Misión TIC 2021.",
+            "I'm a Full Stack Developer with nearly five years of experience building web, mobile and 3D applications end to end. I currently work at DALOG Diagnosesysteme GmbH, optimizing a React platform that delivers large volumes of industrial sensor data in real time.\n\nOn the back end, I build Node.js and Express APIs with protected routes, authentication and role-based authorization middleware, and data layers on MySQL, MariaDB and MongoDB using ORMs and MVC architecture. On the front end, I work with React, Next.js, TypeScript and Three.js, with a strong focus on performance, Core Web Vitals and technical SEO.\n\nI'm studying Software Development Engineering at Pascual Bravo University Institution and hold a Technologist degree in Generalist 3D Technology from SENA, plus diplomas from Digital House, UPB and Misión TIC 2021."
+        ],
+        "skillsTitle": [
+            "Skills técnicas",
+            "Technical skills"
+        ],
+        "skills": [
+            {
+                "title": [
+                    "Back-End",
+                    "Back-End"
+                ],
+                "items": [
+                    "Node.js",
+                    "Express.js",
+                    "REST APIs",
+                    "MVC",
+                    "Auth & RBAC"
+                ]
+            },
+            {
+                "title": [
+                    "Bases de datos",
+                    "Databases"
+                ],
+                "items": [
+                    "MySQL",
+                    "MariaDB",
+                    "MongoDB",
+                    "Sequelize",
+                    "Supabase",
+                    "Firebase"
+                ]
+            },
+            {
+                "title": [
+                    "Front-End",
+                    "Front-End"
+                ],
+                "items": [
+                    "React",
+                    "Next.js",
+                    "TypeScript",
+                    "Vite",
+                    "Astro",
+                    "Redux",
+                    "Zustand",
+                    "GSAP"
+                ]
+            },
+            {
+                "title": [
+                    "3D y Móvil",
+                    "3D & Mobile"
+                ],
+                "items": [
+                    "Three.js",
+                    "React Three Fiber",
+                    "Web Workers",
+                    "iOS (Swift)",
+                    "Android (Kotlin)"
+                ]
+            },
+            {
+                "title": [
+                    "Testing y DevOps",
+                    "Testing & DevOps"
+                ],
+                "items": [
+                    "Jest",
+                    "React Testing Library",
+                    "GitHub Actions",
+                    "CI/CD",
+                    "Azure"
+                ]
+            },
+            {
+                "title": [
+                    "Rendimiento e IA",
+                    "Performance & AI"
+                ],
+                "items": [
+                    "Lighthouse",
+                    "Core Web Vitals",
+                    "Technical SEO",
+                    "n8n",
+                    "AI agents"
+                ]
+            }
         ]
     },
     "contact": {
         "title": [
-            "Contactame",
-            "Contact me"
+            "Hablemos",
+            "Let's talk"
+        ],
+        "intro": [
+            "¿Tienes un proyecto en mente o una oportunidad que compartir? Escríbeme y te responderé lo antes posible.",
+            "Have a project in mind or an opportunity to share? Send me a message and I'll get back to you as soon as I can."
         ],
         "label": {
             "name": [
-                "nombre",
-                "name"
+                "Nombre",
+                "Name"
             ],
             "email": [
-                "correo",
-                "email"
+                "Correo",
+                "Email"
             ],
             "service": {
                 "title": [
-                    "servicio",
-                    "service"
+                    "¿En qué te puedo ayudar?",
+                    "What can I help you with?"
                 ],
                 "dev": [
-                    "desarrollo",
-                    "development"
+                    "Desarrollo Full Stack",
+                    "Full Stack Dev"
                 ],
                 "art": [
-                    "arte",
-                    "art"
+                    "Arte 3D",
+                    "3D Art"
                 ]
             },
             "message": [
-                "mensaje",
-                "message"
+                "Mensaje",
+                "Message"
             ],
             "send": [
-                "enviar",
-                "send"
+                "Enviar mensaje",
+                "Send message"
+            ]
+        },
+        "placeholder": {
+            "name": [
+                "Tu nombre",
+                "Your name"
+            ],
+            "email": [
+                "tu@correo.com",
+                "you@email.com"
+            ],
+            "message": [
+                "Cuéntame sobre tu proyecto…",
+                "Tell me about your project…"
+            ]
+        },
+        "status": {
+            "sending": [
+                "Enviando…",
+                "Sending…"
+            ],
+            "success": [
+                "¡Mensaje enviado! Te responderé pronto.",
+                "Message sent! I'll be in touch soon."
+            ],
+            "error": [
+                "No se pudo enviar. Intenta de nuevo o escríbeme por correo.",
+                "Something went wrong. Please try again or email me directly."
             ]
         }
     },
     "footer": {
+        "tagline": [
+            "Desarrollador Full Stack: APIs, bases de datos e interfaces web y 3D.",
+            "Full Stack Developer: APIs, databases, and web & 3D interfaces."
+        ],
+        "navigate": [
+            "Navegación",
+            "Navigate"
+        ],
+        "connect": [
+            "Redes",
+            "Connect"
+        ],
+        "home": [
+            "Inicio",
+            "Home"
+        ],
         "copy": [
-            "© 2024 David Naranjo. Todos los derechos resevados",
-            "© 2024 David Naranjo. All rights reserved"
+            "Todos los derechos reservados.",
+            "All rights reserved."
+        ],
+        "backToTop": [
+            "Volver arriba",
+            "Back to top"
         ]
     }
 }

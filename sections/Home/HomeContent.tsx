@@ -3,16 +3,16 @@ import { info } from '@/db/info';
 import styles from './HomeContent.module.css';
 
 export const HomeContent = () => {
-  const { home, header } = info;
-  const contactLabel = header[header.length - 1];
+  const { home } = info;
   return (
     <section id="home" className={styles.home}>
       <HomeInfo
+        role={home.role}
         welcome={home.welcome}
         description={home.description}
         showMore={home.showMore}
       />
-      <HomeContact contactLabel={contactLabel} />
+      <HomeContact contactLabel={home.cta} />
     </section>
   );
 };

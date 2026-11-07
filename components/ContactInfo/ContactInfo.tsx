@@ -20,13 +20,30 @@ interface ContactLabels {
 
 interface ContactInfoProps {
   labels: ContactLabels;
+  placeholder: {
+    name: string[];
+    email: string[];
+    message: string[];
+  };
+  status: {
+    sending: string[];
+    success: string[];
+    error: string[];
+  };
 }
 
-export const ContactInfo = ({ labels }: ContactInfoProps) => {
+type FormStatus = "idle" | "sending" | "success" | "error";
+
+export const ContactInfo = ({
+  labels,
+  placeholder,
+  status: statusText,
+}: ContactInfoProps) => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [active, setActive] = useState<boolean>(true);
+  const [status, setStatus] = useState<FormStatus>("idle");
   const { language } = useGlobal();
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -43,12 +60,17 @@ export const ContactInfo = ({ labels }: ContactInfoProps) => {
       service: active ? "Development" : "Design",
       message,
     };
+    setStatus("sending");
     emailjs
       .send(server, template, messageTemplate, { publicKey: keyPublic })
       .then(() => {
-        if (!formRef.current) return;
-        formRef.current.reset();
-      });
+        setStatus("success");
+        setName("");
+        setEmail("");
+        setMessage("");
+        formRef.current?.reset();
+      })
+      .catch(() => setStatus("error"));
   }
 
   return (
@@ -57,7 +79,9 @@ export const ContactInfo = ({ labels }: ContactInfoProps) => {
       <input
         id="name"
         type="text"
-        placeholder="Name"
+        name="name"
+        autoComplete="name"
+        placeholder={placeholder.name[language]}
         required
         onChange={(e) => setName(e.target.value)}
       />
@@ -65,13 +89,15 @@ export const ContactInfo = ({ labels }: ContactInfoProps) => {
       <input
         id="email"
         type="email"
-        placeholder="Email"
+        name="email"
+        autoComplete="email"
+        placeholder={placeholder.email[language]}
         required
         onChange={(e) => setEmail(e.target.value)}
       />
       <fieldset className={styles.formSelect}>
         <legend onClick={() => setActive(!active)}>{labels.service.title[language]}</legend>
-        <div className={global.containerToggle} style={{ justifyContent: "left", marginBottom: "1.875rem" }}>
+        <div className={global.containerToggle}>
           <label
             className={`${global.buttonToggle} ${active && global.activeToggle}`}
             onClick={() => setActive(true)}
@@ -102,14 +128,14 @@ export const ContactInfo = ({ labels }: ContactInfoProps) => {
       </fieldset>
       <label htmlFor="message">{labels.message[language]}</label>
       <textarea
-        placeholder="Message"
+        placeholder={placeholder.message[language]}
         name="message"
         id="message"
         minLength={10}
         required
         onChange={(e) => setMessage(e.target.value)}
       />
-      <button type="submit">
+      <button type="submit" disabled={status === "sending"}>
         <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             style={{ stroke: "var(--color1)" }}
@@ -118,8 +144,22 @@ export const ContactInfo = ({ labels }: ContactInfoProps) => {
             strokeWidth="3"
           />
         </svg>
-        <span>{labels.send[language]}</span>
+        <span>
+          {status === "sending"
+            ? statusText.sending[language]
+            : labels.send[language]}
+        </span>
       </button>
+      <p
+        role="status"
+        aria-live="polite"
+        className={`${styles.status} ${
+          status === "error" ? styles.statusError : ""
+        }`}
+      >
+        {status === "success" && statusText.success[language]}
+        {status === "error" && statusText.error[language]}
+      </p>
     </form>
   );
 };

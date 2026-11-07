@@ -7,6 +7,7 @@ interface ExperienceInfoProps {
   company: string;
   time: string[];
   description: string[];
+  stack: string[];
   type: string;
 }
 
@@ -15,17 +16,26 @@ export const ExperienceJob = ({
   company,
   time,
   description,
-  type,
+  stack,
 }: ExperienceInfoProps) => {
-  const { language }  = useGlobal();
+  const { language } = useGlobal();
   return (
-    <div className={styles.experienceJob}>
-      <div>
+    <li className={`${styles.experienceJob} reveal`}>
+      <div className={styles.jobMeta}>
+        <span className={styles.jobTime}>{time[language]}</span>
         <h3>{company}</h3>
         <h4>{charge[language]}</h4>
-        <p>{time[language]}</p>
       </div>
-      <p className={styles.experienceJobDescription}>{description[language]}</p>
-    </div>
+      <div className={styles.jobBody}>
+        <p className={styles.experienceJobDescription}>{description[language]}</p>
+        {stack.length > 0 && (
+          <ul className={styles.jobStack} aria-label="Stack">
+            {stack.map((tech) => (
+              <li key={tech}>{tech}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </li>
   );
 };

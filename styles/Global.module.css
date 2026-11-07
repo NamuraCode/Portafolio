@@ -1,7 +1,7 @@
 .sections {
   background-color: var(--color1);
-  padding: 10rem calc(100vw / 5);
-  padding-bottom: 0rem;
+  padding: 9rem var(--gutter) 0;
+  scroll-margin-top: 1rem;
 }
 
 .contact {
@@ -9,42 +9,56 @@
 }
 
 .containerToggle {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 2px;
-  margin-bottom: 2rem;
+  gap: 4px;
+  padding: 4px;
+  margin-bottom: 2.5rem;
+  border-radius: var(--radiusPill);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadowSoft);
 }
 
 .buttonToggle {
   display: flex;
   width: fit-content;
-  gap: 0.625rem;
+  gap: 0.5rem;
   align-items: center;
   border: none;
-  padding: 0.813rem 1rem;
-  background-color: var(--color3);
-  opacity: var(--opacity50);
-  border-top-left-radius: var(--borderRadiusCustom);
-  border-bottom-left-radius: var(--borderRadiusCustom);
-  transition: opacity 0.1s ease;
-}
-
-.activeToggle {
-  opacity: var(--opacity100);
-}
-
-.buttonToggle:last-child {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: var(--borderRadiusCustom);
-  border-bottom-right-radius: var(--borderRadiusCustom);
+  padding: 0.7rem 1.15rem;
+  border-radius: var(--radiusPill);
+  background-color: transparent;
+  transition: background-color 0.3s var(--ease), color 0.3s var(--ease);
 }
 
 .buttonToggle span {
   font-size: var(--text14);
   font-weight: var(--weight700);
+  color: var(--color3);
+  transition: color 0.3s var(--ease);
+}
+
+.buttonToggle svg path {
+  fill: var(--color3) !important;
+  transition: fill 0.3s var(--ease);
+}
+
+.buttonToggle:not(.activeToggle):hover {
+  background-color: var(--border);
+}
+
+.activeToggle {
+  background-color: var(--color3);
+}
+
+.activeToggle span {
   color: var(--color1);
+}
+
+.activeToggle svg path {
+  fill: var(--color1) !important;
 }
 
 .fadeIn {
@@ -75,7 +89,7 @@
 }
 
 @media (width < 768px) {
-  .sections{
-    padding: 10rem 1rem 0rem 1rem;
+  .sections {
+    padding: 7rem 1.25rem 0;
   }
 }
