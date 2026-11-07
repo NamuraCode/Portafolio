@@ -9,7 +9,6 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@emailjs/browser": "^5.0.3",
     "@gsap/react": "^2.1.2",
     "@react-three/drei": "^10.7.9",
     "@react-three/fiber": "^9.8.2",
@@ -24,6 +23,7 @@
     "postprocessing": "^6.39.6",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
+    "resend": "^6.37.0",
     "three": "^0.187.0"
   },
   "devDependencies": {

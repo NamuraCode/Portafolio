@@ -15,25 +15,3 @@
   border-radius: 28px;
   overflow: hidden;
 }
-
-.textBgContainer{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  width: 100%;
-  height: calc(100vw / 3);
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  z-index: 0 !important;
-}
-
-.textBg {
-  font-size: calc(100vw / 3);
-  font-weight: var(--weight600);
-  font-family: var(--font-alumni-sans), sans-serif;
-  color: var(--color1);
-  opacity: 0.2;
-  line-height: normal;
-}

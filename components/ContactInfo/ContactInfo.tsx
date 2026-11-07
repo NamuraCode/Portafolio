@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { sendContactEmail } from "@/app/actions/contact";
 
 import styles from "./ContactInfo.module.css";
 import global from "@/styles/Global.module.css";
@@ -47,30 +47,33 @@ export const ContactInfo = ({
   const { language } = useGlobal();
   const formRef = useRef<HTMLFormElement>(null);
 
-  function handleSubmit(evt: React.FormEvent<HTMLFormElement>) {
-    evt.preventDefault();
-    const server = process.env.NEXT_PUBLIC_KEY_SERVER!;
-    const template = process.env.NEXT_PUBLIC_KEY_TEMPLATE!;
-    const keyPublic = process.env.NEXT_PUBLIC_KEY_PUBLIC!;
-    if (!name || !email || !message || !formRef.current) return;
+  const [company, setCompany] = useState<string>("");
 
-    const messageTemplate = {
-      name,
-      email,
-      service: active ? "Development" : "Design",
-      message,
-    };
+  async function handleSubmit(evt: React.FormEvent<HTMLFormElement>) {
+    evt.preventDefault();
+    if (!name || !email || !message) return;
+
     setStatus("sending");
-    emailjs
-      .send(server, template, messageTemplate, { publicKey: keyPublic })
-      .then(() => {
-        setStatus("success");
-        setName("");
-        setEmail("");
-        setMessage("");
-        formRef.current?.reset();
-      })
-      .catch(() => setStatus("error"));
+    try {
+      const result = await sendContactEmail({
+        name,
+        email,
+        message,
+        company,
+        service: active ? "dev" : "art",
+      });
+      if (!result.ok) {
+        setStatus("error");
+        return;
+      }
+      setStatus("success");
+      setName("");
+      setEmail("");
+      setMessage("");
+      formRef.current?.reset();
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -81,6 +84,7 @@ export const ContactInfo = ({
         type="text"
         name="name"
         autoComplete="name"
+        maxLength={100}
         placeholder={placeholder.name[language]}
         required
         onChange={(e) => setName(e.target.value)}
@@ -126,12 +130,22 @@ export const ContactInfo = ({
           </label>
         </div>
       </fieldset>
+      <input
+        type="text"
+        name="company"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className={styles.honeypot}
+        onChange={(e) => setCompany(e.target.value)}
+      />
       <label htmlFor="message">{labels.message[language]}</label>
       <textarea
         placeholder={placeholder.message[language]}
         name="message"
         id="message"
         minLength={10}
+        maxLength={5000}
         required
         onChange={(e) => setMessage(e.target.value)}
       />
