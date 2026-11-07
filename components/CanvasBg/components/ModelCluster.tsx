@@ -1,15 +1,22 @@
 "use client";
 
 import { useMemo, useRef } from "react";
-import { useFrame, useThree } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import {
-  BallCollider,
+  CapsuleCollider,
   Physics,
   RapierRigidBody,
   RigidBody,
 } from "@react-three/rapier";
-import { MathUtils, Mesh, MeshStandardMaterial, Vector3 } from "three";
+import {
+  Euler,
+  MathUtils,
+  Mesh,
+  MeshStandardMaterial,
+  Quaternion,
+  Vector3,
+} from "three";
 import type { GLTF } from "three/examples/jsm/Addons.js";
 
 type GLTFResult = GLTF & {
@@ -18,32 +25,56 @@ type GLTFResult = GLTF & {
 
 const ATTRACTION = 0.08;
 const POINTER_FOLLOW = 0.12;
-const BASE_SCALE: [number, number, number] = [0.22, 0.44, 0.11];
+const BASE_SCALE: [number, number, number] = [0.32, 0.64, 0.16];
+
+const UPRIGHT_STRENGTH = 0.02;
 
 const tmp = new Vector3();
+const currentRotation = new Quaternion();
+const rotationError = new Quaternion();
 
-const MAX_BODIES = 16;
+const BODY_COUNT = 10;
+const UPRIGHT: [number, number, number] = [Math.PI, 0, Math.PI];
+const UPRIGHT_QUATERNION = new Quaternion().setFromEuler(new Euler(...UPRIGHT));
+const FRONT_TARGET = new Vector3(0, 0, 0.8);
+const BACK_TARGET = new Vector3(0, 0, 0);
 
-const INITIAL_BODIES = Array.from({ length: MAX_BODIES }, () => ({
-  position: [
-    MathUtils.randFloatSpread(8),
-    MathUtils.randFloatSpread(8),
-    MathUtils.randFloatSpread(4),
-  ] as [number, number, number],
-  rotation: [
-    Math.random() * Math.PI,
-    Math.random() * Math.PI,
-    Math.random() * Math.PI,
-  ] as [number, number, number],
-  size: MathUtils.randFloat(0.75, 1.25),
-}));
-
-interface LogoBodyProps {
-  geometry: Mesh["geometry"];
-  material: MeshStandardMaterial;
+interface BodyConfig {
   position: [number, number, number];
   rotation: [number, number, number];
   size: number;
+  target: Vector3;
+  upright: boolean;
+}
+
+const INITIAL_BODIES: BodyConfig[] = [
+  {
+    position: [0, 0, FRONT_TARGET.z],
+    rotation: UPRIGHT,
+    size: 1.1,
+    target: FRONT_TARGET,
+    upright: true,
+  },
+  ...Array.from({ length: BODY_COUNT - 1 }, () => ({
+    position: [
+      MathUtils.randFloatSpread(6),
+      MathUtils.randFloatSpread(6),
+      MathUtils.randFloatSpread(3),
+    ] as [number, number, number],
+    rotation: [
+      Math.random() * Math.PI,
+      Math.random() * Math.PI,
+      Math.random() * Math.PI,
+    ] as [number, number, number],
+    size: MathUtils.randFloat(0.85, 1),
+    target: BACK_TARGET,
+    upright: false,
+  })),
+];
+
+interface LogoBodyProps extends BodyConfig {
+  geometry: Mesh["geometry"];
+  material: MeshStandardMaterial;
 }
 
 const LogoBody = ({
@@ -52,6 +83,8 @@ const LogoBody = ({
   position,
   rotation,
   size,
+  target,
+  upright,
 }: LogoBodyProps) => {
   const api = useRef<RapierRigidBody>(null);
 
@@ -59,8 +92,35 @@ const LogoBody = ({
     const body = api.current;
     if (!body) return;
     const strength = ATTRACTION * Math.min(delta * 60, 2);
-    tmp.copy(body.translation() as Vector3).negate().multiplyScalar(strength);
+    tmp
+      .copy(target)
+      .sub(body.translation() as Vector3)
+      .multiplyScalar(strength);
     body.applyImpulse(tmp, true);
+
+    if (upright) {
+      const q = body.rotation();
+      currentRotation.set(q.x, q.y, q.z, q.w);
+      rotationError
+        .copy(UPRIGHT_QUATERNION)
+        .multiply(currentRotation.invert());
+      if (rotationError.w < 0) {
+        rotationError.set(
+          -rotationError.x,
+          -rotationError.y,
+          -rotationError.z,
+          -rotationError.w
+        );
+      }
+      const angle = 2 * Math.acos(Math.min(1, rotationError.w));
+      const sin = Math.sqrt(1 - rotationError.w * rotationError.w);
+      if (sin > 1e-4) {
+        tmp
+          .set(rotationError.x / sin, rotationError.y / sin, rotationError.z / sin)
+          .multiplyScalar(angle * UPRIGHT_STRENGTH * Math.min(delta * 60, 2));
+        body.applyTorqueImpulse(tmp, true);
+      }
+    }
   });
 
   return (
@@ -107,16 +167,15 @@ const Pointer = () => {
       type="kinematicPosition"
       colliders={false}
       position={[100, 100, 0]}
+      rotation={[Math.PI / 2, 0, 0]}
     >
-      <BallCollider args={[1.2]} />
+      <CapsuleCollider args={[2.5, 1.1]} />
     </RigidBody>
   );
 };
 
 export const ModelCluster = () => {
   const { nodes } = useGLTF("/assets/codeModel.glb") as unknown as GLTFResult;
-  const width = useThree((state) => state.size.width);
-  const count = width < 768 ? 9 : MAX_BODIES;
 
   const material = useMemo(
     () =>
@@ -128,12 +187,10 @@ export const ModelCluster = () => {
     []
   );
 
-  const bodies = INITIAL_BODIES.slice(0, count);
-
   return (
     <Physics gravity={[0, 0, 0]}>
       <Pointer />
-      {bodies.map((props, index) => (
+      {INITIAL_BODIES.map((props, index) => (
         <LogoBody
           key={index}
           geometry={nodes.Logo.geometry}

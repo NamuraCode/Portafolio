@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { BorderLeft, BorderRight, Navbar, NavbarPoints } from "@/components";
+import { BorderLeft, BorderRight, Navbar } from "@/components";
 import { info } from "@/db/info";
 
 import gsap from "gsap";
@@ -38,7 +38,6 @@ export const Header = () => {
       <BorderLeft changeColor={navDiff} />
       <Navbar changeColor={navDiff} items={info.header} />
       <BorderRight changeColor={navDiff} />
-      {/* <NavbarPoints changeColor={navDiff} /> */}
     </header>
   );
 };
