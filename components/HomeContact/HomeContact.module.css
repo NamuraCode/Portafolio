@@ -4,25 +4,41 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.4rem;
     width: 140px;
     height: 50px;
-    background-color: var(--buttonBg1);
-    border: 1px solid var(--color1);
-    border-radius: 20px;
+    background-color: color-mix(in srgb, var(--color1) 10%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color1) 35%, transparent);
+    border-radius: var(--radiusPill);
     pointer-events: all;
-    transition: border 0.2s ease;
+    transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease);
 }
 
 .HomeContent:hover {
-    border: 1px solid var(--color3);
+    background-color: var(--color1);
+    border-color: var(--color1);
 }
 
 .HomeContent span {
-    font-size: var(--text12);
-    font-weight: var(--weight800);
+    font-size: var(--text14);
+    font-weight: var(--weight700);
     color: var(--color1);
-    line-height: normal;
-    text-transform: uppercase;
-    text-wrap: balance;
+    line-height: 1;
+    transition: color 0.3s var(--ease);
 }
 
+.HomeContent svg {
+    width: 16px;
+    height: 16px;
+    color: var(--color1);
+    transition: color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.HomeContent:hover span,
+.HomeContent:hover svg {
+    color: var(--color3);
+}
+
+.HomeContent:hover svg {
+    transform: translate(2px, -2px);
+}

@@ -3,85 +3,15 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 1.875rem;
 }
 
 .projectInfoCards {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 1.5rem;
   flex-wrap: wrap;
   width: 100%;
   height: fit-content;
-}
-
-.projectCard {
-  width: min-content;
-  margin-bottom: 2rem;
-}
-
-.projectCard p {
-  margin-top: 1rem;
-  font-size: var(--text14);
-  font-weight: var(--weight600);
-  color: var(--colorCaption);
-  text-wrap: balance;
-}
-
-.projectCardImage {
-  display: flex;
-  align-items: center;
-  overflow-x: scroll;
-  width: 260px;
-  height: 200px;
-  padding: 0;
-  scroll-snap-type: x mandatory;
-  mask-image: url("/images/projectMask.svg");
-}
-
-.projectCardImage img {
-  scroll-snap-align: center;
-  object-fit: cover;
-  min-width: 260px;
-  width: 260px;
-  height: 200px;
-  background-color: var(--color3);
-  filter: blur(6px);
-  transition: filter 0.3s ease-in-out;
-  will-change: filter;
-}
-
-.projectCardImage:hover img {
-  filter: none;
-}
-
-.projectCardContent {
-  position: relative;
-  width: min-content;
-  height: min-content;
-}
-
-.projectCardContent a {
-  position: absolute;
-  right: 4px;
-  bottom: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  background-color: var(--color3);
-  border: none;
-  border-radius: 12px;
-  transition: transform 0.1s ease-in-out;
-}
-
-.projectCardContent a:hover {
-  transform: scale(1.1);
-}
-
-.projectCardContent a:active {
-  transform: scale(0.8);
 }
 
 .hiddenProjects {

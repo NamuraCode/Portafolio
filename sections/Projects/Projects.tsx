@@ -7,7 +7,7 @@ export const Projects = () => {
   const { title, toggle } = info.projects;
   return (
     <section id="projects" className={styles.sections}>
-      <HelperTitle title={title}></HelperTitle>
+      <HelperTitle title={title} index="03" />
       <ProjectsInfo projects={infoImagesProject} toggle={toggle} />
     </section>
   );

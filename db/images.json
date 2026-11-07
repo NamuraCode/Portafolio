@@ -27,10 +27,13 @@
     ],
     "imagesProject": [
         {
-            "title" : ["Portafolio Web","Portfolio Web"],
+            "title": [
+                "Portafolio Web",
+                "Portfolio Website"
+            ],
             "description": [
-                "portafolio profesional de desarrollador de software, con competencias técnicas, experiencia laboral y proyectos realizados",
-                "Professional software developer portfolio, with technical skills, work experience and completed projects"
+                "Mi portafolio profesional: experiencia, proyectos y un hero 3D interactivo hecho con Three.js.",
+                "My professional portfolio: experience, projects and an interactive 3D hero built with Three.js."
             ],
             "image": [
                 "/images/projects/ProfileWeb1.webp"
@@ -39,10 +42,13 @@
             "type": "dev"
         },
         {
-            "title" : ["Makata Web Interactiva","Makata Interactive Web"],
+            "title": [
+                "Makata Web Interactiva",
+                "Makata Interactive Website"
+            ],
             "description": [
-                "Makata estudio creativo con servicios integrales de branding, diseño UX/UI, modelado 3D y desarrollo web/app",
-                "Makata creative studio with comprehensive services in branding, UX/UI design, 3D modeling, and web/app dev"
+                "Sitio del estudio creativo Makata: branding, diseño UX/UI, modelado 3D y desarrollo web y de apps.",
+                "Website for Makata, a creative studio offering branding, UX/UI design, 3D modeling and web/app development."
             ],
             "image": [
                 "/images/projects/makata1.webp"
@@ -51,10 +57,13 @@
             "type": "dev"
         },
         {
-            "title" : ["Rhezo Pagina Web","Rhezo Web Page"],
+            "title": [
+                "Rhezo Página Web",
+                "Rhezo Website"
+            ],
             "description": [
-                "Rhezo es una plataforma que conecta talento con start-ups tecnológicas y ayuda a reclutadores a formar equipos de manera ágil.",
-                "Rhezo is a platform that connects talent with tech startups and helps recruiters build teams quickly."
+                "Plataforma que conecta talento con startups tecnológicas y ayuda a los reclutadores a formar equipos rápidamente.",
+                "A platform that connects talent with tech startups and helps recruiters build teams fast."
             ],
             "image": [
                 "/images/projects/rhezo1.webp"
@@ -63,10 +72,13 @@
             "type": "dev"
         },
         {
-            "title" : ["Mimir Web Interactiva","Mimir Interactive Web"],
+            "title": [
+                "Mimir Web Interactiva",
+                "Mimir Interactive Website"
+            ],
             "description": [
-                "AskMimir (askmimir.ai) presenta una herramienta de inteligencia artificial educativa que facilita el aprendizaje interactivo en diversos temas.",
-                "AskMimir (askmimir.ai) features an educational AI tool that facilitates interactive learning across various subjects."
+                "Sitio de AskMimir, una herramienta educativa con IA que facilita el aprendizaje interactivo en múltiples temas.",
+                "Website for AskMimir, an educational AI tool that makes learning interactive across many subjects."
             ],
             "image": [
                 "/images/projects/mimir1.webp"
@@ -75,10 +87,13 @@
             "type": "dev"
         },
         {
-            "title" : ["Heypeer Web Inmersiva","Heypeer Immersive Web"],
+            "title": [
+                "Heypeer Web Inmersiva",
+                "Heypeer Immersive Website"
+            ],
             "description": [
-                "Heypeer web site permite interactuar con un modelo 3D en tiempo real en la ciudad de Nueva York",
-                "Heypeer web site allows you to interact with a 3D model in real time in New York City"
+                "Experiencia web que permite interactuar en tiempo real con un modelo 3D de la ciudad de Nueva York.",
+                "A web experience for interacting in real time with a 3D model of New York City."
             ],
             "image": [
                 "/images/projects/peer1.webp"
@@ -87,10 +102,13 @@
             "type": "hidden"
         },
         {
-            "title" : ["Infini Ecommerce","Infini Ecommerce"],
+            "title": [
+                "Infini E-commerce",
+                "Infini E-commerce"
+            ],
             "description": [
-                "Infini es un ecommerce donde se venden diversos productos siendo el principal Magical Water",
-                "Infini is an ecommerce where various products are sold, with the main one being Magical Water"
+                "Tienda en línea de Infini con diversos productos, siendo Magical Water el principal.",
+                "Infini's online store with a range of products, led by Magical Water."
             ],
             "image": [
                 "/images/projects/infini1.webp"
@@ -99,10 +117,13 @@
             "type": "dev"
         },
         {
-            "title" : ["3Core Web Site","Web Page"],
+            "title": [
+                "3Core Sitio Web",
+                "3Core Website"
+            ],
             "description": [
-                "3CORE Studio una agencia especializada en desarrollo web, aplicaciones móviles y software a medida",
-                "3CORE Studio is an agency specializing in web development, mobile applications, and custom software"
+                "Sitio de 3CORE Studio, agencia especializada en desarrollo web, apps móviles y software a medida.",
+                "Website for 3CORE Studio, an agency specializing in web development, mobile apps and custom software."
             ],
             "image": [
                 "/images/projects/3core1.webp"
@@ -111,10 +132,13 @@
             "type": "dev"
         },
         {
-            "title" : ["Wemoms App","Wemoms App"],
+            "title": [
+                "Wemoms App",
+                "Wemoms App"
+            ],
             "description": [
-                "Aplicación móvil de seguimiento de embarazo con modelos 3D interactivos.",
-                "Mobile pregnancy tracking app with interactive 3D models."
+                "App móvil de seguimiento del embarazo con modelos 3D interactivos.",
+                "Mobile pregnancy-tracking app with interactive 3D models."
             ],
             "image": [
                 "/images/projects/wemoms1.webp"
@@ -123,10 +147,13 @@
             "type": "dev"
         },
         {
-            "title" : ["Pintura Digital Retrato","Digital Painting Portrait"],
+            "title": [
+                "Retrato en Pintura Digital",
+                "Digital Painting Portrait"
+            ],
             "description": [
-                "Retrato de práctica surrealista de mi y mis pasatiempos en Krita",
-                "Surrealist practice portrait of me and my hobbies in Krita"
+                "Autorretrato surrealista sobre mis pasatiempos, pintado en Krita.",
+                "A surrealist self-portrait about my hobbies, painted in Krita."
             ],
             "image": [
                 "/images/projects/IlustrationDN1.webp",
@@ -139,10 +166,13 @@
             "type": "art"
         },
         {
-            "title" : ["Junior Sinfonia Salvaje SENA","Junior Sinfonia Salvaje SENA"],
+            "title": [
+                "Junior · Sinfonía Salvaje",
+                "Junior · Wild Symphony"
+            ],
             "description": [
-                "Modelo 3D del personaje de junior, concept art de un jaguar  para el cortometraje sinfonía salvaje",
-                "3D model of the junior character, concept art of a jaguar for the short film wild symphony"
+                "Modelo 3D y concept art de Junior, un jaguar protagonista del cortometraje «Sinfonía Salvaje».",
+                "3D model and concept art of Junior, the jaguar lead of the short film \"Sinfonía Salvaje\" (Wild Symphony)."
             ],
             "image": [
                 "/images/projects/Junior1.webp",
@@ -152,10 +182,13 @@
             "type": "art"
         },
         {
-            "title" : ["Bioma en botella","Biome in a bottle"],
+            "title": [
+                "Bioma en una Botella",
+                "Biome in a Bottle"
+            ],
             "description": [
-                "Modelo de Bioma creado en blender para practica personal",
-                "Biome model created in blender for personal practice"
+                "Diorama de un bioma modelado en Blender como práctica personal.",
+                "A biome diorama modeled in Blender as a personal study."
             ],
             "image": [
                 "/images/projects/Biome1.webp",

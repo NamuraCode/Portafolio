@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import Link from "next/link";
+import { Images } from "lucide-react";
 
 import { useGlobal } from "@/store";
 
@@ -29,13 +30,20 @@ export const HelperSlider = ({
   const { language, setIsCursorHover } = useGlobal();
   const sliderRef = useRef<HTMLDivElement>(null);
   const cursorText = ["Click", "Click"];
+  const imageCount = imagePropsProject?.images.length ?? 0;
   return (
     <div
       className={`${
-        isProject ? styles.helperProject : styles.helperAboutContainer
+        isProject ? `${styles.helperProject} reveal` : styles.helperAboutContainer
       }`}
     >
-      <div className={`${isProject && styles.helperProjectContent}`}>
+      <div className={isProject ? styles.helperProjectContent : undefined}>
+        {isProject && imageCount > 1 && (
+          <span className={styles.imageCount}>
+            <Images aria-hidden="true" />
+            {imageCount}
+          </span>
+        )}
         <div
           ref={sliderRef}
           className={`${
@@ -62,7 +70,8 @@ export const HelperSlider = ({
           <Link
             href={imagePropsProject.url}
             target="_blank"
-            aria-label="helperProjectRedirect"
+            rel="noopener noreferrer"
+            aria-label={imagePropsProject.title[language]}
           >
             <svg
               width="15"
