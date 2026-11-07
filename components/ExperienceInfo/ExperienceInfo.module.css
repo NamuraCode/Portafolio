@@ -61,7 +61,7 @@
   content: "";
   position: absolute;
   top: 2.05rem;
-  left: calc(-1.75rem - 4px);
+  left: calc(-1.75rem - 7px);
   width: 9px;
   height: 9px;
   border-radius: 50%;
